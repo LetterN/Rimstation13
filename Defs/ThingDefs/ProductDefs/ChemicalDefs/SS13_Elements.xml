@@ -603,27 +603,6 @@
   </ThingDef>
   
   <ThingDef ParentName="SS13ElementBase">
-    <defName>ChemWeldingFuel</defName>
-    <label>Water</label>
-    <description>A ubiquitous chemical substance that is composed of hydrogen and oxygen.</description>
-    <graphicData>
-      <texPath>Resources/Chemicals/Elements/weldingfuel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <stackLimit>100</stackLimit>
-    <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>1</MarketValue>
-      <Mass>0.01</Mass>
-      <Flammability>1.0</Flammability>
-			<DeteriorationRate>1.0</DeteriorationRate>
-		</statBases>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-  </ThingDef>
-  
-  <ThingDef ParentName="SS13ElementBase">
     <defName>ChemCarpotoxin</defName>
     <label>Carpotoxin</label>
     <description>A sinister chemical extracted from Space Carp.</description>

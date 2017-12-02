@@ -23,6 +23,27 @@
   </ThingDef>
   
   <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemWeldingFuel</defName>
+    <label>Welding Fuel</label>
+    <description>Itching Powder</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/weldingfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
     <defName>ChemBathSalts</defName>
     <label>Bath Salts</label>
     <description>Bath Salts</description>

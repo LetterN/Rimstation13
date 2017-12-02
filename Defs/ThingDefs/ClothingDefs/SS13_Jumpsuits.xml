@@ -24,6 +24,9 @@
 		<defaultOutfitTags>
 			<li>Crew</li>
 		</defaultOutfitTags>
+		<tags>
+			<li>NanoTrasen</li>
+		</tags>
     </apparel>
   </ThingDef>
 
@@ -51,7 +54,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>AtmosphericTechnician</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -82,7 +85,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Captain</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -111,7 +114,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>CargoTechnician</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -140,7 +143,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>ChiefEngineer</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -169,7 +172,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Chemist</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -198,7 +201,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>ChiefMedicalOfficer</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -227,7 +230,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Engineer</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -256,7 +259,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Geneticist</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -285,7 +288,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Assistant</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -314,7 +317,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>HeadOfSecurity</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -343,7 +346,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Botanist</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -372,7 +375,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Janitor</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -401,7 +404,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>MedicalDoctor</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -430,7 +433,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>ShaftMiner</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -459,7 +462,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>QuarterMaster</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -488,7 +491,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>ResearchDirector</li>
 	  </tags>
       <defaultOutfitTags>
       </defaultOutfitTags>
@@ -519,7 +522,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Roboticist</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -548,7 +551,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>SecurityOfficer</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -577,7 +580,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Virologist</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -606,7 +609,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Warden</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -635,7 +638,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Chef</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -664,7 +667,7 @@
         <li>OnSkin</li>
       </layers>
 	  <tags>
-			<li>NanoTrasen</li>
+			<li>Detective</li>
 	  </tags>
     </apparel>
   </ThingDef>

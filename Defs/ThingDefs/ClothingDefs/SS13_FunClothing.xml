@@ -37,8 +37,9 @@
       <layers>
         <li>OnSkin</li>
       </layers>
-      <defaultOutfitTags>
-      </defaultOutfitTags>
+			<tags>
+				<li>Clown</li>
+			</tags>
     </apparel>
   </ThingDef>
  

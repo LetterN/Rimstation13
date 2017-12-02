@@ -106,15 +106,6 @@
     <altitudeLayer>Item</altitudeLayer>
     <alwaysHaulable>True</alwaysHaulable>
     <tickerType>Never</tickerType>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
   </ThingDef>
   
     <ThingDef Name="SS13ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
@@ -144,6 +135,12 @@
   </ThingDef>
   
   <ThingDef Name="SS13ArmorHelmetMakeableBase" ParentName="SS13ArmorMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef Name="SS13ArmorHelmetUnmakeableBase" ParentName="ApparelBase" Abstract="True">
     <thingCategories>
       <li>Headgear</li>
     </thingCategories>
