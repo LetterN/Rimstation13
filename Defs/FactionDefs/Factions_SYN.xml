@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Syndicate faction -->
+	
+  <FactionDef>
+		<defName>Syndicate</defName>
+		<label>Syndicate</label>
+    <description>An major space terrorist.</description>		<!-- Lore, SOON -->
+    <pawnsPlural>Syndicates</pawnsPlural>
+    <baseSelectionWeight>1</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>General</leaderTitle>
+    <expandingIconTexture>World/Notexture</expandingIconTexture>		<!-- Sprites needed, (wtf syndie uses nt one, kek) -->
+	<homeIconPath>World/Notexture</homeIconPath>
+    <startingGoodwill>
+      <min>-15</min>
+      <max>35</max>
+    </startingGoodwill>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategory>Civil</backstoryCategory>
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-60</min>
+      <max>0</max>
+    </naturalColonyGoodwill>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>  <!-- Should i delete this temperature autisim? -->
+      <min>-999999999999</min>
+      <max>100</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+					<Villager>50</Villager>
+					<GrenadierDestructive>15</GrenadierDestructive>
+					<MercenarySlasher>70</MercenarySlasher>
+					<TownGuard>100</TownGuard>
+					<TownCouncilman>100</TownCouncilman>
+					<MercenaryGunner>100</MercenaryGunner>
+					<MercenaryElite>100</MercenaryElite>
+				</options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <TownTrader>1</TownTrader>
+        </traders>
+        <carriers>
+          <SpaceCarp>5</SpaceCarp>			<!-- Yes, were using carps, Even syndies too -->
+        </carriers>
+        <guards>
+					<GrenadierDestructive>20</GrenadierDestructive>
+					<MercenarySlasher>70</MercenarySlasher>
+					<TownGuard>90</TownGuard>
+					<MercenaryGunner>100</MercenaryGunner>
+					<MercenaryElite>100</MercenaryElite>
+				</guards>
+      </li>
+      <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+					<GrenadierDestructive>70</GrenadierDestructive>
+					<MercenarySlasher>100</MercenarySlasher>
+					<Villager>100</Villager>
+					<TownGuard>100</TownGuard>
+					<TownCouncilman>100</TownCouncilman>
+					<MercenaryGunner>150</MercenaryGunner>
+					<MercenaryElite>200</MercenaryElite>
+				</options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
