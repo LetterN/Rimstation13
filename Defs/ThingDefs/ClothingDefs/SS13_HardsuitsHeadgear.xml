@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================================== Jumpsuits =====================================-->
+  <ThingDef ParentName="SS13ArmorHelmetMakeableBase">
+    <defName>ApparelEVASuitHelmet</defName>
+    <label>EVA Suit Helmet</label>
+    <description>Keeps your head from ballooning and freezing. And being hugged by Xenos. </description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/EVA_Suit/spacesuithelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>0.1</ArmorRating_Electric>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Plasteel>30</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Clothing/Heavy_Suits/EVA_Suit/spacesuithelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>NanoTrasen</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>EVA</li>
+			</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ArmorHelmetMakeableBase">
+    <defName>ApparelAdvancedSuitHelmet</defName>
+    <label>Advanced Hardsuit Helmet</label>
+    <description>The matching helmet for the Advanced Hardsuit.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Advanced_Suit/advancedsuithelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>0.1</ArmorRating_Electric>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Plasteel>40</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Clothing/Heavy_Suits/Advanced_Suit/advancedsuithelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>NanoTrasen</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>EVA</li>
+			</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ArmorHelmetMakeableBase">
+    <defName>ApparelAtmosSuitHelmet</defName>
+    <label>Atmospherics Hardsuit Helmet</label>
+    <description>The matching helmet for the Atmospherics Hardsuit.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Atmos_Suit/atmossuithelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>1</ArmorRating_Electric>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Plasteel>40</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Clothing/Heavy_Suits/Atmos_Suit/atmossuithelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>NanoTrasen</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>EVA</li>
+			</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ArmorHelmetMakeableBase">
+    <defName>ApparelEngineeringSuitHelmet</defName>
+    <label>Engineering Hardsuit Helmet</label>
+    <description>The matching helmet for the Engineering Hardsuit, or Isaac Clarke cosplayers.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Engineering_Suit/engineeringsuithelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>1</ArmorRating_Electric>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Plasteel>40</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Clothing/Heavy_Suits/Engineering_Suit/engineeringsuithelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>NanoTrasen</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>EVA</li>
+			</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ArmorHelmetMakeableBase">
+    <defName>ApparelMiningSuitHelmet</defName>
+    <label>Mining Hardsuit Helmet</label>
+    <description>The matching helmet for the Mining Hardsuit.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Mining_Suit/miningsuithelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>1</ArmorRating_Electric>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Plasteel>40</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Clothing/Heavy_Suits/Mining_Suit/miningsuithelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>NanoTrasen</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>EVA</li>
+			</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ArmorHelmetMakeableBase">
+    <defName>ApparelSecuritySuitHelmet</defName>
+    <label>Security Hardsuit Helmet</label>
+    <description>The matching helmet for the Security Hardsuit.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Security_Suit/securitysuithelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>1</ArmorRating_Electric>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Plasteel>40</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Clothing/Heavy_Suits/Security_Suit/securitysuithelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>NanoTrasen</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>EVA</li>
+			</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+</Defs>

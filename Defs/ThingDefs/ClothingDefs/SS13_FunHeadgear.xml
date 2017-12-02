@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="SS13ApparelMakeableBase">
+    <defName>ApparelClownMask</defName>
+    <label>clown mask</label>
+    <description>No one cared who I was until I put on the mask.</description>
+    <graphicData>
+      <texPath>Clothing/Other_Suits/Clown_Suit/Mask/clownmask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+    <costList>
+      <Cloth>10</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+    </statBases>
+	<thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Clothing/Other_Suits/Clown_Suit/Mask/clownmask</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+ 
+</Defs>

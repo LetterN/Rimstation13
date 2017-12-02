@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>NanoTrasenInvestment</defName>
+    <label>NanoTrasen Investment Application</label>
+    <description>Contact NanoTrasen to apply for a Technology grant to build your own Station.</description>
+    <baseCost>1</baseCost>
+	<techLevel>Neolithic</techLevel>
+	<researchViewX>11</researchViewX>
+	<researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

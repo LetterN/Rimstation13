@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Candy</defName>
+    <label>candy</label>
+    <description>A Candy bar.</description>
+    <graphicData>
+      <texPath>Meals/candy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.3</nutrition>
+      <joy>0.40</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>CheesieHonkers</defName>
+    <label>cheesie honkers</label>
+    <description>A bag of Cheet[COPYRIGHT REDACTED].</description>
+    <graphicData>
+      <texPath>Meals/cheesie_honkers</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>100</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.3</nutrition>
+      <joy>0.40</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Chips</defName>
+    <label>chips</label>
+    <description>A bag of chips.</description>
+    <graphicData>
+      <texPath>Meals/chips</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>100</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.3</nutrition>
+      <joy>0.40</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>Jerky</defName>
+    <label>Jerky</label>
+    <description>A bag of Jerky.</description>
+    <graphicData>
+      <texPath>Meals/jerky</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>120</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.3</nutrition>
+      <joy>0.40</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>4NoRaisins</defName>
+    <label>4No Raisins</label>
+    <description>A box of 4No Raisins, made from the tears of the robusted.</description>
+    <graphicData>
+      <texPath>Meals/raisins</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>120</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.3</nutrition>
+      <joy>0.40</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>SyndieCakes</defName>
+    <label>syndie cakes</label>
+    <description>A Cyanide flavoured cake(Non-toxic).</description>
+    <graphicData>
+      <texPath>Meals/syndiecakes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>120</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.3</nutrition>
+      <joy>0.40</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+</Defs>

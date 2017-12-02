@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="CookProcessorBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>Processor</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef Name="CookMicrowaveBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>Microwave</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef Name="CookFryerBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>Fryer</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef Name="CookKitchenTableBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>KitchenTable</li>
+		</recipeUsers>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMicrowaveBase">
+    <defName>MakeBread</defName>
+    <label>make bread</label>
+    <description>Cook flour into Bread.</description>
+    <jobString>Cooking bread.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawFlour</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawFlour</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MealBread>1</MealBread>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookKitchenTableBase">
+    <defName>SliceBread</defName>
+    <label>slice bread</label>
+    <description>Cut bread into slices.</description>
+    <jobString>Slicing bread.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MealBread</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MealBread</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MealBreadSliced>3</MealBreadSliced>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookProcessorBase">
+    <defName>ProcessMeat</defName>
+    <label>process meat into faggots</label>
+    <description>Process Meat into faggots.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13Meat</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13Faggot>2</SS13Faggot>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookKitchenTableBase">
+    <defName>SliceMeat</defName>
+    <label>slice meat</label>
+    <description>Slice Meat into cutlets.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13Meat</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13RawCutlet>2</SS13RawCutlet>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookProcessorBase">
+    <defName>ProcessCutlet</defName>
+    <label>process raw cutlet</label>
+    <description>Process a cutlet into bacon.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCutlet</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13RawBacon>3</SS13RawBacon>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMicrowaveBase">
+    <defName>CookBacon</defName>
+    <label>cook bacon</label>
+    <description>Cook bacon</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBacon</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13CookedBacon>1</SS13CookedBacon>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookKitchenTableBase">
+    <defName>ChopPotato</defName>
+    <label>chop raw potato</label>
+    <description>Chop a potato into Wedges.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPotato</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13RawPotatoWedge>2</SS13RawPotatoWedge>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookKitchenTableBase">
+    <defName>MakeFries</defName>
+    <label>chop raw wedges</label>
+    <description>Chop potato wedges into fries.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPotatoWedge</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13SpaceFries>1</SS13SpaceFries>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookMicrowaveBase">
+    <defName>CookFries</defName>
+    <label>cook space fries</label>
+    <description>Cook raw fries.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13SpaceFries</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13CookedSpaceFries>1</SS13CookedSpaceFries>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookKitchenTableBase">
+    <defName>MakeDough</defName>
+    <label>make dough</label>
+    <description>Mix water and flour into dough.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChemWater</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawFlour</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13Dough>5</SS13Dough>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookKitchenTableBase">
+    <defName>FlattenDough</defName>
+    <label>flatten dough</label>
+    <description>flatten dough.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13Dough</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13FlatDough>1</SS13FlatDough>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookKitchenTableBase">
+    <defName>SliceDough</defName>
+    <label>slice flat dough</label>
+    <description>slice flat dough.</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13Faggot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13SlicedDough>3</SS13SlicedDough>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookKitchenTableBase">
+    <defName>MakeSpaghetti</defName>
+    <label>make spaghetti</label>
+    <description>make spaghetti</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13SlicedDough</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13RawSpaghetti>3</SS13RawSpaghetti>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookMicrowaveBase">
+    <defName>BoilSpaghetti</defName>
+    <label>boil spaghetti</label>
+    <description>boil spaghetti</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSpaghetti</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13BoiledSpaghetti>1</SS13BoiledSpaghetti>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookMicrowaveBase">
+    <defName>TomatoPasta</defName>
+    <label>make tomato pasta</label>
+    <description>make tomato pasta</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13BoiledSpaghetti</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawTomato</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13TomatoPasta>1</SS13TomatoPasta>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookMicrowaveBase">
+    <defName>CopyPasta</defName>
+    <label>make copypasta</label>
+    <description>make copypasta</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13TomatoPasta</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13CopyPasta>1</SS13CopyPasta>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+</Defs>

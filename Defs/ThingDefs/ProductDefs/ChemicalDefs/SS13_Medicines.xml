@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="SS13MedicineBase" ParentName="ResourceBase" Abstract="True">
+	<recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>ChemDispenser</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemAlkysine</defName>
+    <label>Alkysine</label>
+    <description>Lessens the damage to neurological tissue, effective even after catastrophic injury. Used for treating brain damage (Results in 2 units instead of 3).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/alkysine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDylovene>1</ChemDylovene>
+      <ChemChlorine>1</ChemChlorine>
+	  <ChemNitrogen>1</ChemNitrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemAtropine</defName>
+    <label>Atropine</label>
+    <description>Good for stabilising critical patients.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/atropine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemEthanol>1</ChemEthanol>
+      <ChemAcetone>1</ChemAcetone>
+	  <ChemDiethylamine>1</ChemDiethylamine>
+	  <ChemPhenol>1</ChemPhenol>
+	  <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemDylovene</defName>
+    <label>Dylovene</label>
+    <description>A broad-spectrum anti-toxin, which treats toxin damage in the blood stream. It is also known as "Anti-Toxin".</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/dylovene</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemPotassium>1</ChemPotassium>
+      <ChemSilicon>1</ChemSilicon>
+	  <ChemNitrogen>1</ChemNitrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemArithrazine</defName>
+    <label>Arithrazine</label>
+    <description>A very unstable medication used to treat the most extreme cases of radiation poisoning. May cause some internal damage to the patient, but such damage is easily treatable.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/arithrazine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemHyronalin>1</ChemHyronalin>
+      <ChemHydrogen>1</ChemHydrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemBicaridine</defName>
+    <label>Bicaridine</label>
+    <description>An analgesic which is highly effective at treating brute damage. It is useful for stabilizing people who have been severely beaten, as well as treating less life-threatening injuries.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/bicaridine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemInaprovaline>1</ChemInaprovaline>
+      <ChemCarbon>1</ChemCarbon>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemCryoxadone</defName>
+    <label>Cryoxadone</label>
+    <description>Required for the proper function of cryogenics. It heals all types of damage (including clone damage) very swiftly, but only when in a very cold environment.
+</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/cryoxadone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDexalin>1</ChemDexalin>
+      <ChemOxygen>1</ChemOxygen>
+	  <ChemWater>1</ChemWater>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemClonexadone</defName>
+    <label>Clonexadone</label>
+    <description>A stronger version of Cryoxadone. It heals all types of damage but as an added bonus, heals clone damage 3x faster than Cryoxadone, but only when in a very cold environment. Useful for speed cloning.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/clonexadone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCryoxadone>1</ChemCryoxadone>
+      <ChemSodium>1</ChemSodium>
+	  <ChemPlasma>5</ChemPlasma>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemRezadone</defName>
+    <label>Rezadone</label>
+    <description>A powder derived from fish toxin, this substance can effectively treat genetic damage in humanoids, though excessive consumption has side effects.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/rezadone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCryptobiolin>1</ChemCryptobiolin>
+      <ChemCarpotoxin>1</ChemCarpotoxin>
+	  <ChemCopper>1</ChemCopper>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemDermaline</defName>
+    <label>Dermaline</label>
+    <description>A chemical, which is more effective at treating burns damage than kelotone. Is administered with a syringe or pill.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/dermaline</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemKelotane>1</ChemKelotane>
+      <ChemOxygen>1</ChemOxygen>
+	  <ChemPhosphorous>1</ChemPhosphorous>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemDexalin</defName>
+    <label>Dexalin</label>
+    <description>Used for treating oxygen deprivation. In most cases where it is likely to be needed, the strength of Dexalin Plus will probably be more useful (Results in 1 unit instead of 2).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/dexalin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemOxygen>2</ChemOxygen>
+      <ChemPlasma>5</ChemPlasma>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemDexalinPlus</defName>
+    <label>Dexalin Plus</label>
+    <description>Used in treatment of extreme cases of oxygen deprivation. It immediately counters all oxygen loss, which is hugely useful in many circumstances.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/dexalinplus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDexalin>1</ChemDexalin>
+      <ChemCarbon>1</ChemCarbon>
+	  <ChemIron>1</ChemIron>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemEthylredoxrazine</defName>
+    <label>Ethylredoxrazine</label>
+    <description>Neutralises alcohol in the blood stream. Though it is commonly needed, it is rarely requested.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/ethylredoxrazine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDylovene>1</ChemDylovene>
+      <ChemCarbon>1</ChemCarbon>
+	  <ChemOxygen>1</ChemOxygen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemHaloperidol</defName>
+    <label>Haloperidol</label>
+    <description>Helps fight against the effects of most drugs, while purging them.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/haloperidol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemChlorine>1</ChemChlorine>
+      <ChemFluorine>1</ChemFluorine>
+	  <ChemAluminium>1</ChemAluminium>
+	  <ChemPotassiumIodide>1</ChemPotassiumIodide>
+	  <ChemOil>1</ChemOil>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemHyperzine</defName>
+    <label>Hyperzine</label>
+    <description>A highly effective, long lasting muscle stimulant. It allows greater freedom of movement in bulky clothing although it has the side effect of causing some twitching.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/hyperzine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemPhosphorous>1</ChemPhosphorous>
+      <ChemSugar>1</ChemSugar>
+	  <ChemSulphur>1</ChemSulphur>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemHyronalin</defName>
+    <label>Hyronalin</label>
+    <description>A weak treatment for radiation damage. Considered to be useful mainly for genetic modification, where it reduces radiation levels, and thus the chance of genetic mutations.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/hyronalin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDylovene>1</ChemDylovene>
+      <ChemRadium>1</ChemRadium>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemImidazoline</defName>
+    <label>Imidazoline</label>
+    <description>Effective in treating eye trauma. It heals damage caused by physical or chemical trauma, though it is ineffective in treating genetic defects in the eyes (Results in 2 units instead of 3).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/imidazoline</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDylovene>1</ChemDylovene>
+      <ChemCarbon>1</ChemCarbon>
+	  <ChemHydrogen>1</ChemHydrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemInaprovaline</defName>
+    <label>Inaprovaline</label>
+    <description>Inaprovaline is a synaptic stimulant and cardiostimulant. Commonly used to stabilize patients - it stops the rate of decline in a patient's body if it has reached 0% or lower.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/inaprovaline</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCarbon>1</ChemCarbon>
+      <ChemOxygen>1</ChemOxygen>
+	  <ChemSugar>1</ChemSugar>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemKelotane</defName>
+    <label>Kelotane</label>
+    <description>Treats burn damage effectively, preventing microbial growth and vastly speeding up healing of even full thickness burns.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/kelotane</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCarbon>1</ChemCarbon>
+      <ChemSilicon>1</ChemSilicon>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemLeporazine</defName>
+    <label>Leporazine</label>
+    <description>This keeps a patient's body temperature stable. High doses can allow short periods of unprotected EVA.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/leporazine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCopper>1</ChemCopper>
+      <ChemSilicon>1</ChemSilicon>
+	  <ChemPlasma>5</ChemPlasma>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemLipozine</defName>
+    <label>Lipozine</label>
+    <description>speeds up the patient's metabolism to reduce body fat at a rapid rate.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/lipozine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemSodiumChloride>1</ChemSodiumChloride>
+      <ChemEthanol>1</ChemEthanol>
+	  <ChemRadium>5</ChemRadium>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemOculine</defName>
+    <label>Oculine</label>
+    <description>speeds up the patient's metabolism to reduce body fat at a rapid rate.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/oculine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCharcoal>1</ChemCharcoal>
+      <ChemCarbon>1</ChemCarbon>
+	  <ChemHydrogen>1</ChemHydrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemRyetalyn</defName>
+    <label>Ryetalyn</label>
+    <description>Repairs all genetic defects, restoring a patient to an ideal state. May be useful if genetics is unable to function properly.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/ryetalyn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemArithrazine>1</ChemArithrazine>
+      <ChemCarbon>1</ChemCarbon>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemSalbutamol</defName>
+    <label>Salbutamol</label>
+    <description>A theta-lactam antibiotic. A common and very useful medicine, effective against many diseases likely to be encountered in space.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/salbutamol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemSalicyclicAcid>1</ChemSalicyclicAcid>
+      <ChemLithium>1</ChemLithium>
+      <ChemAluminium>1</ChemAluminium>
+      <ChemBromine>1</ChemBromine>
+      <ChemAmmonia>1</ChemAmmonia>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemSpaceacillin</defName>
+    <label>Spaceacillin</label>
+    <description>A theta-lactam antibiotic. A common and very useful medicine, effective against many diseases likely to be encountered in space.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/spaceacillin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCryptobiolin>1</ChemCryptobiolin>
+      <ChemInaprovaline>1</ChemInaprovaline>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemSynaptizine</defName>
+    <label>Synaptizine</label>
+    <description>Used as part of a cure for GBS. It removes Mindbreaker Toxin (faster than anti-toxin) and lowers the duration of paralysis, stunned, weakened, drowsyness and hallucinations. Has a chance to deal a small amount of toxic damage.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/synaptizine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemLithium>1</ChemLithium>
+      <ChemSugar>1</ChemSugar>
+	  <ChemWater>1</ChemWater>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemTricordrazine</defName>
+    <label>Tricordrazine</label>
+    <description>A highly potent stimulant that can heal all damage types, originally derived from Cordrazine. Often used in a wide range of applications.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/tricordrazine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDylovene>1</ChemDylovene>
+      <ChemInaprovaline>1</ChemInaprovaline>
+    </costList>
+  </ThingDef>
+  
+</Defs>

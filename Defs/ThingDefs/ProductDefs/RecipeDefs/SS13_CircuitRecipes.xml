@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="CreateCircuitBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>500</workAmount>
+	<ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChemSulphuricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>CircuitImprinter</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateAutolatheCircuit</defName>
+    <label>Create Autolathe circuitry</label>
+    <description>Create a circuit board for an Autolathe</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardAutolathe>1</CircuitBoardAutolathe>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateHeavyLatheCircuit</defName>
+    <label>Create Heavy Lathe circuitry</label>
+    <description>Create a circuit board for a Heavy lathe</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardHeavyLathe>1</CircuitBoardHeavyLathe>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitImprinterCircuit</defName>
+    <label>Create Circuit Imprinter circuitry</label>
+    <description>Create a circuit board for a Circuit Imprinter</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardCircuitImprinter>1</CircuitBoardCircuitImprinter>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitChemDispenser</defName>
+    <label>Create Chem Dispenser Circuitry</label>
+    <description>Create a circuit board for a Chem Dispenser</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardChemDispenser>1</CircuitBoardChemDispenser>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitCommsConsole</defName>
+    <label>Create Comms Console Circuitry</label>
+    <description>Create a circuit board for a Comms Console</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardCommsConsole>1</CircuitBoardCommsConsole>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitDestructiveAnalyser</defName>
+    <label>Create Destructive Analyser Circuitry</label>
+    <description>Create a circuit board for a Destructive Analyser</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardDestructiveAnalyser>1</CircuitBoardDestructiveAnalyser>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitBioGen</defName>
+    <label>Create Bio Generator's Circuitry</label>
+    <description>Create a circuit board for a Bio Generator</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardBioGen>1</CircuitBoardBioGen>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitChemMixer</defName>
+    <label>Create Chem Mixer Circuitry</label>
+    <description>Create a circuit board for a Chem Mixer</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardChemMixer>1</CircuitBoardChemMixer>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitOreRedemption</defName>
+    <label>Create Ore Redemption Machine Circuitry</label>
+    <description>Create a circuit board for a Ore Redemption Machine</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardOreRedemption>1</CircuitBoardOreRedemption>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitProtolathe</defName>
+    <label>Create Protolathe Circuitry</label>
+    <description>Create a circuit board for a Protolathe</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardProtolathe>1</CircuitBoardProtolathe>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitRobotFabricator</defName>
+    <label>Create Robot Fabricator Circuitry</label>
+    <description>Create a circuit board for a Robot Fabricator</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardRobotFabricator>1</CircuitBoardRobotFabricator>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitPortableGenerator</defName>
+    <label>Create Portable Generator Circuitry</label>
+    <description>Create a circuit board for a Portable Generator</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardPortableGenerator>1</CircuitBoardPortableGenerator>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitSMESUnit</defName>
+    <label>Create SMES Unit Circuitry</label>
+    <description>Create a circuit board for a SMES Unit</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <CircuitBoardSMESUnit>1</CircuitBoardSMESUnit>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="CreateCircuitBase">
+    <defName>CreateCircuitAirlock</defName>
+    <label>Create airlock electronics</label>
+    <description>Create the electronics for an Airlock</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <products>
+      <AirlockElectronics>1</AirlockElectronics>
+    </products>
+  </RecipeDef>
+ 
+</Defs>

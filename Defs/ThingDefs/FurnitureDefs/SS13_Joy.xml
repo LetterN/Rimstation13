@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SnackVendor</defName>
+    <label>snack vendor</label>
+    <description>Filled with a seemingly infinite amount of delicious yet nutritionless calories.(Gives Joy not food).</description>
+    <graphicData>
+      <texPath>Furniture/Vendors/snack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>CigaretteVendor</defName>
+    <label>cigarette vendor</label>
+    <description>Filled with a seemingly infinite amount of cigarettes.(Gives Joy).</description>
+    <graphicData>
+      <texPath>Furniture/Vendors/cigarettes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>CoffeeVendor</defName>
+    <label>coffee vendor</label>
+    <description>Filled with a seemingly infinite amount of delicious yet nutritionless coffee.(Gives Joy not food).</description>
+    <graphicData>
+      <texPath>Furniture/Vendors/coffee</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>ColaVendor</defName>
+    <label>cola vendor</label>
+    <description>Filled with a seemingly infinite amount of delicious yet nutritionless sugar.(Gives Joy not food).</description>
+    <graphicData>
+      <texPath>Furniture/Vendors/cola</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>BoozeFridge</defName>
+    <label>booze fridge</label>
+    <description>Filled with a seemingly infinite amount of delicious yet nutritionless beer.(Gives Joy not food).</description>
+    <graphicData>
+      <texPath>Furniture/Vendors/booze</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>500</pathCost>
+    <passability>Impassable</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>BoozeDispenser</defName>
+    <label>booze dispenser</label>
+    <description>Filled with a seemingly infinite amount of delicious yet nutritionless alcohols.(Gives Joy not food).</description>
+    <graphicData>
+      <texPath>Furniture/Vendors/booze2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SodaDispenser</defName>
+    <label>soda dispenser</label>
+    <description>Filled with a seemingly infinite amount of delicious yet nutritionless soda.(Gives Joy not food).</description>
+    <graphicData>
+      <texPath>Furniture/Vendors/soda</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArcadeMachine</defName>
+    <label>arcade machine</label>
+    <description>A way to spend your downtime when you should be setting up the emitters. Someone else will get it.</description>
+    <graphicData>
+      <texPath>Misc/Arcade/arcade</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.7, 0.6, 0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <MarketValue>700</MarketValue>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <Component>8</Component>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <building>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>
+        <min>1</min>
+        <max>3</max>
+      </watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>4</watchBuildingStandRectWidth>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+	
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SlotMachine</defName>
+    <label>slot machine</label>
+    <description>The perfect way to waste both time and money while the blob destroys the station.</description>
+    <graphicData>
+      <texPath>Misc/slotmachine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  
+</Defs>

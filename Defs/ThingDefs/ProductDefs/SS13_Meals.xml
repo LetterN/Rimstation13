@@ -1,0 +1,1469 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MealBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+			<Beauty>-4</Beauty>
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Ingredients" />
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </ingestible>
+  </ThingDef>
+  
+  
+  <ThingDef Name="FineCookedMealBase" ParentName="MealBase" Abstract="True">
+    <ingestible>
+      <preferability>MealFine</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef Name="SimpleCookedMealBase" ParentName="MealBase" Abstract="True">
+    <ingestible>
+      <preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef Name="LavishCookedMealBase" ParentName="MealBase" Abstract="True">
+    <ingestible>
+      <preferability>MealFine</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawFlour</defName>
+    <label>flour</label>
+    <description>Raw flour, technically edible but not very nutritious and pretty disgusting. Better baked into bread. Lasts a long time.</description>
+    <graphicData>
+      <texPath>Meals/flour</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>200</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>MealBread</defName>
+    <label>loaf of bread</label>
+    <description>A loaf of crumbly bread. Check for foreign bodies.</description>
+	<stackLimit>30</stackLimit>
+    <graphicData>
+      <texPath>Meals/bread</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>20</DeteriorationRate>
+      <MarketValue>10</MarketValue>
+	  <Mass>0.4</Mass>
+      <WorkToMake>100</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.45</nutrition>
+      <joy>0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>MealBreadSliced</defName>
+    <label>slice of bread</label>
+    <description>A slice of crumbly bread. Product of lazy chefs.</description>
+	<stackLimit>30</stackLimit>
+    <graphicData>
+      <texPath>Meals/breadslice</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>20</DeteriorationRate>
+      <MarketValue>5</MarketValue>
+	  <Mass>0.4</Mass>
+      <WorkToMake>50</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.15</nutrition>
+      <joy>0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13Milk</defName>
+    <label>Milk</label>
+    <description>White and nutritious goodness!</description>
+	<stackLimit>30</stackLimit>
+    <graphicData>
+      <texPath>Meals/milk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Ingest_Beer</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13Meat</defName>
+    <label>Meat</label>
+    <description>A slab of unidentified meat.</description>
+	<stackLimit>30</stackLimit>
+    <graphicData>
+      <texPath>Meals/meat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawEgg</defName>
+    <label>Egg</label>
+    <description>It's an egg.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/egg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCutlet</defName>
+    <label>Raw Cutlet</label>
+    <description>It's a prepared cutlet of "meat".</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/rawcutlet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBacon</defName>
+    <label>Raw Bacon</label>
+    <description>It's a slice of raw bacon.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/rawbacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13Faggot</defName>
+    <label>Faggot</label>
+    <description>It's a glob of vaguely spherical meat.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/faggot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawPotatoWedge</defName>
+    <label>Raw Potato Wedges</label>
+    <description>It's a plate of raw potato wedges.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/rawpotatowedges</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13SpaceFries</defName>
+    <label>Space Fries</label>
+    <description>It's a plate of raw potato fries.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/spacefries</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13CarrotFries</defName>
+    <label>Carrot Fries</label>
+    <description>It's a plate of raw carrot fries.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/rawcarrotfries</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawParsnipFries</defName>
+    <label>Raw Parsnip Fries</label>
+    <description>It's a plate of raw parsnip fries.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/rawparsnipfries</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13SoyDope</defName>
+    <label>Space Fries</label>
+    <description>It's a plate of raw potato fries.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/soydope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSpaghetti</defName>
+    <label>Raw Spaghetti</label>
+    <description>It's a handful of Raw Spaghetti.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/spaghetti</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13Tortilla</defName>
+    <label>Tortilla</label>
+    <description>It's a tortilla.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/tortilla</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13YakiImo</defName>
+    <label>Yaki Imo</label>
+    <description>It's a Yaki Imo.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/yakiimo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>SS13RiceBowl</defName>
+    <label>Rice Bowl</label>
+    <description>It's a bowl of Rice. Who even pays the Chef?</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/ricebowl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13Dough</defName>
+    <label>Dough</label>
+    <description>It's a moist nugget of dough. You could eat it raw, but why?</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/dough</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13SlicedDough</defName>
+    <label>Slice of dough</label>
+    <description>It's a moist, sliced nugget of dough. You could eat it raw, but why?</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/sliceddough</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13FlatDough</defName>
+    <label>flat dough</label>
+    <description>It's a moist, sliced nugget of dough. You could eat it raw, but why?</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/flatdough</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13CakeBatter</defName>
+    <label>Cake Batter</label>
+    <description>Cake Batter, bake a cake or eat the mix raw like the fat little Greyshirt you are.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/cakebatter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13EggYolk</defName>
+    <label>Egg Yolk</label>
+    <description>An egg, minus the shell and white.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/eggyolk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13SoySauce</defName>
+    <label>Soy Sauce</label>
+    <description>It's a bottle of Soy Sauce.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/soysauce</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <nutrition>0.1</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13Salt</defName>
+    <label>Salt</label>
+    <description>Make it from Chlorine and Sodium or pull it straight from your salty tears.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/salt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13Pepper</defName>
+    <label>Pepper</label>
+    <description>The perfect seasoning for the clowns eyeballs.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/pepper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13DrinkBase">
+    <defName>SS13Moonshine</defName>
+    <label>Moonshine</label>
+    <description>One step below paint thinner.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/moonshine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>SS13CheeseWheel</defName>
+    <label>Cheese Wheel</label>
+    <description>A perfectly circular wheel of cheese. Eat it all. Do it.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/cheesewheel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Chocolate</defName>
+    <label>chocolate</label>
+    <description>A delicious preparation of cocoa seeds ground together with sugar and vanilla. Very pleasurable to eat, but not very nutritious.</description>
+    <graphicData>
+      <texPath>Meals/chocolatebar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>6</MarketValue>
+      <Mass>0.075</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <nutrition>0.10</nutrition>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>SS13Tofu</defName>
+    <label>Tofu</label>
+    <description>Mmmmm, soy milk and enzymes.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/tofu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>SS13Sprinkles</defName>
+    <label>Sprinkles</label>
+    <description>Who grinds a perfectly good donut into just the sprinkles? REALLY? See me. - HoS</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/sprinkles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13CherryJelly</defName>
+    <label>Cherry Jelly</label>
+    <description>Ground up cherries. Really more of a puree, honestly.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/cherryjelly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13BlueCherryJelly</defName>
+    <label>Blue Cherry Jelly</label>
+    <description>Ground up blue cherries. Really more of a puree, honestly.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/bluecherryjelly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13CookedBacon</defName>
+    <label>Cooked Bacon</label>
+    <description>Perfectly fried bacon from the microwave. It's a SPACE microwave, ok?</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/cookedbacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.3</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13Bun</defName>
+    <label>Bun</label>
+    <description>It's just a plain bun. At least it's cooked.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/bun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13PastryBase</defName>
+    <label>Pastry Base</label>
+    <description>It's the base of a pastry. Tell me you're going to add something to this. Please.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/pastrybase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13BoiledSpaghetti</defName>
+    <label>"Boiled" Spaghetti</label>
+    <description>It's just spaghetti cooked in the magic space microwave.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/boiledspaghetti</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.15</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13TomatoPasta</defName>
+    <label>Tomato Pasta</label>
+    <description>It's just spaghetti and tomatoes cooked in the magic space microwave.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/tomatopasta</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.2</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13CopyPasta</defName>
+    <label>CopyPasta</label>
+    <description>Make this, and the wrath of the Coderbus will descend upon you. No, really. They hate this stuff.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/copypasta</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.4</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13PizzaBread</defName>
+    <label>Pizza Bread</label>
+    <description>Contrary to the belief of some pizza sellers, Pizza bread is for pizza and ONLY pizza. No one wants cinammon toast made with pizza bread, god damn. Like, who thinks pizza bread with tasteless mozzarella is a good idea? Just make a damn pizza with it.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/pastrybase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13PlainPie</defName>
+    <label>Empty Pie</label>
+    <description>It's an empty pastry shell, a stark reminder of what could be, a metaphor for all the good and evil in the world. Morality hangs by a thread above the blade of truth. To fill, or not to fill.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/plainpie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13PlainCake</defName>
+    <label>Plain Cake</label>
+    <description>A completely plain cake. Dryer than a retired hooker.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/plaincake</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13BoiledSpiderLeg</defName>
+    <label>Boiled Spider Leg</label>
+    <description>Y'know what? No. Hell no, put that down.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/boiledspiderleg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13CookedCutlet</defName>
+    <label>Cooked Cutlet</label>
+    <description>A perfectly cooked prime cutlet of "Meat".</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/cookedcutlet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13MeatSteak</defName>
+    <label>Cooked Meat Steak</label>
+    <description>A prime cooked steak.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/meatsteak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13ToastedSandwich</defName>
+    <label>Toasted Sandwich</label>
+    <description>A delicious toasted sandwich, much better than dry, dry bread.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/toastedsandwich</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13CookedSpaceFries</defName>
+    <label>Cooked Space Fries</label>
+    <description>A batch of delicious potato fries.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/cookedspacefries</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.3</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13WarmDonkPocket</defName>
+    <label>Warm Donk-Pocket</label>
+    <description>The meal of kings, a warm Donk-Pocket will see you right.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/warmdonkpocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13BoiledEgg</defName>
+    <label>Boiled Egg</label>
+    <description>A bit bland on its own, but hopefully you boiled this baby chicken for a reason.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/boiledegg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13BoiledRice</defName>
+    <label>Boiled Rice</label>
+    <description>A bowl of boiled rice. More bland than your personality, but at least it's cooked.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/boiledrice</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SimpleCookedMealBase">
+    <defName>SS13Khinkali</defName>
+    <label>Khinkali</label>
+    <description>Basically ravioli with airs.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/khinkali</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13Burger</defName>
+    <label>Burger</label>
+    <description>A hunk of meat between two buns. Ask your mother.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/burger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13BaconBurger</defName>
+    <label>Bacon Burger</label>
+    <description>A hunk of meat and cheese between two buns. Ask your mother.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/baconburger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13BrainBurger</defName>
+    <label>Brain Burger</label>
+    <description>Made with delicious brains!</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/brainburger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13CorgiBurger</defName>
+    <label>Corgi Burger</label>
+    <description>You monster.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/baconburger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13ClownBurger</defName>
+    <label>Clown Burger</label>
+    <description>This tastes funny. And stupid.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/clownburger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13MimeBurger</defName>
+    <label>Mime Burger</label>
+    <description>It's taste defies language.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/mimeburger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13TofuBurger</defName>
+    <label>Tofu Burger</label>
+    <description>Tastes like disappointment.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/tofuburger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="FineCookedMealBase">
+    <defName>SS13SpellBurger</defName>
+    <label>Spell Burger</label>
+    <description>This is absolutely Ei Nath.</description>
+    <stackLimit>50</stackLimit>
+    <graphicData>
+      <texPath>Meals/spellburger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <joy>0.0</joy>
+	  <joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+</Defs>

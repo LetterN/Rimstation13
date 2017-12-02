@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="RefineOreBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>OreRedemption</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef Name="RefineAutolatheBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>Autolathe</li>
+		</recipeUsers>
+  </RecipeDef>  
+
+  <RecipeDef Name="RefineBioGeneratorBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>BioGenerator</li>
+		</recipeUsers>
+  </RecipeDef>  
+  
+  <RecipeDef Name="AutolatheStoneBlocksBase" Abstract="True">
+		<jobString>Cutting stone blocks from chunk.</jobString>
+		<workAmount>300</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<workSkill>Construction</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>Autolathe</li>
+		</recipeUsers>
+  </RecipeDef>  
+
+  <RecipeDef Name="RefineBase" Abstract="True">
+	<jobString>Crafting.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>OreRedemption</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefineIronOre</defName>
+    <label>Refine Iron Ore</label>
+    <description>Refine Iron Ore into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>IronOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Steel>3</Steel>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefineMassIronOre</defName>
+    <label>Mass Refine Iron Ore</label>
+    <description>Refine Iron Ore into sheets 10x. Is slightly more efficient than burning one ore at a time, producing more Steel per Ore.</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>IronOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Steel>35</Steel>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefineSilverOre</defName>
+    <label>Refine Silver Ore</label>
+    <description>Refine Silver Ore into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SilverOre</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SilverOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Silver>1</Silver>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefineGoldOre</defName>
+    <label>Refine Gold Ore</label>
+    <description>Refine Gold Ore into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoldOre</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GoldOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gold>3</Gold>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefineUraniumOre</defName>
+    <label>Refine Uranium Ore</label>
+    <description>Refine Uranium Ore into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UraniumOre</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UraniumOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Uranium>3</Uranium>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefineDiamondOre</defName>
+    <label>Refine Diamond Ore</label>
+    <description>Refine Diamond Ore into usable Diamonds.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DiamondOre</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DiamondOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Jade>3</Jade>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefinePlasmaOre</defName>
+    <label>Refine Plasma Ore</label>
+    <description>Refine Plasma Ore into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasmaOre</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasmaOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasma>3</Plasma>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefinePlasteelSheets</defName>
+    <label>Refine Plasteel.</label>
+    <description>Refine Plasma and Steel into Plasteel.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasma</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasma</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasteel>3</Plasteel>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefineGlassSheets</defName>
+    <label>Refine Glass.</label>
+    <description>Refine sand into glass.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GlassOre</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GlassOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Glass>20</Glass>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineAutolatheBase">
+    <defName>RefineGlassBeaker</defName>
+    <label>Craft Glass Beaker.</label>
+    <description>Refine glass into beakers.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Glass</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <GlassBeaker>10</GlassBeaker>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="AutolatheStoneBlocksBase">
+    <defName>RefineStoneBlocks</defName>
+    <label>Craft stone blocks.</label>
+    <description>Refine chunks into blocks.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+    <products>
+      <StoneBlock>10</StoneBlock>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="AutolatheStoneBlocksBase">
+    <defName>RefineSand</defName>
+    <label>Refine Chunks into Sand.</label>
+    <description>Refine chunks into sand.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+    <products>
+      <GlassOre>10</GlassOre>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineBioGeneratorBase">
+    <defName>RefineBiomass</defName>
+    <label>Create Biomass</label>
+    <description>Refine nutriment into biomass.</description>
+    <workAmount>100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChemNutriment</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <Biomass>5</Biomass>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineBioGeneratorBase">
+    <defName>RefineCloth</defName>
+    <label>Synthesize Cloth</label>
+    <description>Refine Biomass into Cloth.</description>
+    <workAmount>100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Cloth>10</Cloth>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineBioGeneratorBase">
+    <defName>RefineMilk</defName>
+    <label>Synthesize Milk</label>
+    <description>Refine Biomass into Milk.</description>
+    <workAmount>100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13Milk>15</SS13Milk>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineBioGeneratorBase">
+    <defName>RefineLeather</defName>
+    <label>Synthesize Leather</label>
+    <description>Refine Biomass into Leather.</description>
+    <workAmount>100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Leather>5</Leather>
+    </products>
+  </RecipeDef>
+ 
+</Defs>

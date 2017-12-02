@@ -1,0 +1,1772 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="GrindReagentBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>ReagentGrinder</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindAmbrosiaDeus</defName>
+    <label>Grind Ambrosia Deus</label>
+    <description>Grind Ambrosia Deus down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawAmbrosiaDeus</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemOmnizine>15</ChemOmnizine>
+      <ChemSynaptizine>15</ChemSynaptizine>
+      <ChemSpaceDrugs>10</ChemSpaceDrugs>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindAmbrosiaGaia</defName>
+    <label>Grind Ambrosia Gaia</label>
+    <description>Grind Ambrosia Gaia down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawAmbrosiaGaia</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>6</ChemNutriment>
+      <ChemEarthsblood>5</ChemEarthsblood>
+      <ChemVitamin>5</ChemVitamin>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindApple</defName>
+    <label>Grind Apple</label>
+    <description>Grind Apple down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawApple</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindAmbrosiaVulgaris</defName>
+    <label>Grind Ambrosia Vulgaris</label>
+    <description>Grind Ambrosia Vulgaris down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawAmbrosiaVulgaris</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemBicaridine>10</ChemBicaridine>
+	  <ChemKelotane>10</ChemKelotane>
+	  <ChemSpaceDrugs>15</ChemSpaceDrugs>
+	  <ChemToxin>10</ChemToxin>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBanana</defName>
+    <label>Grind Banana</label>
+    <description>Grind Banana down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBanana</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>2</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemBananaJuice>10</ChemBananaJuice>
+	  <ChemPotassium>10</ChemPotassium>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBerry</defName>
+    <label>Grind Berry</label>
+    <description>Grind Berry down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBerry</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBloodTomato</defName>
+    <label>Grind Blood Tomato</label>
+    <description>Grind Blood Tomato down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBloodTomato</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemBlood>10</ChemBlood>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBlueSpaceBanana</defName>
+    <label>Grind Blue-Space Banana</label>
+    <description>Grind Blue-Space Banana down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBlueSpaceBanana</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>2</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemBananaJuice>10</ChemBananaJuice>
+	  <ChemSingulo>20</ChemSingulo>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBlueSpaceTomato</defName>
+    <label>Grind Blue-Space Tomato</label>
+    <description>Grind Blue-Space Tomato down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBlueSpaceTomato</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemSingulo>20</ChemSingulo>
+	  <ChemSpaceLube>20</ChemSpaceLube>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBlueCherry</defName>
+    <label>Grind Blue Cherry</label>
+    <description>Grind Blue Cherry down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBlueCherry</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>7</ChemNutriment>
+      <ChemSugar>7</ChemSugar>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBlueTomato</defName>
+    <label>Grind Blue Tomato</label>
+    <description>Grind Blue Tomato down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBlueTomato</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemSpaceLube>20</ChemSpaceLube>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindBlumpkin</defName>
+    <label>Grind Blumpkin</label>
+    <description>Grind Blumpkin down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawBlumpkin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>20</ChemNutriment>
+      <ChemChlorine>10</ChemChlorine>
+	  <ChemAmmonia>20</ChemAmmonia>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCabbage</defName>
+    <label>Grind Cabbage</label>
+    <description>Grind Cabbage down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCabbage</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCannabis</defName>
+    <label>Grind Cannabis</label>
+    <description>Grind Cannabis down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCannabis</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemSpaceDrugs>15</ChemSpaceDrugs>
+      <ChemLipolicide>35</ChemLipolicide>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCarrot</defName>
+    <label>Grind Carrot</label>
+    <description>Grind Carrot down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCarrot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemOculine>25</ChemOculine>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindChanterelle</defName>
+    <label>Grind Chanterelle</label>
+    <description>Grind Chanterelle down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawChanterelle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCherry</defName>
+    <label>Grind Cherry</label>
+    <description>Grind Cherry down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCherry</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>7</ChemNutriment>
+      <ChemSugar>7</ChemSugar>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindChili</defName>
+    <label>Grind Chili</label>
+    <description>Grind Chili down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawChili</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>4</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemCapsaicin>25</ChemCapsaicin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCocoa</defName>
+    <label>Grind Cocoa</label>
+    <description>Grind Coca down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCocoa</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemCocoa>25</ChemCocoa>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCoffeeArabica</defName>
+    <label>Grind Coffee Arabica</label>
+    <description>Grind Coffee Arabica down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCoffeeArabica</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemCoffeePowder>10</ChemCoffeePowder>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCoffeeRobusta</defName>
+    <label>Grind Coffee Robusta</label>
+    <description>Grind Coffee Robusta down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCoffeeRobusta</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemCoffeePowder>10</ChemCoffeePowder>
+	  <ChemEphedrine>10</ChemEphedrine>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindCorn</defName>
+    <label>Grind Corn</label>
+    <description>Grind Corn down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawCorn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemCornOil>20</ChemCornOil>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindDeathBerry</defName>
+    <label>Grind Death Berry</label>
+    <description>Grind Death Berry down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawDeathBerry</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemConiine>8</ChemConiine>
+	  <ChemTirizene>10</ChemTirizene>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindDeathNettle</defName>
+    <label>Grind Death Nettle</label>
+    <description>Grind Death Nettle down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawDeathNettle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemFluorosulfuricAcid>50</ChemFluorosulfuricAcid>
+      <ChemSulphuricAcid>50</ChemSulphuricAcid>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindDeathweed</defName>
+    <label>Grind Deathweed</label>
+    <description>Grind Deathweed down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawDeathWeed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemCyanide>35</ChemCyanide>
+      <ChemSpaceDrugs>15</ChemSpaceDrugs>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindDestroyingAngel</defName>
+    <label>Grind Destroying Angel</label>
+    <description>Grind Destroying Angel down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawDestroyingAngel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemAmatoxin>10</ChemAmatoxin>
+      <ChemMushroomHallucinogen>4</ChemMushroomHallucinogen>
+	  <ChemAmanitin>20</ChemAmanitin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindEggplant</defName>
+    <label>Grind Eggplant</label>
+    <description>Grind Eggplant down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawEggplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindEgg</defName>
+    <label>Grind Egg</label>
+    <description>Grind Egg down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawEgg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindFlyAmanita</defName>
+    <label>Grind Fly Amanita</label>
+    <description>Grind Fly Amanita down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawFlyAmanita</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemAmatoxin>35</ChemAmatoxin>
+      <ChemMushroomHallucinogen>4</ChemMushroomHallucinogen>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGeranium</defName>
+    <label>Grind Geranium</label>
+    <description>Grind Geranium its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGeranium</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemBicaridine>20</ChemBicaridine>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGlowBerry</defName>
+    <label>Grind Glow-berry</label>
+    <description>Grind Glow-berry down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGlowBerry</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemUranium>25</ChemUranium>
+	  <ChemIodine>20</ChemIodine>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGhostChili</defName>
+    <label>Grind Ghost Chili</label>
+    <description>Grind Ghost Chili down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGhostChili</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>4</ChemNutriment>
+      <ChemCapsaicin>55</ChemCapsaicin>
+	  <ChemCondensedCapsaicin>30</ChemCondensedCapsaicin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGlowshroom</defName>
+    <label>Grind Glowshroom</label>
+    <description>Grind Glowshroom down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGlowshroom</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>4</ChemNutriment>
+      <ChemRadium>10</ChemRadium>
+	  <ChemPhosphorous>10</ChemPhosphorous>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGlowcap</defName>
+    <label>Grind Glowcap</label>
+    <description>Grind Glowcap down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGlowcap</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemTeslium>10</ChemTeslium>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGoldApple</defName>
+    <label>Grind Gold Apple</label>
+    <description>Grind Gold Apple down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGoldApple</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemGold>20</ChemGold>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGrapes</defName>
+    <label>Grind Grapes</label>
+    <description>Grind Grapes down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGrapes</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemSugar>10</ChemSugar>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGrass</defName>
+    <label>Grind Grass</label>
+    <description>Grind Grass down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGrass</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>1</ChemNutriment>
+      <ChemHydrogen>5</ChemHydrogen>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindGreenGrapes</defName>
+    <label>Grind Green Grapes</label>
+    <description>Grind Green Grapes down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawGreenGrapes</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemKelotane>20</ChemKelotane>
+	  <ChemSugar>20</ChemSugar>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindHarebell</defName>
+    <label>Grind Harebell</label>
+    <description>Grind Glow-berry down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawHarebell</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>4</ChemNutriment>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindHolymelon</defName>
+    <label>Grind Holymelon</label>
+    <description>Grind Holymelon down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawHolymelon</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+	  <ChemHolyWater>20</ChemHolyWater>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindIcePepper</defName>
+    <label>Grind Ice Pepper</label>
+    <description>Grind Ice Pepper down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawIcePepper</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>2</ChemNutriment>
+      <ChemVitamin>2</ChemVitamin>
+	  <ChemFrostOil>25</ChemFrostOil>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindKoibean</defName>
+    <label>Grind Koibean</label>
+    <description>Grind Koibean down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawKoibean</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+      <ChemCarpotoxin>10</ChemCarpotoxin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindLemon</defName>
+    <label>Grind Lemon</label>
+    <description>Grind Lemon down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawLemon</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindLibertyCap</defName>
+    <label>Grind Liberty Cap</label>
+    <description>Grind Liberty Cap down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawLibertyCap</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>2</ChemNutriment>
+      <ChemMushroomHallucinogen>25</ChemMushroomHallucinogen>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindLifeweed</defName>
+    <label>Grind Lifeweed</label>
+    <description>Grind Lifeweed down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawLifeweed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemOmnizine>35</ChemOmnizine>
+      <ChemSpaceDrugs>15</ChemSpaceDrugs>
+      <ChemLipolicide>15</ChemLipolicide>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindLily</defName>
+    <label>Grind Lily</label>
+    <description>Grind Lily down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawLily</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemBicaridine>20</ChemBicaridine>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindLime</defName>
+    <label>Grind Lime</label>
+    <description>Grind Lime down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawLime</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindMeatwheat</defName>
+    <label>Grind Meatwheat</label>
+    <description>Grind Meatwheat down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawMeatwheat</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+      <ChemVitamin>4</ChemVitamin>
+      <SS13Meat>5</SS13Meat>
+	  <ChemBlood>20</ChemBlood>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindMimana</defName>
+    <label>Grind Mimana</label>
+    <description>Grind Mimana down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawMimana</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>2</ChemNutriment>
+      <ChemNothing>10</ChemNothing>
+      <ChemMuteToxin>10</ChemMuteToxin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindMoonflower</defName>
+    <label>Grind Moonflower</label>
+    <description>Grind Moonflower down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawMoonflower</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>2</ChemNutriment>
+      <ChemVitamin>2</ChemVitamin>
+      <ChemMoonshine>20</ChemMoonshine>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindNettle</defName>
+    <label>Grind Nettle</label>
+    <description>Grind Nettle down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawNettle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemSulphuricAcid>50</ChemSulphuricAcid>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindNovaflower</defName>
+    <label>Grind Novaflower</label>
+    <description>Grind Novaflower down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawNovaflower</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>2</ChemNutriment>
+      <ChemCondensedCapsaicin>25</ChemCondensedCapsaicin>
+      <ChemCapsaicin>30</ChemCapsaicin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindOat</defName>
+    <label>Grind Oats</label>
+    <description>Grind Oat down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawOat</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>4</ChemNutriment>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindOmegaweed</defName>
+    <label>Grind Omegaweed</label>
+    <description>Grind Omegaweed down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawOmegaWeed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemSpaceDrugs>30</ChemSpaceDrugs>
+      <ChemMindbreakerToxin>30</ChemMindbreakerToxin>
+      <ChemMercury>15</ChemMercury>
+      <ChemLithium>15</ChemLithium>
+      <ChemAtropine>15</ChemAtropine>
+      <ChemHaloperidol>15</ChemHaloperidol>
+      <ChemMethamphetamine>15</ChemMethamphetamine>
+      <ChemCapsaicin>15</ChemCapsaicin>
+      <ChemBarbersAid>15</ChemBarbersAid>
+      <ChemBathSalts>15</ChemBathSalts>
+      <ChemItchingPowder>15</ChemItchingPowder>
+      <ChemCrank>15</ChemCrank>
+      <ChemKrokodil>15</ChemKrokodil>
+      <ChemHistamine>15</ChemHistamine>
+      <ChemLipolicide>15</ChemLipolicide>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindOrange</defName>
+    <label>Grind Orange</label>
+    <description>Grind Orange down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawOrange</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindParsnip</defName>
+    <label>Grind Parsnip</label>
+    <description>Grind Parsnip down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawParsnip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+	  <ChemVitamin>5</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindPlumpHelmet</defName>
+    <label>Grind Plump Helmet</label>
+    <description>Grind Plump Helmet down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPlumpHelmet</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindPoisonBerry</defName>
+    <label>Grind Poison Berry</label>
+    <description>Grind Poison Berry down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPoisonBerry</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+      <ChemCyanide>15</ChemCyanide>
+	  <ChemTirizene>20</ChemTirizene>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindPoisonedApple</defName>
+    <label>Grind Poisoned Apple</label>
+    <description>Grind Poisoned Apple down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPoisonedApple</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>1</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+      <ChemCyanide>50</ChemCyanide>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindPoppy</defName>
+    <label>Grind Poppy</label>
+    <description>Grind Poppy down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPoppy</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+	  <ChemBicaridine>20</ChemBicaridine>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindPotato</defName>
+    <label>Grind Potato</label>
+    <description>Grind Potato down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPotato</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindPumpkin</defName>
+    <label>Grind Pumpkin</label>
+    <description>Grind Pumpkin down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawPumpkin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>20</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindRainbowweed</defName>
+    <label>Grind Rainbowweed</label>
+    <description>Grind Rainbowweed down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawRainbowweed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemMindbreakerToxin>15</ChemMindbreakerToxin>
+	  <ChemLipolicide>35</ChemLipolicide>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindRedbeet</defName>
+    <label>Grind Redbeet</label>
+    <description>Grind Redbeet down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawRedbeet</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+	  <ChemVitamin>5</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindRice</defName>
+    <label>Grind Rice</label>
+    <description>Grind Rice down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawRice</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>4</ChemNutriment>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindReishi</defName>
+    <label>Grind Reishi</label>
+    <description>Grind Reishi down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawReishi</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>35</ChemNutriment>
+	  <ChemVitamin>35</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindSnapcorn</defName>
+    <label>Grind Snapcorn</label>
+    <description>Grind Snapcorn down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSnapcorn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+      <ChemCornOil>20</ChemCornOil>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindSoybean</defName>
+    <label>Grind Soybean</label>
+    <description>Grind Soybean down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSoybean</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindSpaceTobacco</defName>
+    <label>Grind Space Tobacco</label>
+    <description>Grind Space Tobacco down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSpaceTobacco</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>3</ChemNutriment>
+	  <ChemNicotine>8</ChemNicotine>
+      <ChemSalbutamol>5</ChemSalbutamol>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindSteelcap</defName>
+    <label>Grind Steelcap</label>
+    <description>Grind Steelcap down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSteelcap</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>5</Steel>
+	  <SteelRod>10</SteelRod>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindSugarcane</defName>
+    <label>Grind Sugarcane</label>
+    <description>Grind Sugarcane down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSugarcane</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemSugar>25</ChemSugar>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindSunflower</defName>
+    <label>Grind Sunflower</label>
+    <description>Grind Sunflower down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSunflower</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>4</ChemNutriment>
+	  <ChemCornOil>8</ChemCornOil>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindSweetPotato</defName>
+    <label>Grind Sweet Potato</label>
+    <description>Grind Sweet Potato down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawSweetPotato</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemVitamin>10</ChemVitamin>
+      <ChemCyanide>10</ChemCyanide>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindTeaAspera</defName>
+    <label>Grind Tea Aspera</label>
+    <description>Grind Tea Aspera down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawTeaAspera</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+	  <ChemVitamin>4</ChemVitamin>
+      <ChemTeaPowder>10</ChemTeaPowder>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindTeaAstra</defName>
+    <label>Grind Tea Astra</label>
+    <description>Grind Tea Astra down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawTeaAstra</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+	  <ChemVitamin>4</ChemVitamin>
+      <ChemTeaPowder>10</ChemTeaPowder>
+      <ChemSynaptizine>10</ChemSynaptizine>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindTobacco</defName>
+    <label>Grind Tobacco</label>
+    <description>Grind Tobacco down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawTobacco</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+	  <ChemNicotine>3</ChemNicotine>
+      <ChemNutriment>3</ChemNutriment>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindTomato</defName>
+    <label>Grind Tomato</label>
+    <description>Grind Tomato down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawTomato</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindVanilla</defName>
+    <label>Grind Vanilla</label>
+    <description>Grind Vanilla down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawVanilla</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>10</ChemNutriment>
+	  <ChemVanilla>25</ChemVanilla>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindWatermelon</defName>
+    <label>Grind Watermelon</label>
+    <description>Grind Tomato down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawWatermelon</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>20</ChemNutriment>
+	  <ChemWater>20</ChemWater>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindWheat</defName>
+    <label>Grind Wheat</label>
+    <description>Grind Wheat down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawWheat</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <RawFlour>5</RawFlour>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrindReagentBase">
+    <defName>GrindWhitebeet</defName>
+    <label>Grind Whitebeet</label>
+    <description>Grind Whitebeet down into its constituent parts.</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13RawWhitebeet</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ChemNutriment>5</ChemNutriment>
+	  <ChemSugar>20</ChemSugar>
+	  <ChemVitamin>4</ChemVitamin>
+    </products>
+  </RecipeDef>
+  
+  
+  
+</Defs>

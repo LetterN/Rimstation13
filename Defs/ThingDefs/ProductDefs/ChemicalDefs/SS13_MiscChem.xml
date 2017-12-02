@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemItchingPowder</defName>
+    <label>Itching Powder</label>
+    <description>Itching Powder</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/itchingpowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemBathSalts</defName>
+    <label>Bath Salts</label>
+    <description>Bath Salts</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/bathsalts</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemBarbersAid</defName>
+    <label>Barber's Aid</label>
+    <description>Barber's Aid.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/barbersaid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemMethamphetamine</defName>
+    <label>Methamphetamine</label>
+    <description>Meth.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/methamphetamine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemAsh</defName>
+    <label>Ash</label>
+    <description>Ash. In a beaker. For Science.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/ash</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemBlood</defName>
+    <label>Blood</label>
+    <description>Blood. In a beaker. For Science.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/blood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCornOil</defName>
+    <label>Corn Oil</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/cornoil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemNutriment</defName>
+    <label>Nutriment</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/nutriment</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemOmnizine</defName>
+    <label>Omnizine</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/omnizine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemVitamin</defName>
+    <label>Vitamin</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/vitamin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemEarthsblood</defName>
+    <label>Earthsblood</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/earthsblood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemBananaJuice</defName>
+    <label>Banana Juice</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/bananajuice</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSingulo</defName>
+    <label>Singulo</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/singulo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSingulo</defName>
+    <label>Singulo</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/singulo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCocoa</defName>
+    <label>Cocoa</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/cocoa</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCoffeePowder</defName>
+    <label>Coffee Powder</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/coffeepowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCapsaicin</defName>
+    <label>Capsaicin</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/capsaicin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCondensedCapsaicin</defName>
+    <label>Condensed Capsaicin</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/condensedcapsaicin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemConiine</defName>
+    <label>Coniine</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/coniine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemTirizene</defName>
+    <label>Tirizene</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/tirizene</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemConiine</defName>
+    <label>Coniine</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/coniine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemPsilocybin</defName>
+    <label>Psilocybin</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/psilocybin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemKrokodil</defName>
+    <label>Krokodil</label>
+    <description>Krokodil</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/krokodil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemVanilla</defName>
+    <label>Vanilla</label>
+    <description>Vanilla</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/vanilla</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemHistamine</defName>
+    <label>Histamine</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/histamine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemAmanitin</defName>
+    <label>Amanitin</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/amanitin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemMushroomHallucinogen</defName>
+    <label>Mushroom Hallucinogen</label>
+    <description>An oil derived from Corn, typically used to produce glycerol.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/mushroomhallucinogen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemIodine</defName>
+    <label>Iodine</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/iodine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemHolyWater</defName>
+    <label>Holy Water</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/holywater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemFrostOil</defName>
+    <label>Frost Oil</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Meals/frostoil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemEntropicPolypnium</defName>
+    <label>Frost Oil</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/frostoil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemNothing</defName>
+    <label>Nothing</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/nothing</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemNothing</defName>
+    <label>Nothing</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/nothing</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemMoonshine</defName>
+    <label>Moonshine</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/nothing</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemMorphine</defName>
+    <label>Morphine</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/morphine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemNicotine</defName>
+    <label>Nicotine</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/nicotine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemTeaPowder</defName>
+    <label>Tea Powder</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/teapowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>Biomass</defName>
+    <label>Biomass</label>
+    <description>Raw Biomass, converted into products through the Bio Generator.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/biomass</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1000</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

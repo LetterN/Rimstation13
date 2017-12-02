@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="RefineWeaponAutolatheBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>Autolathe</li>
+		</recipeUsers>
+  </RecipeDef>  
+
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponCShotgun</defName>
+    <label>Create Combat Shotgun</label>
+    <description>Create Combat Shotgun</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_CShotgun>1</Gun_CShotgun>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponDBShotgun</defName>
+    <label>Create Double-Barrelled Shotgun</label>
+    <description>Create Double-Barrelled Shotgun</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_DBShotgun>1</Gun_DBShotgun>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponMateba</defName>
+    <label>Create Mateba</label>
+    <description>Create Mateba</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_Mateba>1</Gun_Mateba>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponC20R</defName>
+    <label>Create C20R Sub-machinegun</label>
+    <description>Create C20R Sub-machinegun</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_C20R>1</Gun_C20R>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponPShotgun</defName>
+    <label>Create Pump Shotgun</label>
+    <description>Create Pump Shotgun</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_PShotgun>1</Gun_PShotgun>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponCapLaser</defName>
+    <label>Create Captain's Laser Pistol</label>
+    <description>Create Captain's Laser Pistol</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_CapLaser>1</Gun_CapLaser>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponLaserRifle</defName>
+    <label>Create Laser Rifle</label>
+    <description>Create Laser Rifle</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_LaserRifle>1</Gun_LaserRifle>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineWeaponAutolatheBase">
+    <defName>CreateWeaponLaserPistol</defName>
+    <label>Create Laser Pistol</label>
+    <description>Create Laser Pistol</description>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Gun_LaserPistol>1</Gun_LaserPistol>
+    </products>
+  </RecipeDef>
+ 
+</Defs>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>MeleeWeapon_Toolbox</defName>
+    <label>toolbox</label>
+    <description>Since time immemorial, Grey suited scoundrels have been caving each others heads in with Toolboxes. A robust weapon for every crewman, the Toolbox is the true equalizer.</description>
+    <graphicData>
+      <texPath>Weapons/toolbox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Spacer</li>
+	  <li>SS13Melee</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>400</WorkToMake>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+	<researchPrerequisites>
+      <li>NanoTrasenInvestment</li>
+    </researchPrerequisites>
+	<costList>
+      <Steel>20</Steel>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>MeleeWeapon_FireAxe</defName>
+    <label>fireaxe</label>
+    <description>"WHO TOOK THE FIREAXE!?" Located in Atmos and the Bridge, the fireaxe is the most stolen weapon on the Station.</description>
+    <graphicData>
+      <texPath>Weapons/fireaxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+	<techLevel>Spacer</techLevel>
+	<weaponTags>
+	  <li>SS13Melee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Cut</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>MeleeWeapon_GlassSpear</defName>
+    <label>shard spear</label>
+    <description>A metal rod tipped with a shard of glass, weapon of choice for the Grey Tide.</description>
+    <graphicData>
+      <texPath>Weapons/spear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>SS13Melee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+    </statBases>
+    <equippedAngleOffset>-15</equippedAngleOffset>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Stab</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>MeleeWeapon_BlueESword</defName>
+    <label>blue energy sword</label>
+    <description>A copyright safe energysaber, if someone has this they're a traitor or an assistant that killed a traitor that will now be treated as a traitor. This one is blue.</description>
+    <graphicData>
+      <texPath>Weapons/swordblue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>SS13Melee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Cut</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>MeleeWeapon_RedESword</defName>
+    <label>red energy sword</label>
+    <description>A copyright safe energysaber, if someone has this they're a traitor or an assistant that killed a traitor that will now be treated as a traitor. This one is red.</description>
+    <graphicData>
+      <texPath>Weapons/swordred</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>SS13Melee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Cut</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Beam -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShuttleWall</defName>
+    <label>Escape Shuttle Wall</label>
+    <thingClass>Building</thingClass>
+	<category>Building</category>
+    <graphicData>
+      <texPath>Walls/Shuttle_Wall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>Custom3</li>
+		<li>Custom4</li>
+      </linkFlags>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Walls/ShuttleWall_MenuIcon</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,1)</size>
+    <designationCategory>Ship</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      
+    </building>
+    <costList>
+      <Steel>200</Steel>
+      <Plasteel>150</Plasteel>
+      <Component>10</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShuttleWindow</defName>
+    <label>Escape Shuttle Window</label>
+    <thingClass>Building</thingClass>
+	<category>Building</category>
+    <graphicData>
+      <texPath>Walls/Shuttle_Window_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>Custom4</li>
+      </linkFlags>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Walls/ShuttleWindow_MenuIcon</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,1)</size>
+    <designationCategory>Ship</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      
+    </building>
+    <costList>
+      <Steel>200</Steel>
+      <Plasteel>150</Plasteel>
+      <Component>10</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>ShuttleFloor</defName>
+    <label>Shuttle Floor</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>The floor of the shuttle.</description>
+	<designationCategory>Ship</designationCategory>
+    <texturePath>Floors/shuttlefloor</texturePath>
+	<edgeType>Hard</edgeType>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>150</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShuttleEngine</defName>
+    <label>shuttle propulsion</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Shuttle/engine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>40000</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>An engine capable of launching a ship into orbit and on interstellar trajectories.</description>
+    <size>(1,1)</size>
+    <designationCategory>Ship</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      
+    </building>
+    <costList>
+      <Steel>50</Steel>
+      <Component>5</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShuttleConsole</defName>
+    <label>shuttle console</label>
+    <thingClass>Building_ShipComputerCore</thingClass>
+    <graphicData>
+      <texPath>Shuttle/console</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>16000</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A console used for getting the hell out of dodge.</description>
+    <size>(1,1)</size>
+    <designationCategory>Ship</designationCategory>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      
+    </building>
+    <costList>
+      <Steel>50</Steel>
+      <Component>3</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc3</designationHotKey>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShuttleSleeper</defName>
+    <label>Shuttle Sleeper Pod</label>
+    <thingClass>Building_CryptosleepCasket</thingClass>
+    <graphicData>
+      <texPath>Furniture/Sleeper/Closed/sleeperclosed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A sleeper to stop you being beaten to death and flashbanged on the way to CentComm.</description>
+    <size>(1,1)</size>
+    <designationCategory>Ship</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(1,0,0)</interactionCellOffset>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      
+      <isPlayerEjectable>true</isPlayerEjectable>
+    </building>
+    <costList>
+      <Steel>50</Steel>
+	  <Component>5</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+
+</Defs>

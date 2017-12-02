@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef Name="SS13StorageBase" ParentName="FurnitureBase" Abstract="True">
+    <designationCategory>Storage</designationCategory>
+  </ThingDef>
+
+  <ThingDef Name="SS13CrateBase" ParentName="SS13StorageBase" Abstract="True">
+    <defName>Crate</defName>
+    <label>plain crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/crateplain</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<costList>
+      <Steel>25</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1050</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A big body-sized box.</description>
+    <size>(1,1)</size>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+	<rotatable>false</rotatable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>Crate</defName>
+    <label>plain crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/crateplain</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateEmergency</defName>
+    <label>emergency crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/crateemergency</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateFreezer</defName>
+    <label>freezer crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/cratefreezer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateHydro</defName>
+    <label>hydroponics crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/cratehydro</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateMedical</defName>
+    <label>medical crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/cratemedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateMilitary</defName>
+    <label>military crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/cratemilitary</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CratePlasma</defName>
+    <label>plasma crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/crateplasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateRadioactive</defName>
+    <label>radioactive crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/crateradioactive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateSecure</defName>
+    <label>secure crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/cratesecure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CrateBase">
+    <defName>CrateSecurity</defName>
+    <label>security crate</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Crates/cratesecurity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+</Defs>

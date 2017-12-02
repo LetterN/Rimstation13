@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="SS13ApparelMakeableBase">
+    <defName>ApparelClownSuit</defName>
+    <label>clown suit</label>
+    <description>A Clown Suit, for when you want to die but also want to be as irritating as possible beforehand.</description>
+    <graphicData>
+      <texPath>Clothing/Other_Suits/Clown_Suit/Suit/jsclown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+	
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.0</ArmorRating_Sharp>
+      <Insulation_Cold>-0</Insulation_Cold>
+      <Insulation_Heat>-0</Insulation_Heat>
+    </statBases>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.01</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Other_Suits/Clown_Suit/Suit/jsclown</wornGraphicPath>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+ 
+</Defs>

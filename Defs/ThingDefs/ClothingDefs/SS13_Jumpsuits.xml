@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================================== Jumpsuits =====================================-->
+  
+  <ThingDef Name="SS13JumpsuitBase" ParentName="SS13ApparelMakeableBase" Abstract="True">
+    <statBases>
+      <WorkToMake>100</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+	  <Insulation_Cold>-10</Insulation_Cold>
+	  <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+	<apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Atmospherics_Suit/jsatmos</wornGraphicPath>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+		<defaultOutfitTags>
+			<li>Crew</li>
+		</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelAtmosJump</defName>
+    <label>Atmospherics Jumpsuit</label>
+    <description>An Atmospherics Jumpsuit. For when you want to declare independence and hold the station hostage. ALL HAIL THE SOVEREIGN NATION OF ATMOSIA!</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Atmospherics_Suit/jsatmos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Atmospherics_Suit/jsatmos</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+	
+
+	
+	<ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelCaptainJump</defName>
+    <label>Captain's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Captain_Suit/jscaptain</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Captain_Suit/jscaptain</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelCargoJump</defName>
+    <label>Cargo Technician's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Cargo_Suit/jscargo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Cargo_Suit/jscargo</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelCEJump</defName>
+    <label>Chief Engineer's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/CE_Suit/jsce</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/CE_Suit/jsce</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelChemistJump</defName>
+    <label>Chemist's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Chemist_Suit/jschemist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Chemist_Suit/jschemist</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelCMOJump</defName>
+    <label>Chemist's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/CMO_Suit/jscmo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/CMO_Suit/jscmo</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelEngineerJump</defName>
+    <label>Engineer's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Engineering_Suit/jsengineering</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Engineering_Suit/jsengineering</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelGeneticsJump</defName>
+    <label>Geneticist's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Genetics_Suit/jsgenetics</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Genetics_Suit/jsgenetics</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelGreyJump</defName>
+    <label>Grey's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Grey_Suit/jsgrey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Grey_Suit/jsgrey</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelHOSJump</defName>
+    <label>HoS Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/HOS_Suit/jshos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/HOS_Suit/jshos</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelHydroponicsJump</defName>
+    <label>Botanist's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Hydroponics_Suit/jshydroponics</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Hydroponics_Suit/jshydroponics</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelJanitorJump</defName>
+    <label>Janitor's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Janitor_Suit/jsjanitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Janitor_Suit/jsjanitor</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelMedicalJump</defName>
+    <label>Medical Doctor's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Medical_Suit/jsmedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Medical_Suit/jsmedical</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelMiningJump</defName>
+    <label>Shaft Miner's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Mining_Suit/jsmining</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Mining_Suit/jsminer</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelQuartermasterJump</defName>
+    <label>Quartermaster's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/QM_Suit/jsqm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/QM_Suit/jsqm</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelRDJump</defName>
+    <label>Research Director's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/RD_Suit/jsrd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/RD_Suit/jsrd</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelRoboticsJump</defName>
+    <label>Roboticist's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Robotics_Suit/jsrobotics</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Robotics_Suit/jsrobotics</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelSecurityJump</defName>
+    <label>Security Officer's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Security_Suit/jssec</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Security_Suit/jssec</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelVirologyJump</defName>
+    <label>Virologist's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Virology_Suit/jsvirology</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Virology_Suit/jsvirology</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelWardenJump</defName>
+    <label>Warden's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Warden_Suit/jswarden</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Warden_Suit/jswarden</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelChefJump</defName>
+    <label>Chef's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Chef_Suit/jschef</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Chef_Suit/jschef</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13JumpsuitBase">
+    <defName>ApparelDetectiveJump</defName>
+    <label>Detective's Jumpsuit</label>
+    <description>It's a crewmembers jumpsuit.</description>
+    <graphicData>
+      <texPath>Clothing/Jumpsuits/Detective_Suit/jsdetective</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+    </costList>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.05</MoveSpeed>
+	  <WorkSpeedGlobal>+0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Detective_Suit/jsdetective</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>NanoTrasen</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+</Defs>

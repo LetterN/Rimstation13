@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- ============= Cooking ============= -->
+
+  <WorkGiverDef>
+    <defName>SS13DoBillsCook</defName>
+    <label>cook meals</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Microwave</li>
+      <li>Grinder</li>
+	  <li>KitchenTable</li>
+	  <li>Processor</li>
+    </fixedBillGiverDefs>
+    <verb>cook</verb>
+    <gerund>cooking</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>SS13DoBillsButcherFlesh</defName>
+    <label>butcher creatures</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>90</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Grinder</li>
+    </fixedBillGiverDefs>
+    <verb>butcher</verb>
+    <gerund>butchering at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>SS13DoBillsMakeWeapons</defName>
+    <label>make weapons</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>115</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Autolathe</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>SS13DoBillsMachiningTable</defName>
+    <label>do bills at autolathe</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Autolathe</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>SS13DoBillsMakeWeapons</defName>
+    <label>make weapons</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>115</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Autolathe</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>SS13DoBillsOreRedemption</defName>
+    <label>do bills at ore redemption machine</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>OreRedemption</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>SS13DoBillsChemDispenser</defName>
+    <label>do bills at chem dispenser</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ChemDispenser</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+	<WorkGiverDef>
+		<defName>SS13DoBillsCremate</defName>
+		<label>do cremation bills</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>40</priorityInType>
+		<fixedBillGiverDefs>
+			<li>SS13Crematorium</li>
+		</fixedBillGiverDefs>
+		<verb>cremate</verb>
+		<gerund>cremating at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>SS13DoBillsCircuitImprinter</defName>
+    <label>do bills at circuit imprinter</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>CircuitImprinter</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+	
+  <WorkGiverDef>
+    <defName>SS13DoBillsReagentGrinder</defName>
+    <label>do bills at reagent grinder</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ReagentGrinder</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+	
+  <WorkGiverDef>
+    <defName>SS13DoBillsBioGenerator</defName>
+    <label>do bills at bio generator</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>BioGenerator</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+	
+</Defs>

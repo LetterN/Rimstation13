@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>XenoNest</defName>
+    <label>Xeno Hive</label>
+    <description>A hive of Xenomorphs. Will spawn additional Xenomorphs and Eggs over time.</description>
+    <thingClass>Hive</thingClass>
+    <graphicData>
+      <texPath>Creatures/Xeno/aliennest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.60</fillPercent>
+    <statBases>
+      <MaxHitPoints>230</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <passability>PassThroughOnly</passability>
+    <comps>
+      <li Class="CompProperties_SpawnerHives" />
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>AlienWeedsNode</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+          <min>10000</min>
+          <max>15000</max>
+        </spawnIntervalRange>
+        <spawnMaxAdjacent>3</spawnMaxAdjacent>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>7</heatPerSecond>
+        <heatPushMaxTemperature>38</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_TemperatureDamaged">
+        <safeTemperatureRange>
+          <min>-20</min>
+          <max>9999</max>
+        </safeTemperatureRange>
+        <damagePerTickRare>8</damagePerTickRare>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>XenoFilth</filthDef>
+        <spawnCountOnSpawn>20</spawnCountOnSpawn>
+        <spawnMtbHours>0.1</spawnMtbHours>
+        <spawnRadius>7</spawnRadius>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>AlienWeedsNode</defName>
+    <label>Xeno Node</label>
+    <description>A bioluminescent pod produced by Xenomorph nests.</description>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <selectable>true</selectable>
+    <fillPercent>0.20</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>4</Mass>
+      <WorkToBuild>170</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(77,204,218,25)</glowColor>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Creatures/Xeno/weedsnode</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+  </ThingDef>
+
+ <!-- 
+  
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseXeno">
+    <statBases>
+      <ToxicSensitivity>0</ToxicSensitivity>
+    </statBases>
+    <race>
+      <fleshType>Insectoid</fleshType>
+      <bloodDef>FilthBloodInsect</bloodDef>
+      <meatColor>(160,150,140)</meatColor>
+      <foodType>OmnivoreAnimal, AnimalProduct</foodType>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseXeno">
+    <defName>XenoFacehugger</defName>
+    <label>Facehugger</label>
+    <description>The Facehugger is a parasitic cycle in xenomorph production with the appearance of two human hands held together and attached to a spiny, powerful tail. It has a proboscis it uses to implant embryos and provide oxygen while strangling a victim. The finger-like appendages are used to attach itself firmly to a host body when they are in close proximity. Once implantation is complete, the facehugger falls off and dies. </description>
+    <statBases>
+      <MoveSpeed>9</MoveSpeed>
+      <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.0</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <MarketValue>100</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+    </statBases>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <commonality>0.2</commonality>
+      </li>
+    </tools>
+    <race>
+      <body>BeetleLike</body>
+      <baseBodySize>0.2</baseBodySize>
+      <baseHungerRate>0.10</baseHungerRate>
+      <baseHealthScale>0.1</baseHealthScale>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>Insectoid</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>XenoFacehugger</defName>
+    <label>Facehugger</label>
+    <race>Facehugger</race>
+    <combatPower>40</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Facehugger/alienfacehugger</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Facehugger/alienfacehugger_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Facehugger/alienfacehugger</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Facehugger/alienfacehugger_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Facehugger/alienfacehugger</texPath>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Facehugger/alienfacehugger_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <ThingDef ParentName="BaseXeno">
+    <defName>XenoDrone</defName>
+    <label>Xenomorph Drone</label>
+    <description>The Drone has a broad skull, no back-spikes, and a lanky physique. It is responsible for maintaining and expanding the hive.</description>
+    <statBases>
+      <MoveSpeed>3</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <MarketValue>450</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <commonality>0.2</commonality>
+      </li>
+    </tools>
+    <race>
+      <body>BeetleLikeWithClaw</body>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1.4</baseHealthScale>
+      <gestationPeriodDays>3</gestationPeriodDays>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>6</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>Insectoid</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>XenoDrone</defName>
+    <label>Xenomorph Drone</label>
+    <race>XenomorphDrone</race>
+    <combatPower>75</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<wildSpawn_EcoSystemWeight>0.2</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Drone/aliendrone</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Drone/aliendrone_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Drone/aliendrone</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Drone/aliendrone_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Drone/aliendrone</texPath>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.5, 0.37)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Drone/aliendrone_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <ThingDef ParentName="BaseXeno">
+    <defName>XenoHunter</defName>
+    <label>Xenomorph Hunter</label>
+    <description>The Hunter sports a phallic-shaped skull with hidden, mostly useless eyes protected by a one-way transparent dome. The Hunter is responsible for hunting prey and dragging likely hosts back to the hive.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <MarketValue>700</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.4</cooldownTime>
+        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <commonality>0.2</commonality>
+      </li>
+    </tools>
+    <race>
+      <body>BeetleLikeWithClaw</body>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>2.5</baseHealthScale>
+      <gestationPeriodDays>5</gestationPeriodDays>
+      <meatLabel>insect meat</meatLabel>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>6</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+          <soundDeath>Pawn_BigInsect_Death</soundDeath>
+          <soundCall>Pawn_BigInsect_Call</soundCall>
+          <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>Insectoid</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="B">
+    <defName>XenomorphHunter</defName>
+    <label>Xenomorph Hunter</label>
+    <race>XenomorphHunter</race>
+    <combatPower>180</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<wildSpawn_EcoSystemWeight>0.2</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Hunter/alienhunter</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Hunter/alienhunter_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Hunter/alienhunter</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Hunter/alienhunter_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Creatures/Xeno/Hunter/alienhunter</texPath>
+          <drawSize>1</drawSize>
+          <color>(154,125,94)</color>
+          <shadowData>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Creatures/Xeno/Hunter/alienhunter_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  -->
+  
+</Defs>

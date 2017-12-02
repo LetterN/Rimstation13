@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="TableBase">
+    <defName>SteelTableModular</defName>
+    <label>steel table</label>
+    <uiIconPath>Icons/steeltable_menuicon</uiIconPath>	
+	<graphicData>
+		<texPath>Furniture/Steel_Table_Atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom1</li>
+		</linkFlags>
+	</graphicData>	
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>450</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>4</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>Furniture</designationCategory>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <rotatable>false</rotatable>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="TableBase">
+    <defName>WoodTableModular</defName>
+    <label>wood table</label>
+    <uiIconPath>Icons/woodtable_menuicon</uiIconPath>	
+	<graphicData>
+		<texPath>Furniture/Wood_Table_Atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom1</li>
+		</linkFlags>
+	</graphicData>	
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>450</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>4</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>Furniture</designationCategory>
+    <costList>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <rotatable>false</rotatable>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+  </ThingDef>
+
+  
+</Defs>

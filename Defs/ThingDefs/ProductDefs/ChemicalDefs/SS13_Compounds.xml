@@ -1,0 +1,1189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="SS13CompoundBase" ParentName="ResourceBase" Abstract="True">
+	<recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>ChemDispenser</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <GlassBeaker>1</GlassBeaker>
+    </costList>
+	</ThingDef>
+	
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemPotassiumIodide</defName>
+    <label>Potassium Iodide</label>
+    <description>An effective fertilizer which is better than what is available to the botanist initially, though it isn't as powerful as Diethylamine (Results in 3 units instead of 4).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/potassiumiodide</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemPotassium>1</ChemPotassium>
+      <ChemIodine>1</ChemIodine>
+    </costList>
+  </ThingDef>
+	
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemDiphenhydramine</defName>
+    <label>Diphenhydramine</label>
+    <description>An effective fertilizer which is better than what is available to the botanist initially, though it isn't as powerful as Diethylamine (Results in 3 units instead of 4).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/diphenhydramine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemOil>1</ChemOil>
+      <ChemCarbon>1</ChemCarbon>
+      <ChemBromine>1</ChemBromine>
+      <ChemDiethylamine>1</ChemDiethylamine>
+      <ChemEthanol>1</ChemEthanol>
+    </costList>
+  </ThingDef>
+	
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemCrank</defName>
+    <label>Crank</label>
+    <description>An effective fertilizer which is better than what is available to the botanist initially, though it isn't as powerful as Diethylamine (Results in 3 units instead of 4).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/crank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDiphenhydramine>1</ChemDiphenhydramine>
+      <ChemWeldingFuel>1</ChemWeldingFuel>
+      <ChemLithium>1</ChemLithium>
+      <ChemSulphuricAcid>1</ChemSulphuricAcid>
+      <ChemAmmonia>1</ChemAmmonia>
+    </costList>
+  </ThingDef>
+	
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemAcetone</defName>
+    <label>Acetone</label>
+    <description>An effective fertilizer which is better than what is available to the botanist initially, though it isn't as powerful as Diethylamine (Results in 3 units instead of 4).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Misc/acetone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemOil>1</ChemOil>
+      <ChemWeldingFuel>1</ChemWeldingFuel>
+      <ChemOxygen>1</ChemOxygen>
+    </costList>
+  </ThingDef>
+	
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemAmmonia</defName>
+    <label>Ammonia</label>
+    <description>An effective fertilizer which is better than what is available to the botanist initially, though it isn't as powerful as Diethylamine (Results in 3 units instead of 4).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/ammonia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemHydrogen>3</ChemHydrogen>
+      <ChemNitrogen>1</ChemNitrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemBlackPowder</defName>
+    <label>Black Powder</label>
+    <description>A powerful sedative which causes death in doses around 45 units, starting to cause damage from 30 onwards (Results in 1 units instead of 5).
+	</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/blackpowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemSaltpetre>1</ChemSaltpetre>
+      <ChemCharcoal>1</ChemCharcoal>
+	  <ChemSulphur>1</ChemSulphur>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemCharcoal</defName>
+    <label>Charcoal</label>
+    <description>A powerful sedative which causes death in doses around 45 units, starting to cause damage from 30 onwards (Results in 1 units instead of 5).
+	</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/charcoal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemAsh>1</ChemAsh>
+      <ChemSodiumChloride>1</ChemSodiumChloride>
+	  <ChemWater>1</ChemWater>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemChloralHydrate</defName>
+    <label>Chloral Hydrate</label>
+    <description>A powerful sedative which causes death in doses around 45 units, starting to cause damage from 30 onwards (Results in 1 units instead of 5).
+	</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/chloralhydrate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemChlorine>3</ChemChlorine>
+      <ChemEthanol>1</ChemEthanol>
+	  <ChemWater>1</ChemWater>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemCryptobiolin</defName>
+    <label>Cryptobiolin</label>
+    <description>Causes confusion and dizziness. This is essential to make Spaceacillin.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/cryptobiolin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemOxygen>1</ChemOxygen>
+      <ChemPotassium>1</ChemPotassium>
+	  <ChemSugar>1</ChemSugar>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemCyanide</defName>
+    <label>Cyanide</label>
+    <description>Causes confusion and dizziness. This is essential to make Spaceacillin.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/cyanide</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemOil>1</ChemOil>
+      <ChemAmmonia>1</ChemAmmonia>
+	  <ChemOxygen>1</ChemOxygen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemDiethylamine</defName>
+    <label>Diethylamine</label>
+    <description>A very potent fertilizer.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/diethylamine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemAmmonia>1</ChemAmmonia>
+      <ChemEthanol>1</ChemEthanol>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemEphedrine</defName>
+    <label>Ephedrine</label>
+    <description>A very potent fertilizer.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/ephedrine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDiethylamine>1</ChemDiethylamine>
+      <ChemSugar>1</ChemSugar>
+	  <ChemOil>1</ChemOil>
+	  <ChemHydrogen>1</ChemHydrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemEMP</defName>
+    <label>EMP</label>
+    <description>This reacts immediately on mixing, it creates a large electromagnetic pulse which affects all electronical devices; very useful for causing chaos.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/emp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemIron>1</ChemIron>
+      <ChemUranium>1</ChemUranium>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemExplosion</defName>
+    <label>Explosion</label>
+    <description>This explodes immediately on mixing, which may knock you over or even kill you. Only useful in grenade production.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/explosion</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemPotassium>1</ChemPotassium>
+      <ChemWater>1</ChemWater>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemFlashPowder</defName>
+    <label>Flash Powder</label>
+    <description>Creates a flash similar to that of a flashbang immediately on mixing. Only useful in grenade production.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/flashpowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemAluminium>1</ChemAluminium>
+      <ChemPotassium>1</ChemPotassium>
+	  <ChemSulphur>1</ChemSulphur>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemFluorosulfuricAcid</defName>
+    <label>Fluorosulfuric Acid</label>
+    <description>A highly caustic and dangerous substance. Keep away from faces and valuable equipment. Used in some other recipes.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/fluorosulfuricacid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemFluorine>1</ChemFluorine>
+      <ChemHydrogen>1</ChemHydrogen>
+	  <ChemPotassium>1</ChemPotassium>
+	  <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemFoamingAgent</defName>
+    <label>Foaming Agent</label>
+    <description>Makes foam such as that required in metal foam grenades (Results in 1 unit instead of 2).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/foamingagent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemHydrogen>2</ChemHydrogen>
+      <ChemLithium>5</ChemLithium>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemFoamSurfactant</defName>
+    <label>Foam Surfactant</label>
+    <description>Creates a large cloud of foam when mixed with an equal amount of water.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/foamsurfactant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCarbon>2</ChemCarbon>
+      <ChemFluorine>2</ChemFluorine>
+	  <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemGlycerol</defName>
+    <label>Glycerol</label>
+    <description>Requires blended corn, so thus help from the botanist. This is only useful in other reactions (Results in 1 unit instead of 4).
+</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/glycerol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemCornOil>3</ChemCornOil>
+      <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemImpedrezene</defName>
+    <label>Impedrezene</label>
+    <description>A narcotic that impedes one's ability by slowing down the higher brain cell functions. Causes massive brain damage (Results in 2 units instead of 3).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/impedrezene</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemMercury>1</ChemMercury>
+      <ChemOxygen>1</ChemOxygen>
+	  <ChemSugar>1</ChemSugar>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13MedicineBase">
+    <defName>ChemLipolicide</defName>
+    <label>Lipolicide</label>
+    <description>Speeds up the patient's metabolism to reduce body fat at a rapid rate.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/lipolicide</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemSodiumChloride>1</ChemSodiumChloride>
+      <ChemEthanol>1</ChemEthanol>
+	  <ChemRadium>5</ChemRadium>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemLexorin</defName>
+    <label>Lexorin</label>
+    <description>Temporarily stops respiration and causes tissue damage. Large doses are fatal, and will cause people to pass out very quickly.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/lexorin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemHydrogen>1</ChemHydrogen>
+      <ChemNitrogen>1</ChemNitrogen>
+	  <ChemPlasma>1</ChemPlasma>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemMetalFoam</defName>
+    <label>Metal Foam</label>
+    <description>Creates lightweight metal foam walls. These can be easily torn through, but may be useful for plugging hull breaches. Made with aluminium.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/metalfoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemAluminium>3</ChemAluminium>
+      <ChemFoamingAgent>1</ChemFoamingAgent>
+	  <ChemPolytrinicAcid>1</ChemPolytrinicAcid>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemMuteToxin</defName>
+    <label>Mute Toxin</label>
+    <description>A potent hallucinogenic compound that is illegal under space law. Formerly known as LSD, but was renamed so people understand that it is not a "fun time".</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/mutetoxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemUranium>2</ChemUranium>
+      <ChemWater>1</ChemWater>
+	  <ChemCarbon>1</ChemCarbon>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemMindbreakerToxin</defName>
+    <label>Mindbreaker Toxin</label>
+    <description>A potent hallucinogenic compound that is illegal under space law. Formerly known as LSD, but was renamed so people understand that it is not a "fun time".</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/mindbreakertoxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDylovene>1</ChemDylovene>
+      <ChemHydrogen>1</ChemHydrogen>
+	  <ChemSilicon>1</ChemSilicon>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemNapalm</defName>
+    <label>Napalm</label>
+    <description>Creates a large fire immediately on mixing. Only useful for grenades (Results in 1 unit instead of 3).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/napalm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemAluminium>1</ChemAluminium>
+      <ChemPlasma>1</ChemPlasma>
+	  <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemNitroglycerin</defName>
+    <label>Nitroglycerin</label>
+    <description>A heavy, colourless, oily, explosive liquid obtained by nitrating glycerol. Explodes immediately on mixing (Results in 2 units instead of 3).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/nitroglycerin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemGlycerol>1</ChemGlycerol>
+      <ChemPolytrinicAcid>1</ChemPolytrinicAcid>
+	  <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef>
+  
+<ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemOil</defName>
+    <label>Oil</label>
+    <description>A potent herbicide which is useful to replace the limited supply the botanist starts with.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/oil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemWeldingFuel>1</ChemWeldingFuel>
+      <ChemCarbon>1</ChemCarbon>
+      <ChemHydrogen>1</ChemHydrogen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemPlantBGone</defName>
+    <label>Plant-B-Gone</label>
+    <description>A potent herbicide which is useful to replace the limited supply the botanist starts with.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/plantbgone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemToxin>1</ChemToxin>
+      <ChemWater>4</ChemWater>
+    </costList>
+  </ThingDef>
+  
+    <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemPhenol</defName>
+    <label>Phenol</label>
+    <description>A powerful sedative which causes death in doses around 45 units, starting to cause damage from 30 onwards (Results in 1 units instead of 5).
+	</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/phenol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemWater>1</ChemWater>
+      <ChemChlorine>1</ChemChlorine>
+	  <ChemOil>1</ChemOil>
+    </costList>
+  </ThingDef> 
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemPolytrinicAcid</defName>
+    <label>Polytrinic Acid</label>
+    <description>A highly caustic and dangerous substance. Keep away from faces and valuable equipment. Used in some other recipes.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/polytrinicacid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemChlorine>1</ChemChlorine>
+      <ChemPotassium>1</ChemPotassium>
+	  <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef>
+  
+    <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSalicyclicAcid</defName>
+    <label>Salicyclic Acid</label>
+    <description>A powerful sedative which causes death in doses around 45 units, starting to cause damage from 30 onwards (Results in 1 units instead of 5).
+	</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/salicyclicacid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemSodium>1</ChemSodium>
+      <ChemPhenol>1</ChemPhenol>
+	  <ChemCarbon>1</ChemCarbon>
+	  <ChemOxygen>1</ChemOxygen>
+	  <ChemSulphuricAcid>1</ChemSulphuricAcid>
+    </costList>
+  </ThingDef> 
+
+    <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSaltpetre</defName>
+    <label>Saltpetre</label>
+    <description>A powerful sedative which causes death in doses around 45 units, starting to cause damage from 30 onwards (Results in 1 units instead of 5).
+	</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/saltpetre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemPotassium>1</ChemPotassium>
+      <ChemNitrogen>1</ChemNitrogen>
+	  <ChemOxygen>3</ChemOxygen>
+    </costList>
+  </ThingDef>  
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSleepToxin</defName>
+    <label>Sleep Toxin</label>
+    <description>Not at potent as its preceding chemical, merely makes you narcoleptic rather than comatose.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/sleeptoxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemChloralHydrate>1</ChemChloralHydrate>
+      <ChemSugar>4</ChemSugar>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSmoke</defName>
+    <label>Smoke</label>
+    <description>This creates a large cloud of smoke that will take on the properties of everything (if anything) in the container of the reaction. Very useful if you want to make a chloral hydrate smoke grenade for riot control.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/smoke</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemPhosphorous>1</ChemPhosphorous>
+      <ChemPotassium>1</ChemPotassium>
+	  <ChemSugar>1</ChemSugar>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSodiumChloride</defName>
+    <label>Sodium Chloride</label>
+    <description>Commonly known as salt, Sodium Chloride is often used to season food.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/sodiumchloride</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemSodium>1</ChemSodium>
+      <ChemChlorine>1</ChemChlorine>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSpaceCleaner</defName>
+    <label>Space Cleaner</label>
+    <description>This is able to clean almost all surfaces of almost anything that may dirty them. The janitor is likely to appreciate refills.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/spacecleaner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemAmmonia>1</ChemAmmonia>
+      <ChemWater>1</ChemWater>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSpaceDrugs</defName>
+    <label>Space Drugs</label>
+    <description>An illegal compound which induces a number of effects such as loss of balance and visual artefacts.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/spacedrugs</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemLithium>1</ChemLithium>
+      <ChemMercury>1</ChemMercury>
+	  <ChemSugar>1</ChemSugar>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSpaceLube</defName>
+    <label>Space Lube</label>
+    <description>Space Lube is a high performance lubricant intended for maintenance of extremely complex mechanical equipment (Results in 4 units instead of 3).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/spacelube</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemOxygen>1</ChemOxygen>
+      <ChemSilicon>1</ChemSilicon>
+	  <ChemWater>1</ChemWater>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSterilizine</defName>
+    <label>Sterilizine</label>
+    <description>Helps the patient when used during surgery, may also decontaminate objects and surfaces that bear pathogens.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/sterilizine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemDylovene>1</ChemDylovene>
+      <ChemChlorine>1</ChemChlorine>
+	  <ChemEthanol>1</ChemEthanol>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemSynthiFlesh</defName>
+    <label>Synthi-Flesh</label>
+    <description>A tasty alternative to actual meat, allegedly used for surgery.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/sterilizine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemClonexadone>1</ChemClonexadone>
+      <ChemBlood>5</ChemBlood>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemTeslium</defName>
+    <label>Teslium</label>
+    <description>A tasty alternative to actual meat, allegedly used for surgery.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/teslium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemPlasma>1</ChemPlasma>
+      <ChemSilver>1</ChemSilver>
+	  <ChemBlackPowder>1</ChemBlackPowder>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemThermite</defName>
+    <label>Thermite</label>
+    <description>A tasty alternative to actual meat, allegedly used for surgery.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/thermite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemAluminium>1</ChemAluminium>
+      <ChemIron>1</ChemIron>
+	  <ChemOxygen>1</ChemOxygen>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemUnstableMutagen</defName>
+    <label>Unstable Mutagen</label>
+    <description>Causes mutations when injected into living people or plants. High doses may be lethal, especially in humans. Only useful for Botany and Virology.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/unstablemutagen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemChlorine>1</ChemChlorine>
+      <ChemPhosphorous>1</ChemPhosphorous>
+      <ChemRadium>1</ChemRadium>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13CompoundBase">
+    <defName>ChemZombiePowder</defName>
+    <label>Zombie Powder</label>
+    <description>Paralyses people, and makes them appear dead to the most rudimentary of tests. Requires CarpoToxin, which must be harvested from Space Carp (Results in 2 units instead of 15).</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/zombiepowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>400</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<costList>
+      <ChemSleepToxin>5</ChemSleepToxin>
+      <ChemCarpotoxin>5</ChemCarpotoxin>
+	  <ChemCopper>5</ChemCopper>
+    </costList>
+  </ThingDef>
+  
+</Defs>

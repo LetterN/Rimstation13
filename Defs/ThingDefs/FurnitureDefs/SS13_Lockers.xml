@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="SS13LockerBase" ParentName="SS13StorageBase" Abstract="True">
+    <defName>Locker</defName>
+	<label>plain locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/locker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<costList>
+      <Steel>25</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1050</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Conveniently human-sized with prime Welding Tool access.</description>
+    <size>(1,1)</size>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+	<rotatable>false</rotatable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>Locker</defName>    
+	<label>plain locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/locker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>  
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerEmergency</defName>
+    <label>emergency locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockeremergency</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerAtmos</defName>
+    <label>atmospherics locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockeratmos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerBio</defName>
+    <label>biohazard suit locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerbio</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerBlue</defName>
+    <label>blue locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerblue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerBomb</defName>
+    <label>bomb suit locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerbomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerCaptain</defName>
+    <label>captain's locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockercaptain</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerCE</defName>
+    <label>chief engineer's locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerce</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+ 
+ <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerCupboard</defName>
+    <label>detective's cupboard</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockercupboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerElectrical</defName>
+    <label>electrical locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerelectrical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerEngineering</defName>
+    <label>engineering locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerengineering</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerFire</defName>
+    <label>fire locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerfire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerFreezer</defName>
+    <label>freezer locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerfreezer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerGrey</defName>
+    <label>grey locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockergrey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerHydroponics</defName>
+    <label>hydroponics locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerhydroponics</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerMedical</defName>
+    <label>medical locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockermedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerMining</defName>
+    <label>mining locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockermining</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerMixed</defName>
+    <label>mixed locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockermixed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerRadiation</defName>
+    <label>radiation suit locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerradiation</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerSecure</defName>
+    <label>secure plain locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockersecuregrey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerSecurity</defName>
+    <label>security locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockersecurity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerTools</defName>
+    <label>tools locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockertools</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerViro</defName>
+    <label>virology locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerviro</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13LockerBase">
+    <defName>LockerWelding</defName>
+    <label>welding locker</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/Storage/Lockers/lockerwelding</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+</Defs>

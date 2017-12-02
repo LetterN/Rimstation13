@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ===================== Charge rifle ========================= -->
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LaserPistol</defName>
+		<label>laser beam</label>
+		<graphicData>
+			<texPath>Projectiles/laserbeam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_LaserPistol</defName>
+		<label>laser pistol</label>
+		<description>Kill-mode Laser Pistol, for when you're really sure he's a changeling this time, honest. Short Ranged.</description>
+		<graphicData>
+			<texPath>Weapons/Ranged/laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>4.6</Mass>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
+			<Weapon_Bulk>0.5</Weapon_Bulk>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>40</Plasteel>
+			<Component>7</Component>
+		</costList>
+		<generateCommonality>0.30</generateCommonality>
+		<weaponTags>
+        <li>SS13LaserGun</li>
+        </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_LaserPistol</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>16</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>SS13LaserShot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LaserRifle</defName>
+		<label>laser beam</label>
+		<graphicData>
+			<texPath>Projectiles/laserbeam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_LaserRifle</defName>
+		<label>laser rifle</label>
+		<description>Kill-mode Laser Rifle, for you're really REALLY sure he's a changeling this time, honest. Medium Range.</description>
+		<graphicData>
+			<texPath>Weapons/Ranged/laserrifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>4.6</Mass>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>40</Plasteel>
+			<Component>7</Component>
+		</costList>
+		<generateCommonality>0.30</generateCommonality>
+		<weaponTags>
+        <li>SS13LaserGun</li>
+        </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_LaserRifle</defaultProjectile>
+				<warmupTime>0.4</warmupTime>
+				<range>32</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>SS13LaserShot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_CapLaser</defName>
+		<label>laser beam</label>
+		<graphicData>
+			<texPath>Projectiles/laserbeam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_CapLaser</defName>
+		<label>captain's laser pistol</label>
+		<description>Captain's Antique Laser Pistol, high damage. Short Range.</description>
+		<graphicData>
+			<texPath>Weapons/Ranged/caplaser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>4.6</Mass>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>40</Plasteel>
+			<Component>7</Component>
+		</costList>
+		<generateCommonality>0.30</generateCommonality>
+		<weaponTags>
+        <li>SS13CaptainLaser</li>
+        </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_CapLaser</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>16</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>SS13LaserShot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PShotgun</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_PShotgun</defName>
+    <label>pump shotgun</label>
+    <description>Pump action Shotgun, for when the Greytiders didn't get the message. Short Range.</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/pshotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractShotgun</soundInteract>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>400</MarketValue>
+      <AccuracyTouch>0.99</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>3</Component>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>SS13ProjectileGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PumpShotgun</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>18</range>
+        <soundCast>SS13GunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_C20R</defName>
+    <label>smg bullet</label>
+    <graphicData>
+      <texPath>Projectiles/bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_C20R</defName>
+    <label>C20R Sub Machine Gun</label>
+    <description>C20R SMG, favourite of unimaginative dicks with nuclear intentions. Short/Medium Range.</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/c20r</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractAutopistol</soundInteract>
+    <weaponTags>
+      <li>SS13ProjectileGun</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.91</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <Weapon_Bulk>0.3</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_C20R</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>18</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>SS13SMGShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Mateba</defName>
+    <label>mateba bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>65</damageAmountBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Mateba</defName>
+    <label>mateba</label>
+    <description>Massive revolver pistol, can put a hole in a traitor at nAn paces. Short/Medium Range.</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/mateba</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRevolver</soundInteract>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.99</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <Weapon_Bulk>0.5</Weapon_Bulk>
+    </statBases>
+    <weaponTags>
+      <li>SS13ProjectileGun</li>
+    </weaponTags>
+	<techLevel>Spacer</techLevel>
+    <costList>
+      <Steel>30</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Mateba</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>26</range>
+        <soundCast>SS13GunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef> 
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_DBShotgun</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>65</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_DBShotgun</defName>
+    <label>double barrelled shotgun</label>
+    <description>The ol' Double barrel. For putting down drunks or the Bartender. Short Range.</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/dbshotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractShotgun</soundInteract>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.99</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>3</Component>
+    </costList>
+	<techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>SS13ProjectileGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PumpShotgun</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>SS13GunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+    
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CShotgun</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CShotgun</defName>
+    <label>combat shotgun</label>
+    <description>Combat Shotgun, if these are being rolled out then shit got real. Or they got stolen. Short Range.</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/cshotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractShotgun</soundInteract>
+		<generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <Component>5</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PumpShotgun</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>18</range>
+        <ticksBetweenBurstShots>25</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>SS13GunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PulseRifle</defName>
+		<label>laser beam</label>
+		<graphicData>
+			<texPath>Projectiles/laserbeam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>80</damageAmountBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_PulseRifle</defName>
+		<label>Pulse Rifle</label>
+		<description>Quoth the raven, nevermore.</description>
+		<graphicData>
+			<texPath>Weapons/Ranged/pulserifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>4.6</Mass>
+			<AccuracyTouch>0.99</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<Plasteel>100</Plasteel>
+			<Component>20</Component>
+		</costList>
+		<generateCommonality>0.30</generateCommonality>
+		<weaponTags>
+        <li>SS13LaserGun</li>
+        </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PulseRifle</defaultProjectile>
+				<warmupTime>0.4</warmupTime>
+				<range>32</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>SS13PulseLaserShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

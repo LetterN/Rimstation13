@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Name="SS13FloorBase" ParentName="FloorBase" Abstract="True">
+	<designationCategory>Floors</designationCategory>
+  </TerrainDef>
+  
+  <!-- ================= Misc ================= -->
+
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>MetalPlating</defName>
+    <label>metal plating</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Metal plating, for dragging bodies over through Maintenance.</description>
+    <texturePath>Floors/plating</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+
+    <TerrainDef ParentName="SS13FloorBase">
+    <defName>SpaceTile</defName>
+    <label>space tile</label>
+    <renderPrecedence>240</renderPrecedence>
+	<pathCost>70</pathCost>
+    <description>Space, because Space is made of Steel.</description>
+    <texturePath>Floors/space</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>0</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>WoodTiles</defName>
+    <label>wood flooring</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Wood flooring, for when the botanists have too much free time.</description>
+    <texturePath>Floors/wood</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>BarTiles</defName>
+    <label>bar tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Bar Tiles, for vomiting and punching on.</description>
+    <texturePath>Floors/bar</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>BluefullTiles</defName>
+    <label>blue tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Blue Tiles, the colour of Tyranny.</description>
+    <texturePath>Floors/bluefull</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>BotTiles</defName>
+    <label>bot parking tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Bot parking, for parking your Delivery-bot of death.</description>
+    <texturePath>Floors/bot</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>CafeteriaTiles</defName>
+    <label>cafeteria tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Cafeteria Tiles, for dropping rubbish on.</description>
+    <texturePath>Floors/cafeteria</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>CircuitTiles</defName>
+    <label>circuit tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Circuit Tiles, for surrounding psychopaths.</description>
+    <texturePath>Floors/circuit</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>CircuitOffTiles</defName>
+    <label>off circuit tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Circuit Tiles for when the psycho is sleeping.</description>
+    <texturePath>Floors/circuitoff</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DarkTiles</defName>
+    <label>dark tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Dark Tiles, for when white is too bright.</description>
+    <texturePath>Floors/dark</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DarkblueTiles</defName>
+    <label>dark blue tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Dark Blue Tiles, for the edgy tyrant.</description>
+    <texturePath>Floors/darkblue</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DarkbrownTiles</defName>
+    <label>dark brown tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Dark Brown Tiles.</description>
+    <texturePath>Floors/darkbrown</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DarkgreenTiles</defName>
+    <label>dark green tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Dark Green Tiles, for the edgy weed-grower.</description>
+    <texturePath>Floors/darkgreen</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DarkpurpleTiles</defName>
+    <label>dark purple tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Dark Purple Tiles.</description>
+    <texturePath>Floors/darkpurple</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DarkredTiles</defName>
+    <label>dark red tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Dark Red Tiles, for the edgy egomaniac.</description>
+    <texturePath>Floors/darkred</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DarkyellowTiles</defName>
+    <label>dark yellow tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Dark Yellow Tiles.</description>
+    <texturePath>Floors/darkyellow</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>DeliveryTiles</defName>
+    <label>delivery tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Delivery Tiles, for the mule to drop your stuff before crushing you.</description>
+    <texturePath>Floors/delivery</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>FloorTiles</defName>
+    <label>floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Floor Tiles, to be ripped up as a ghetto weapon.</description>
+    <texturePath>Floors/floor</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>FloorgrimeTiles</defName>
+    <label>grimy floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Grimy Floor Tiles, for when the Janitor deserves a spacing.</description>
+    <texturePath>Floors/floorgrime</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>FreezerTiles</defName>
+    <label>freezer tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Freezer Tiles, for the Chef to hide the bodies.</description>
+    <texturePath>Floors/freezer</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>GreencircuitTiles</defName>
+    <label>green circuit tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Green Circuit Tiles, for the eco-friendly psychopath.</description>
+    <texturePath>Floors/gcircuit</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>GrassTiles</defName>
+    <label>grass tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Grass Tiles, for when the Botanists have too much time on their hands.</description>
+    <texturePath>Floors/grass</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>GreenFloorTiles</defName>
+    <label>green floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Green Floor Tiles, for when Hydroponics leaks onto the station.</description>
+    <texturePath>Floors/green</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>HonkTiles</defName>
+    <label>honk tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Hasn't the clown been murdered yet?</description>
+    <texturePath>Floors/honk</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>HydroTiles</defName>
+    <label>hydroponics tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Hydroponics Tiles, because weed is very particular about the floor it likes.</description>
+    <texturePath>Floors/hydro</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>LightblueFloorTiles</defName>
+    <label>light blue floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Light Blue Floor Tiles, for the tyrant in a good mood.</description>
+    <texturePath>Floors/lightblue</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>NeutralFloorTiles</defName>
+    <label>neutral floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Neutral Floor Tiles, for being ripped up and thrown as a ghetto weapon.</description>
+    <texturePath>Floors/neutralfull</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>OrangeFloorTiles</defName>
+    <label>orange floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Orange Floor Tiles, for when you're feeling exotic but not too exotic.</description>
+    <texturePath>Floors/orange</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>PurpleFloorTiles</defName>
+    <label>purple floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Purple Floor Tiles.</description>
+    <texturePath>Floors/purple</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>RedFloorTiles</defName>
+    <label>red floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Red Floor Tiles, for the morale-focused egomaniac to hide the blood of the assistants.</description>
+    <texturePath>Floors/redfull</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>ReinforcedFloorTiles</defName>
+    <label>reinforced floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Reinforced Floor Tiles, for when people keep making holes in it.</description>
+    <texturePath>Floors/reinforced</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>SyndicateFloorTiles</defName>
+    <label>syndicate floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Syndicate Floor Tiles, for when you've got some bad news for the station.</description>
+    <texturePath>Floors/syndi</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>WhiteFloorTiles</defName>
+    <label>white floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>White Floor Tiles, for when you really want everyone to see the space-aids.</description>
+    <texturePath>Floors/white</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>LightgreenFloorTiles</defName>
+    <label>light green floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Light Green Floor Tiles.</description>
+    <texturePath>Floors/lightgreen</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>LightpurpleFloorTiles</defName>
+    <label>light purple floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Light Purple Floor Tiles.</description>
+    <texturePath>Floors/lightpurple</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>LightredFloorTiles</defName>
+    <label>light red floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Light Red Floor Tiles, for the egomaniac that wants the blood to be visible, but only a little bit.</description>
+    <texturePath>Floors/lightred</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>LightyellowFloorTiles</defName>
+    <label>light yellow floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Light Yellow Floor Tiles.</description>
+    <texturePath>Floors/lightyellow</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>YellowFloorTiles</defName>
+    <label>yellow floor tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Yellow Floor Tiles.</description>
+    <texturePath>Floors/yellow</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SS13FloorBase">
+    <defName>GrimyCarpetTiles</defName>
+    <label>grimy carpet tiles</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Yellow Floor Tiles.</description>
+    <texturePath>Floors/grimy</texturePath>
+	<edgeType>Hard</edgeType>
+    <color>(0.8, 0.8, 0.8)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>40</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+  </TerrainDef>
+
+</Defs>

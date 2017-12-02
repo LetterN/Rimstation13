@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Name="TerrainSpaceParent" Abstract="True">
+    <label>SpaceTerrain</label>
+    <texturePath>Floors/space</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>50</pathCost>
+    <statBases>
+      <Beauty>12</Beauty>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+    </affordances>
+	<avoidWander>true</avoidWander>
+	<holdSnow>false</holdSnow>
+	<acceptFilth>false</acceptFilth>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>0.00</fertility>
+	<tags>
+		<li>NoGeysers</li>
+	</tags>
+    <takeFootprints>False</takeFootprints>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>TerrainSpace</defName>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>WaterDeep</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>WaterOceanDeep</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>WaterMovingDeep</defName>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>WaterShallow</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>WaterOceanShallow</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>WaterMovingShallow</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>Sand</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>Soil</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>MarshyTerrain</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>SoilRich</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>Mud</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>Marsh</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>Gravel</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>MossyTerrain</defName>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TerrainSpaceParent">
+    <defName>Ice</defName>
+  </TerrainDef>
+  
+  <TerrainDef>
+    <defName>XenoWeeds</defName>
+    <label>Xenomorph Weeds</label>
+    <texturePath>Creatures/Xeno/alienweeds</texturePath>
+    <layerable>true</layerable>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>370</renderPrecedence>
+    <pathCost>0</pathCost>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+    </affordances>
+    <fertility>0.0</fertility>
+  </TerrainDef>
+  
+</Defs>

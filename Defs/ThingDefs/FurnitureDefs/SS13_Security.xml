@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>BearTrap</defName>
+    <label>bear trap</label>
+    <thingClass>Building_TrapRearmable</thingClass>
+    <graphicData>
+      <texPath>Misc/beartraparmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Beauty>0</Beauty>
+      <TrapMeleeDamage>20</TrapMeleeDamage>
+      <TrapSpringChance>1</TrapSpringChance>
+    </statBases>
+    <description>A Bear Trap, perfect for defending your Janitors cart from Greysuits. Or for slowing down the HoS as you escape with his gun.</description>
+    <costList>
+		<Steel>10</Steel>
+	</costList>
+    <designationCategory>Security</designationCategory>
+	<size>(1,1)</size>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <trapUnarmedGraphicData>
+        <texPath>Misc/beartrapunarmed</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>Cutout</shaderType>
+      </trapUnarmedGraphicData>
+    </building>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_TurretLaser</defName>
+    <label>auto turret laser</label>
+    <graphicData>
+      <texPath>Projectiles/laserbeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_AutoTurret</defName>
+    <label>automated turret gun</label>
+    <graphicData>
+      <texPath>Weapons/Turret/TurretGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <menuHidden>true</menuHidden>
+    <description>Automated Laser Turret</description>
+    <soundInteract>InteractRifle</soundInteract>
+    <canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_TurretLaser</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>SS13LaserShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>TurretGun</defName>
+    <label>improvised turret</label>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Weapons/Turret/turretbase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>2500</WorkToBuild>
+      <Mass>100</Mass>
+      <Beauty>0</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <description>Perfect for defending the AI core or assembling in random locations around the station on stun all mode for maximum mischief. If you're the clown.</description>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <costList>
+      <Steel>100</Steel>
+      <Component>3</Component>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>25.9</specialDisplayRadius>
+    <building>
+	  <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_AutoTurret</turretGunDef>
+      <turretBurstCooldownTime>0.3</turretBurstCooldownTime>
+      <turretTopGraphicPath>Weapons/Turret/TurretGun</turretTopGraphicPath>
+    </building>
+  </ThingDef>
+<turretTopGraphicPath>Weapons/Turret/TurretGun</turretTopGraphicPath>
+</Defs>

@@ -1,0 +1,1862 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+			<Mass>0.03</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="PlantFoodRawBase" ParentName="OrganicProductBase">
+    <ingestible>
+      <preferability>RawBad</preferability>
+			<tasteThought>AteRawFood</tasteThought>
+      <nutrition>0.05</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+	  <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <comps>
+			<li Class="CompProperties_FoodPoisoningChance">
+				<humanlikeOnly>true</humanlikeOnly>
+			</li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>200</daysToRotStart>
+			</li>
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceVerbBase">
+    <defName>WoodLog</defName>
+    <label>wood</label>
+    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <graphicData>
+      <texPath>Resources/Wood/wood1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>wooden</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <color>(133,97,67)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.4</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawWheat</defName>
+    <label>wheat</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/wheatharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawAmbrosiaDeus</defName>
+    <label>Ambrosia Deus</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/ambrosiadeusharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawAmbrosiaGaia</defName>
+    <label>Ambrosia Gaia</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/ambrosiagaiaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawAmbrosiaVulgaris</defName>
+    <label>Ambrosia Vulgaris</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/ambrosiavulgarisharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawApple</defName>
+    <label>Apple</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/appleharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBanana</defName>
+    <label>Banana</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/bananaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBerry</defName>
+    <label>Berry</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/berryharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBloodTomato</defName>
+    <label>BloodTomato</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/bloodtomatoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBlueSpaceBanana</defName>
+    <label>Blue-Space Banana</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/bluespacebananaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBlueTomato</defName>
+    <label>Blue Tomato</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/bluetomatoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBlueSpaceTomato</defName>
+    <label>Blue-Space Tomato</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/bluespacetomatoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBlumpkin</defName>
+    <label>Blumpkin</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/blumpkinharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawBlueCherry</defName>
+    <label>Blue Cherry</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/bluecherryharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCherry</defName>
+    <label>Cherry</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/cherryharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCabbage</defName>
+    <label>Cabbage</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/cabbageharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCannabis</defName>
+    <label>Cannabis</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/cannabisharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCarrot</defName>
+    <label>Carrot</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/carrotharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawChanterelle</defName>
+    <label>Chanterelle</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/chanterelleharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawChili</defName>
+    <label>Chili</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/chiliharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCocoa</defName>
+    <label>Cocoa</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/coffeearabicaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCoffeeArabica</defName>
+    <label>Coffee Arabica</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/coffeearabicaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCoffeeRobusta</defName>
+    <label>Coffee Robusta</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/coffeerobustaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawCorn</defName>
+    <label>Corn</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/cornharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawDeathBerry</defName>
+    <label>Death-Berry</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/deathberryharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawDeathNettle</defName>
+    <label>Death-Nettle</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/deathnettleharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawDeathWeed</defName>
+    <label>Death Weed</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/deathweedharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawDestroyingAngel</defName>
+    <label>Destroying Angel</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/destroyingangelharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawEggplant</defName>
+    <label>Eggplant</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/eggplantharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawFlyAmanita</defName>
+    <label>Fly Amanita</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/flyamanitaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGeranium</defName>
+    <label>Geranium</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/geraniumharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGlowBerry</defName>
+    <label>Glow Berry</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/glowberryharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGhostChili</defName>
+    <label>Ghost Chili</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/ghostchiliharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGlowcap</defName>
+    <label>Glowcap</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/glowcapharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGlowshroom</defName>
+    <label>Glowshroom</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/glowshroomharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGoldApple</defName>
+    <label>Gold Apple</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/goldappleharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGrapes</defName>
+    <label>Grapes</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/grapesharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGrass</defName>
+    <label>Grass</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/grassharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawGreenGrapes</defName>
+    <label>Green Grapes</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/greengrapesharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawHarebell</defName>
+    <label>Harebell</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/harebellharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawHolymelon</defName>
+    <label>Holymelon</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/holymelonharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawIcePepper</defName>
+    <label>Ice Pepper</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/icepepperharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawKoibean</defName>
+    <label>Koibean</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/koibeanharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawLemon</defName>
+    <label>Lemon</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/lemonharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawLibertyCap</defName>
+    <label>Liberty-Cap</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/libertycapharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawLifeweed</defName>
+    <label>Life Weed</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/lifeweedharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawLily</defName>
+    <label>Lily</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/lilyharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawLime</defName>
+    <label>Lime</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/limeharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawMeatwheat</defName>
+    <label>Meatwheat</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/meatwheatharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawMimana</defName>
+    <label>Mimana</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/mimanaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawMoonflower</defName>
+    <label>Moonflower</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/moonflowerharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawNettle</defName>
+    <label>Nettle</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/nettleharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawNovaflower</defName>
+    <label>Novaflower</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/novaflowerharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawOat</defName>
+    <label>Oats</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/oatharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawOmegaWeed</defName>
+    <label>Omega Weed</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/omegaweedharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawOrange</defName>
+    <label>Orange</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/orangeharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawParsnip</defName>
+    <label>Parsnip</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/parsnipharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawPlumpHelmet</defName>
+    <label>Plump Helmet</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/plumphelmetharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawPoisonBerry</defName>
+    <label>Plump Helmet</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/poisonberryharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawPoppy</defName>
+    <label>Plump Helmet</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/poppyharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawPotato</defName>
+    <label>Potato</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/potatoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawPumpkin</defName>
+    <label>Pumpkin</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/pumpkinharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawPoisonedApple</defName>
+    <label>Poisoned Apple</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/poisonedappleharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawRainbowweed</defName>
+    <label>Rainbow Weed</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/rainbowweedharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawRedbeet</defName>
+    <label>Red Beet</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/redbeetharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawRice</defName>
+    <label>Rice</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/riceharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawReishi</defName>
+    <label>Reishi</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/reishiharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSnapcorn</defName>
+    <label>Snapcorn</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/snapcornharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSoybean</defName>
+    <label>Soybean</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/soybeanharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSpaceTobacco</defName>
+    <label>Space Tobacco</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/spacetobaccoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSteelcap</defName>
+    <label>Steelcap</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/steelcapharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSugarcane</defName>
+    <label>Sugarcane</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/sugarcaneharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSunflower</defName>
+    <label>Sunflower</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/sunflowerharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawSweetPotato</defName>
+    <label>Sweet Potato</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/sweetpotatoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawTeaAspera</defName>
+    <label>Tea Aspera</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/teaasperaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawTeaAstra</defName>
+    <label>Tea Astra</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/teaastraharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawTobacco</defName>
+    <label>Tobacco</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/tobaccoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawTomato</defName>
+    <label>Tomato</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/tomatoharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawVanilla</defName>
+    <label>Vanilla</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/vanillaharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawWatermelon</defName>
+    <label>Watermelon</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/watermelonharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13RawWhitebeet</defName>
+    <label>White Beet</label>
+    <description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <ingestible>
+      <foodType>Plant</foodType>
+    </ingestible>
+    <graphicData>
+      <texPath>Plants/Harvest/whitebeetharvest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

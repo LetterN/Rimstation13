@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="SS13ElementBase" ParentName="ResourceBase" Abstract="True">
+	<recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>ChemDispenser</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <GlassBeaker>1</GlassBeaker>
+    </costList>
+	</ThingDef>
+
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemAluminium</defName>
+    <label>Aluminium</label>
+    <description>A silvery white and ductile member of the boron group of chemical elements.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/aluminium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemAmatoxin</defName>
+    <label>Amatoxin</label>
+    <description>A silvery white and ductile member of the boron group of chemical elements.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/amatoxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemBromine</defName>
+    <label>Bromine</label>
+    <description>A silvery white and ductile member of the boron group of chemical elements.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/bromine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCarbon</defName>
+    <label>Carbon</label>
+    <description>A highly stable element found in organics.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/carbon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemChlorine</defName>
+    <label>Chlorine</label>
+    <description>A noxious gas.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/chlorine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCopper</defName>
+    <label>Copper</label>
+    <description>Pure, pulverised copper in a beaker.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/copper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemEthanol</defName>
+    <label>Ethanol</label>
+    <description>A well-known alcohol with a variety of applications.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/ethanol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemFluorine</defName>
+    <label>Fluorine</label>
+    <description>A highly reactive chemical element.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/fluorine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemGold</defName>
+    <label>Gold</label>
+    <description>A dark yellow, dense, valuable conductive metal. Often used in electronics.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/gold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemHydrogen</defName>
+    <label>Hydrogen</label>
+    <description>A colorless, odorless, nonmetallic, tasteless, highly combustible diatomic gas.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/gold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemIron</defName>
+    <label>Iron</label>
+    <description>A metallic element, reacts with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/iron</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemLithium</defName>
+    <label>Lithium</label>
+    <description>A soft, silver metallic element.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/lithium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemMercury</defName>
+    <label>Mercury</label>
+    <description>A highly toxic, liquid metal.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/mercury</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemNitrogen</defName>
+    <label>Nitrogen</label>
+    <description>A colourless, odorless, tasteless gas.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/nitrogen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemOxygen</defName>
+    <label>Oxygen</label>
+    <description>A colourless, odorless gas.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/oxygen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemPhosphorous</defName>
+    <label>Phosphorous</label>
+    <description>A highly reactive element, glows on contact with oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/phosphorous</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemPlasma</defName>
+    <label>Plasma</label>
+    <description>Liquefied plasma.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/plasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemPotassium</defName>
+    <label>Potassium</label>
+    <description>A soft, low-melting solid that can easily be cut with a knife. Reacts violently with water.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/potassium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemRadium</defName>
+    <label>Radium</label>
+    <description>Radium is an alkaline earth metal. It is extremely radioactive.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/radium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSilicon</defName>
+    <label>Silicon</label>
+    <description>A tetravalent metalloid, silicon is less reactive than its chemical analog carbon.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/silicon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSilver</defName>
+    <label>Silver</label>
+    <description>A white, valuable conductive metal. Often used in harmonic wiring.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/silver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSodium</defName>
+    <label>Sodium</label>
+    <description>A light, silver-coloured metal. So soft it can be cut with a knife and highly reactive.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/sodium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSugar</defName>
+    <label>Sugar</label>
+    <description>The organic compound commonly known as table sugar and sometimes called saccharose. This white, odorless, crystalline powder has a pleasing, sweet taste.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/sugar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSulphur</defName>
+    <label>Sulphur</label>
+    <description>A foul smelling non-metallic crystalline element.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/sulphur</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemSulphuricAcid</defName>
+    <label>Sulphuric Acid</label>
+    <description>A strong mineral acid with the molecular formula H2SO4.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/sulphuricacid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemToxin</defName>
+    <label>Toxin</label>
+    <description>A blanket term for a range of equally toxic chemicals.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/toxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemUranium</defName>
+    <label>Uranium</label>
+    <description>A black, incredibly dense, slightly radioactive, actinide. Often used in its depleted state in military ballistics and heavy armor.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/uranium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemWater</defName>
+    <label>Water</label>
+    <description>A ubiquitous chemical substance that is composed of hydrogen and oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/water</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemWeldingFuel</defName>
+    <label>Water</label>
+    <description>A ubiquitous chemical substance that is composed of hydrogen and oxygen.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/weldingfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ElementBase">
+    <defName>ChemCarpotoxin</defName>
+    <label>Carpotoxin</label>
+    <description>A sinister chemical extracted from Space Carp.</description>
+    <graphicData>
+      <texPath>Resources/Chemicals/Elements/carpotoxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

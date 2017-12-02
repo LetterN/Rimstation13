@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="CircuitBoardBase" ParentName="ResourceBase" Abstract="True">
+    <defName>CircuitBoardParent</defName>
+    <label>glass beaker</label>
+    <description>This fragile object is used to hold extremely dangerous chemicals, as well as sugar, milk, blood, and just about everything else you might want to mix.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardAutolathe</defName>
+    <label>Autolathe Circuit Board</label>
+    <description>The primary board of an Autolathe's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardHeavyLathe</defName>
+    <label>Heavy Lathe Circuit Board</label>
+    <description>The primary board of a Heavy Lathe's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardCircuitImprinter</defName>
+    <label>Circuit Imprinter Circuit Board</label>
+    <description>The primary board of a Circuit Imprinter's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardChemDispenser</defName>
+    <label>Chem Dispenser Circuit Board</label>
+    <description>The primary board of a Chem Dispenser's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardCommsConsole</defName>
+    <label>Communication's Console Circuit Board</label>
+    <description>The primary board of a Communication Console's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardDestructiveAnalyser</defName>
+    <label>Destructive Analyser Circuit Board</label>
+    <description>The primary board of a Destructive Analyser's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardBioGen</defName>
+    <label>BioGenerator's Circuit Board</label>
+    <description>The primary board of an Bio Generator's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardChemMixer</defName>
+    <label>Chem Mixer Circuit Board</label>
+    <description>The primary board of a Chem Mixer's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardOreRedemption</defName>
+    <label>Ore Redemption Circuit Board</label>
+    <description>The primary board of an Ore Redemption machine's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardProtolathe</defName>
+    <label>Protolathe Circuit Board</label>
+    <description>The primary board of a Protolathe's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardRobotFabricator</defName>
+    <label>Robot Fabricator Circuit Board</label>
+    <description>The primary board of a Robot Fabricator's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardPortableGenerator</defName>
+    <label>Portable Generator Circuit Board</label>
+    <description>The primary board of a Portable Generator's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardSMESUnit</defName>
+    <label>SMES Unit Circuit Board</label>
+    <description>The primary board of a SMES Unit's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>CircuitBoardReagentGrinder</defName>
+    <label>Reagent Grinder Circuit Board</label>
+    <description>The primary board of a Reagent Grinder's internal electronics.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/circuitboard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>3</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CircuitBoardBase">
+    <defName>AirlockElectronics</defName>
+    <label>Airlock Electronics</label>
+    <description>The primary circuitry of a standard NT airlock.</description>
+    <graphicData>
+      <texPath>Resources/Circuits/airlockelectronics</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>6</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+</Defs>

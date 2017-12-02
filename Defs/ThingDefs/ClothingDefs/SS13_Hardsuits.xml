@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================================== Jumpsuits =====================================-->
+  
+	<ThingDef ParentName="ShellArmourBase">
+    <defName>ApparelEVASuit</defName>
+    <label>EVA Suit</label>
+    <description>Keeps your insides inside when outside. A suit that protects against low pressure environments. Has a big 13 on the back.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/EVA_Suit/spacesuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <Insulation_Cold>-65</Insulation_Cold>
+	  <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <costList>
+      <Component>4</Component>
+      <Plasteel>50</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Heavy_Suits/EVA_Suit/spacesuit</wornGraphicPath>
+			<tags>
+				<li>NanoTrasen</li>
+			</tags>
+    </apparel>
+  </ThingDef>
+  
+	<ThingDef ParentName="ShellArmourBase">
+    <defName>ApparelEngineeringSuit</defName>
+    <label>Engineering Hardsuit</label>
+    <description>Has much better radiation shielding than most other spacesuits. Fireproof, but not completely heatproof.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Engineering_Suit/engineeringsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <Insulation_Cold>-75</Insulation_Cold>
+	  <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <costList>
+      <Component>4</Component>
+      <Plasteel>50</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Heavy_Suits/Engineering_Suit/engineeringsuit</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  
+	<ThingDef ParentName="ShellArmourBase">
+    <defName>ApparelMiningSuit</defName>
+    <label>Mining Hardsuit</label>
+    <description>Bought by Miners at their vending machine. Offers excellent heat and decent blast protection.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Mining_Suit/miningsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <Insulation_Cold>-75</Insulation_Cold>
+	  <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <costList>
+      <Component>4</Component>
+      <Plasteel>50</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Heavy_Suits/Mining_Suit/miningsuit</wornGraphicPath>
+		</apparel>
+  </ThingDef>
+  
+	<ThingDef ParentName="ShellArmourBase">
+    <defName>ApparelSecuritySuit</defName>
+    <label>Security Hardsuit</label>
+    <description>Security hardsuits have a bit of bullet, laser and brute protection, but nothing as good as "real" armor.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Security_Suit/securitysuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>-75</Insulation_Cold>
+	  <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <costList>
+      <Component>5</Component>
+      <Plasteel>50</Plasteel>
+      <Steel>50</Steel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Heavy_Suits/Security_Suit/securitysuit</wornGraphicPath>
+		</apparel>
+  </ThingDef>
+  
+	<ThingDef ParentName="ShellArmourBase">
+    <defName>ApparelAdvancedSuit</defName>
+    <label>Advanced Hardsuit</label>
+    <description>Comes with a jetpack aiding movement, and almost complete protection from radiation and heat. Good explosion and brute protection too.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Advanced_Suit/advancedsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <Insulation_Cold>-75</Insulation_Cold>
+	  <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.10</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <costList>
+      <Component>10</Component>
+      <Plasteel>150</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Heavy_Suits/Advanced_Suit/advancedsuit</wornGraphicPath>
+		</apparel>
+  </ThingDef>
+  
+	<ThingDef ParentName="ShellArmourBase">
+    <defName>ApparelAtmosSuit</defName>
+    <label>Atmospherics Hardsuit</label>
+    <description>The best firefighting suit, both fireproof and completely heatproof. However, it has zero radiation shielding and minimal brute protection.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Atmos_Suit/atmossuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
+      <Insulation_Cold>-75</Insulation_Cold>
+	  <Insulation_Heat>100</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <costList>
+      <Component>5</Component>
+      <Plasteel>50</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Heavy_Suits/Atmos_Suit/atmossuit</wornGraphicPath>
+		</apparel>
+  </ThingDef>
+  
+</Defs>
