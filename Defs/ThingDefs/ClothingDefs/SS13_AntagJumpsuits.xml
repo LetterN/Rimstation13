@@ -34,6 +34,7 @@
     <label>Syndicate Combat Jumpsuit</label>
     <description>What's the point of the pockets if there's no FUKKEN DISK!?!</description>
     <statBases>
+      <MarketValue>250</MarketValue>
       <MaxHitPoints>200</MaxHitPoints>
       <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 	  <ArmorRating_Heat>0.10</ArmorRating_Heat>

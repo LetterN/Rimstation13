@@ -300,7 +300,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>500</WorkToMake>
+      <MarketValue>250</MarketValue>
       <MaxHitPoints>160</MaxHitPoints>
       <Mass>2.7</Mass>
       <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
@@ -327,7 +327,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Deathsquad</li>
+				<li>Syndicate</li>
 			</tags>
     </apparel>
   </ThingDef>

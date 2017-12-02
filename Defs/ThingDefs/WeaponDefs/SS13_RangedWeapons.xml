@@ -330,15 +330,15 @@
     </graphicData>
     <soundInteract>InteractAutopistol</soundInteract>
     <weaponTags>
-      <li>SS13ProjectileGun</li>
+      <li>Syndicate</li>
     </weaponTags>
     <statBases>
-      <WorkToMake>500</WorkToMake>
+      <MarketValue>500</MarketValue>
       <Mass>1.2</Mass>
-      <AccuracyTouch>0.91</AccuracyTouch>
-      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.60</AccuracyMedium>
-      <AccuracyLong>0.32</AccuracyLong>
+      <AccuracyLong>0.50</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
       <Weapon_Bulk>0.3</Weapon_Bulk>
     </statBases>
@@ -352,7 +352,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_C20R</defaultProjectile>
         <warmupTime>0.1</warmupTime>
-        <range>18</range>
+        <range>19</range>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <burstShotCount>6</burstShotCount>
         <soundCast>SS13SMGShot</soundCast>
@@ -483,8 +483,8 @@
       <Mass>3.4</Mass>
       <AccuracyTouch>0.99</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
-      <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.80</AccuracyLong>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
       <Weapon_Bulk>1.0</Weapon_Bulk>
     </statBases>
@@ -561,10 +561,10 @@
     <statBases>
       <WorkToMake>500</WorkToMake>
       <Mass>4.5</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.60</AccuracyShort>
-      <AccuracyMedium>0.38</AccuracyMedium>
-      <AccuracyLong>0.32</AccuracyLong>
+      <AccuracyTouch>0.99</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
       <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
       <Weapon_Bulk>1.0</Weapon_Bulk>
     </statBases>
@@ -576,7 +576,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_PumpShotgun</defaultProjectile>
+        <defaultProjectile>Bullet_CShotgun</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>18</range>
         <ticksBetweenBurstShots>25</ticksBetweenBurstShots>
@@ -621,7 +621,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseGun">
 		<defName>Gun_PulseRifle</defName>
 		<label>Pulse Rifle</label>
 		<description>Quoth the raven, nevermore.</description>
@@ -631,6 +631,7 @@
 		</graphicData>
 		<soundInteract>InteractChargeRifle</soundInteract>
 		<statBases>
+			<MarketValue>500</MarketValue>
 			<WorkToMake>5000</WorkToMake>
 			<Mass>4.6</Mass>
 			<AccuracyTouch>0.99</AccuracyTouch>
@@ -648,6 +649,7 @@
 		<generateCommonality>0.30</generateCommonality>
 		<weaponTags>
         <li>SS13LaserGun</li>
+        <li>Deathsquad</li>
         </weaponTags>
 		<verbs>
 			<li>
@@ -683,5 +685,150 @@
       </li>
     </tools>
   </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_BDShotgun</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_BDShotgun</defName>
+    <label>Bulldog shotgun</label>
+    <description>Close combat shotgun. 8 Shells drum fed, semi-automatic. Great for close encounters..</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/bdshotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractShotgun</soundInteract>
+    <weaponTags>
+      <li>Syndicate</li>
+    </weaponTags>
+	<generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.99</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BDShotgun</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>16</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>8</burstShotCount>
+        <soundCast>SS13GunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Sniper</defName>
+    <label>sniper bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>65</damageAmountBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_SyndiSniper</defName>
+    <label>Sniper Rifle</label>
+    <description>Specialist weapon for the profession, or insane. Long range sniper rifle.</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/sniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRevolver</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+	<generateCommonality>0.05</generateCommonality>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponTags>
+      <li>Syndicate</li>
+    </weaponTags>
+	<techLevel>Spacer</techLevel>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Sniper</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>40</range>
+        <soundCast>SS13GunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef> 
   
 </Defs>

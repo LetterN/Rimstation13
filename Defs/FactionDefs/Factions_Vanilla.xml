@@ -14,6 +14,11 @@
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>prime councilor</leaderTitle>
     <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
     <colorSpectrum>
       <li>(0.64, 0.42, 0.36)</li>
       <li>(0.47, 0.5, 0.91)</li>
@@ -107,16 +112,15 @@
     <baseSelectionWeight>1</baseSelectionWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
-		<raidCommonalityFromPointsCurve>
-			<points>
-				<li>(40, 3)</li>
-				<li>(400, 1)</li>
-			</points>
-		</raidCommonalityFromPointsCurve>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
     <canStageAttacks>true</canStageAttacks>
     <expandingIconTexture>World/WorldObjects/Expanding/Village</expandingIconTexture>
 		<geneticVariance>0.1</geneticVariance>
-		<colorSpectrum>
+	<colorSpectrum>
       <li>(0.4, 0.92, 0.35)</li>
       <li>(0.89, 0.89, 0.7)</li>
       <li>(1, 1, 0.1)</li>
@@ -210,7 +214,12 @@
     <baseSelectionWeight>1</baseSelectionWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxCountAtGameStart>2</maxCountAtGameStart>
-    <canMakeRandomly>true</canMakeRandomly>
+    <canMakeRandomly>false</canMakeRandomly>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
 		<appreciative>false</appreciative>

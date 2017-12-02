@@ -247,6 +247,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
+      <MarketValue>250</MarketValue>
       <MaxHitPoints>340</MaxHitPoints>
       <Mass>20</Mass>
       <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
