@@ -45,8 +45,11 @@
   
   <ThingDef ParentName="DoorBase" Name="SS13DoorBase" Abstract="True">
 	<designationCategory>Structure</designationCategory>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+    </statBases>
 	<costList>
-      <Steel>40</Steel>
+      <Steel>30</Steel>
       <Component>2</Component>
 	  <AirlockElectronics>1</AirlockElectronics>
     </costList>

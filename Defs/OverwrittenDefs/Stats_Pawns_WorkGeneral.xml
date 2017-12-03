@@ -7,7 +7,7 @@
     <description>A multiplier on someone's speed at doing any work.</description>
     <category>PawnWork</category>
     <displayPriorityInCategory>100</displayPriorityInCategory>
-    <defaultBaseValue>1.5</defaultBaseValue>
+    <defaultBaseValue>11</defaultBaseValue>
     <toStringStyle>PercentZero</toStringStyle>
     <parts>
 			<li Class="StatPart_Glow">

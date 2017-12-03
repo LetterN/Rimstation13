@@ -695,7 +695,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>40</damageAmountBase>
+      <damageAmountBase>30</damageAmountBase>
       <speed>65</speed>
     </projectile>
   </ThingDef>
@@ -716,10 +716,10 @@
     <statBases>
       <MarketValue>500</MarketValue>
       <Mass>4.5</Mass>
-      <AccuracyTouch>0.99</AccuracyTouch>
-      <AccuracyShort>0.75</AccuracyShort>
-      <AccuracyMedium>0.45</AccuracyMedium>
-      <AccuracyLong>0.35</AccuracyLong>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
       <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
       <Weapon_Bulk>1.0</Weapon_Bulk>
     </statBases>
@@ -728,8 +728,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_BDShotgun</defaultProjectile>
-        <warmupTime>0.5</warmupTime>
-        <range>16</range>
+        <warmupTime>0.8</warmupTime>
+        <range>14</range>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <burstShotCount>8</burstShotCount>
         <soundCast>SS13GunShot</soundCast>
