@@ -11,7 +11,7 @@
         <label>corgi puppy</label>
         <labelPlural>corgi puppies</labelPlural>
         <bodyGraphicData>
-          <texPath>Animals/Corgi/ian</texPath>
+          <texPath>Creatures/Corgi/ian</texPath>
           <drawSize>0.48</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -21,11 +21,11 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animals/Corgi/ian</texPath>
+          <texPath>Creatures/Corgi/ian</texPath>
           <drawSize>0.75</drawSize>
         </bodyGraphicData>
         <femaleGraphicData>
-          <texPath>Animals/Corgi/lisa</texPath>
+          <texPath>Creatures/Corgi/lisa</texPath>
           <drawSize>0.73</drawSize>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
@@ -35,7 +35,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animals/Corgi/ian</texPath>
+          <texPath>Creatures/Corgi/ian</texPath>
           <drawSize>0.9</drawSize>
           <shadowData>
             <volume>(0.20, 0.3, 0.20)</volume>
@@ -43,7 +43,7 @@
           </shadowData>
         </bodyGraphicData>
         <femaleGraphicData>
-          <texPath>Animals/Corgi/lisa</texPath>
+          <texPath>Creatures/Corgi/lisa</texPath>
           <drawSize>0.89</drawSize>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
