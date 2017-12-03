@@ -19,7 +19,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1050</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
     </statBases>
     <description>Conveniently human-sized with prime Welding Tool access.</description>

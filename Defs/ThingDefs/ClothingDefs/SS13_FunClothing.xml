@@ -14,7 +14,7 @@
     </costList>
 	
     <statBases>
-      <WorkToMake>500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.0</ArmorRating_Sharp>

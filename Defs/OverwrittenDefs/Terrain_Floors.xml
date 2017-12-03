@@ -8,9 +8,6 @@
       <li>Heavy</li>
       <li>SmoothHard</li>
     </affordances>
-    <statBases>
-      <WorkToBuild>135</WorkToBuild>
-    </statBases>
     <fertility>0</fertility>
     <constructEffect>ConstructDirt</constructEffect>
     <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>

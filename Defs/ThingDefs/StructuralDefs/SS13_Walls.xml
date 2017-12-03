@@ -26,7 +26,7 @@
       </damageData>
     </graphicData>
     <blueprintGraphicData>
-      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      <texPath>Walls/Station_Wall_Blueprint_Atlas</texPath>
     </blueprintGraphicData>
     <uiIconPath>Walls/Wall_MenuIcon</uiIconPath>
     <statBases>
@@ -73,7 +73,7 @@
     <category>Building</category>
     <description>A Reinforced Station wall, for surrounding anything near to a welding tool and a wrench.</description>
     <graphicData>
-      <texPath>Walls/Reinforced_Wall_Atlas</texPath>
+      <texPath>Walls/Reinforced_Wall_Blueprint_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
@@ -91,7 +91,7 @@
       </damageData>
     </graphicData>
     <blueprintGraphicData>
-      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      <texPath>Walls/Reinforced_Wall_Blueprint_Atlas</texPath>
     </blueprintGraphicData>
     <uiIconPath>Walls/ReinforcedWall_MenuIcon</uiIconPath>
     <statBases>
@@ -156,7 +156,7 @@
       </damageData>
     </graphicData>
     <blueprintGraphicData>
-      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      <texPath>Walls/Station_Window_Blueprint_Atlas</texPath>
     </blueprintGraphicData>
     <uiIconPath>Walls/GlassWall_MenuIcon</uiIconPath>
     <statBases>

@@ -22,7 +22,7 @@
     <fillPercent>0.5</fillPercent>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
     </statBases>
     <description>The one stop shop for any grey suit looking to break into the armoury.</description>
@@ -65,7 +65,7 @@
 	<designationCategory>Storage</designationCategory>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1050</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
     </statBases>
     <description>Perfectly situated around the station for all your clothes stealing needs.</description>

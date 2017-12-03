@@ -31,7 +31,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>35</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
       <Beauty>-2</Beauty>
     </statBases>
@@ -83,7 +83,7 @@
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>800</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
       <Beauty>-18</Beauty>
     </statBases>
@@ -135,7 +135,7 @@
     <fillPercent>0.8</fillPercent>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -244,7 +244,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
