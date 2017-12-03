@@ -45,9 +45,6 @@
   
   <ThingDef ParentName="DoorBase" Name="SS13DoorBase" Abstract="True">
 	<designationCategory>Structure</designationCategory>
-    <statBases>
-      <WorkToMake>600</WorkToMake>
-    </statBases>
 	<costList>
       <Steel>30</Steel>
       <Component>2</Component>
@@ -61,7 +58,7 @@
     <label>maintenance door</label>
     <description>An entrance to Maintenance, the last seen location of many a greyshirt.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>5000</WorkToMake>
 	  <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
