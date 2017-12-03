@@ -1,0 +1,976 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Note, We dont use console screens anymore, Use glass instead.  ~Letter N
+	Cheat sheet 
+	Mats name: MatterBinA, MicroManipA, ScanModuleA, CapacitorA, LaserA
+	Mats num value: A = T1 Mats, B = T2 Mats, C = T3 Mats, D = T4 Bluespace Mats.  -->
+
+	 <!--=============== T1 ====================-->
+
+		<!-- Matter Bin -->
+
+	<ThingDef ParentName="ResourceBase">
+    <defName>MatterBinA</defName>
+    <label>matter bin</label>
+    <description>A container designed to hold compressed matter awaiting reconstruction.</description>
+    <graphicData>
+      <texPath>Mats/Matterbin1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Micro Manipulator-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>MicroManipA</defName>
+    <label>micro manipulator</label>
+    <description>A tiny little manipulator used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Manip1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Scanning Module-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>ScanModuleA</defName>
+    <label>scanning module</label>
+    <description>A compact, high resolution scanning module used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Scan1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  	<!-- Capacitor -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>CapacitorA</defName>
+    <label>capacitor</label>
+    <description>A basic capacitor used in the construction of a variety of devices.</description>
+    <graphicData>
+      <texPath>Mats/Cap1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+   	<!-- Laser -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>LaserA</defName>
+    <label>micro-laser</label>
+    <description>A tiny laser used in certain devices</description>
+    <graphicData>
+      <texPath>Mats/Laser1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+		<!--=============== T2 ====================-->
+
+				<!-- Matter Bin -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MatterBinB</defName>
+    <label>advanced matter bin</label>
+    <description>A container designed to hold compressed matter awaiting reconstruction.</description>
+    <graphicData>
+      <texPath>Mats/Matterbin2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Micro Manipulator-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>MicroManipB</defName>
+    <label>nano-manipulator</label>
+    <description>A tiny little manipulator used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Manip2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Scanning Module-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>ScanModuleB</defName>
+    <label>advanced scanning module</label>
+    <description>A compact, high resolution scanning module used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Scan2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  	<!-- Capacitor -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>CapacitorB</defName>
+    <label>advanced capacitor</label>
+    <description>An advanced capacitor used in the construction of a variety of devices.</description>
+    <graphicData>
+      <texPath>Mats/Cap2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+   	<!-- Laser -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>LaserB</defName>
+    <label>high-power micro-laser</label>
+    <description>A tiny laser used in certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Laser2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <!--=============== T3 ====================-->
+
+  				<!-- Matter Bin -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MatterBinC</defName>
+    <label>super matter bin</label>
+    <description>A container designed to hold compressed matter awaiting reconstruction.</description>
+    <graphicData>
+      <texPath>Mats/Matterbin3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Micro Manipulator-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>MicroManipC</defName>
+    <label>pico-manipulator</label>
+    <description>A tiny little manipulator used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Manip3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Scanning Module-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>ScanModuleC</defName>
+    <label>phasic scanning module</label>
+    <description>A compact, high resolution scanning module used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Scan3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  	<!-- Capacitor -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>CapacitorC</defName>
+    <label>super capacitor</label>
+    <description>A super-high capacity capacitor used in the construction of a variety of devices.</description>
+    <graphicData>
+      <texPath>Mats/Cap3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+   	<!-- Laser -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>LaserC</defName>
+    <label>ultra-high-power micro-laser</label>
+    <description>A tiny laser used in certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Laser3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  <!--=============== T4 ====================-->
+
+    				<!-- Matter Bin -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MatterBinD</defName>
+    <label>bluespace matter bin</label>
+    <description>A container designed to hold compressed matter awaiting reconstruction.</description>
+    <graphicData>
+      <texPath>Mats/Matterbin4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Micro Manipulator-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>MicroManipD</defName>
+    <label>femto-manipulator</label>
+    <description>A tiny little manipulator used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Manip4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+	<!-- Scanning Module-->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>ScanModuleD</defName>
+    <label>triphasic scanning module</label>
+    <description>A compact, ultra resolution triphasic scanning module used in the construction of certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Scan4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  	<!-- Capacitor -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>CapacitorD</defName>
+    <label>quadratic capacitor</label>
+    <description>An capacity capacitor used in the construction of a variety of devices.</description>
+    <graphicData>
+      <texPath>Mats/Cap4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+   	<!-- Laser -->
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>LaserD</defName>
+    <label>quad-ultra micro-laser</label>
+    <description>A tiny laser used in certain devices.</description>
+    <graphicData>
+      <texPath>Mats/Laser4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>		<!--============ REMEMBER TO DO THE SILVER =================-->
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0</MarketValue>
+	  <Mass>0.070</Mass>
+      <SharpDamageMultiplier>0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <smallVolume>false</smallVolume>
+	<deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.2</Flammability>
+        <Beauty>0</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

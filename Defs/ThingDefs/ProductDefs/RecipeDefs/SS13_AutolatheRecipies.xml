@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="AutolatheCrafting" Abstract="True">
+		<jobString>Crafting.</jobString>
+		<workAmount>50</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>Autolathe</li>
+		</recipeUsers>
+  </RecipeDef>  
+
+  <RecipeDef Name="RefineAutolatheBase" Abstract="True">
+	<jobString>Refining materials.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>Autolathe</li>
+		</recipeUsers>
+  </RecipeDef>  
+  
+	<!-- Matter bin 1 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftBinA</defName>
+    <label>Craft Matter Bin.</label>
+    <description>Refine metal into matter bin.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <MatterBinA>1</MatterBinA>
+    </products>
+  </RecipeDef>
+
+	<!-- Matter bin 5 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftBinB</defName>
+    <label>Craft 5 Matter Bin.</label>
+    <description>Refine metal into matter bin.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <MatterBinA>5</MatterBinA>
+    </products>
+  </RecipeDef>
+
+	<!-- Matter bin 25 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftBinC</defName>
+    <label>Craft 25 Matter Bin.</label>
+    <description>Refine metal into matter bin.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <MatterBinA>25</MatterBinA>
+    </products>
+  </RecipeDef>
+
+	<!-- Micro Manipulator 1 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftManipA</defName>
+    <label>Craft Micro Manip.</label>
+    <description>Refine metal into micro manipulator.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <MicroManipA>1</MicroManipA>
+    </products>
+  </RecipeDef>
+
+	<!-- Micro Manipulator 5 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftManipB</defName>
+    <label>Craft 5 Micro Manip.</label>
+    <description>Refine metal into micro manipulator.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <MicroManipA>5</MicroManipA>
+    </products>
+  </RecipeDef>
+
+	<!-- Micro Manipulator 25 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftManipC</defName>
+    <label>Craft 25 Micro Manip.</label>
+    <description>Refine metal into micro manipulator.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <MicroManipA>25</MicroManipA>
+    </products>
+  </RecipeDef>
+
+  	<!-- Scanning Module 1 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftScanningModA</defName>
+    <label>Craft Scanning Module.</label>
+    <description>Refine metal into scanning module.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ScanModuleA>1</ScanModuleA>
+    </products>
+  </RecipeDef>
+
+  	<!-- Scanning Module 5 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftScanningModB</defName>
+    <label>Craft 5 Scanning Module.</label>
+    <description>Refine metal into scanning module.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <ScanModuleA>5</ScanModuleA>
+    </products>
+  </RecipeDef>
+
+  	<!-- Scanning Module 15 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftScanningModC</defName>
+    <label>Craft 15 Scanning Module.</label>
+    <description>Refine metal into scanning module.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ScanModuleA>15</ScanModuleA>
+    </products>
+  </RecipeDef>
+
+    	<!-- Capacitor 1 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftCapacitorA</defName>
+    <label>Craft Capacitor.</label>
+    <description>Refine metal into capacitor.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CapacitorA>1</CapacitorA>
+    </products>
+  </RecipeDef>
+
+    	<!-- Capacitor 5 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftCapacitorB</defName>
+    <label>Craft 5 Capacitor.</label>
+    <description>Refine metal into capacitors.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <CapacitorA>5</CapacitorA>
+    </products>
+  </RecipeDef>
+
+     	<!-- Capacitor 15 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftCapacitorC</defName>
+    <label>Craft 15 Capacitor.</label>
+    <description>Refine metal into capacitors.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <CapacitorA>15</CapacitorA>
+    </products>
+  </RecipeDef>
+
+    	<!-- Laser 1 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftLaserA</defName>
+    <label>Craft Laser.</label>
+    <description>Refine metal into laser.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <LaserA>1</LaserA>
+    </products>
+  </RecipeDef>
+
+    	<!-- Laser 5 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftLaserA</defName>
+    <label>Craft 5 Laser.</label>
+    <description>Refine metal into lasers.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <LaserA>5</LaserA>
+    </products>
+  </RecipeDef>
+  
+    	<!-- Laser 15 -->
+
+  <RecipeDef ParentName="AutolatheCrafting">
+    <defName>CraftLaserA</defName>
+    <label>Craft 15 Laser.</label>
+    <description>Refine metal into lasers.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <LaserA>15</LaserA>
+    </products>
+  </RecipeDef>
+  
+		<!-- Beaker -->
+
+  <RecipeDef ParentName="RefineAutolatheBase">
+    <defName>RefineGlassBeaker</defName>
+    <label>Craft Glass Beaker.</label>
+    <description>Refine glass into beakers.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Glass</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <GlassBeaker>10</GlassBeaker>
+    </products>
+  </RecipeDef>
+
+  
+</Defs>

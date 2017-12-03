@@ -12,17 +12,6 @@
 		</recipeUsers>
   </RecipeDef>
 
-  <RecipeDef Name="RefineAutolatheBase" Abstract="True">
-	<jobString>Refining materials.</jobString>
-    <workAmount>300</workAmount>
-    <workSpeedStat>SmeltingSpeed</workSpeedStat>
-    <effectWorking>Smelt</effectWorking>
-    <soundWorking>Recipe_Smelt</soundWorking>
-		<recipeUsers>
-			<li>Autolathe</li>
-		</recipeUsers>
-  </RecipeDef>  
-
   <RecipeDef Name="RefineBioGeneratorBase" Abstract="True">
 	<jobString>Refining materials.</jobString>
     <workAmount>300</workAmount>
@@ -59,6 +48,8 @@
 		</recipeUsers>
   </RecipeDef>
 
+	<!-- Metal -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineIronOre</defName>
     <label>Refine Iron Ore</label>
@@ -84,7 +75,9 @@
       <Steel>3</Steel>
     </products>
   </RecipeDef>
-  
+
+	<!-- Mass Metal Refine -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineMassIronOre</defName>
     <label>Mass Refine Iron Ore</label>
@@ -110,7 +103,9 @@
       <Steel>35</Steel>
     </products>
   </RecipeDef>
-  
+
+	<!-- Silver -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineSilverOre</defName>
     <label>Refine Silver Ore</label>
@@ -136,7 +131,9 @@
       <Silver>1</Silver>
     </products>
   </RecipeDef>
-  
+
+	<!-- Gold -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineGoldOre</defName>
     <label>Refine Gold Ore</label>
@@ -162,7 +159,9 @@
       <Gold>3</Gold>
     </products>
   </RecipeDef>
-  
+
+	<!-- Uranum -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineUraniumOre</defName>
     <label>Refine Uranium Ore</label>
@@ -188,7 +187,9 @@
       <Uranium>3</Uranium>
     </products>
   </RecipeDef>
-  
+
+	<!-- Diamond -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineDiamondOre</defName>
     <label>Refine Diamond Ore</label>
@@ -214,7 +215,8 @@
       <Jade>3</Jade>
     </products>
   </RecipeDef>
-  
+
+	<!-- Plasma -->
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefinePlasmaOre</defName>
     <label>Refine Plasma Ore</label>
@@ -240,7 +242,9 @@
       <Plasma>3</Plasma>
     </products>
   </RecipeDef>
-  
+
+	<!-- Plasteel -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefinePlasteelSheets</defName>
     <label>Refine Plasteel.</label>
@@ -275,7 +279,9 @@
       <Plasteel>3</Plasteel>
     </products>
   </RecipeDef>
- 
+
+	<!-- Glass -->
+
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineGlassSheets</defName>
     <label>Refine Glass.</label>
@@ -301,28 +307,9 @@
       <Glass>20</Glass>
     </products>
   </RecipeDef>
-  
-  <RecipeDef ParentName="RefineAutolatheBase">
-    <defName>RefineGlassBeaker</defName>
-    <label>Craft Glass Beaker.</label>
-    <description>Refine glass into beakers.</description>
-    <workAmount>150</workAmount>
-    <targetCountAdjustment>1</targetCountAdjustment>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Glass</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <GlassBeaker>10</GlassBeaker>
-    </products>
-  </RecipeDef>
-  
+
+	<!-- Stone -->
+
   <RecipeDef ParentName="AutolatheStoneBlocksBase">
     <defName>RefineStoneBlocks</defName>
     <label>Craft stone blocks.</label>
@@ -348,7 +335,9 @@
       <StoneBlock>10</StoneBlock>
     </products>
   </RecipeDef>
-  
+
+	<!-- Sand -->
+
   <RecipeDef ParentName="AutolatheStoneBlocksBase">
     <defName>RefineSand</defName>
     <label>Refine Chunks into Sand.</label>
@@ -374,7 +363,9 @@
       <GlassOre>10</GlassOre>
     </products>
   </RecipeDef>
- 
+
+	<!-- Biomass -->
+
   <RecipeDef ParentName="RefineBioGeneratorBase">
     <defName>RefineBiomass</defName>
     <label>Create Biomass</label>
@@ -395,7 +386,9 @@
       <Biomass>5</Biomass>
     </products>
   </RecipeDef>
- 
+
+	<!-- Cloth -->
+
   <RecipeDef ParentName="RefineBioGeneratorBase">
     <defName>RefineCloth</defName>
     <label>Synthesize Cloth</label>
@@ -416,7 +409,9 @@
       <Cloth>10</Cloth>
     </products>
   </RecipeDef>
- 
+
+	<!-- Milk -->
+
   <RecipeDef ParentName="RefineBioGeneratorBase">
     <defName>RefineMilk</defName>
     <label>Synthesize Milk</label>
@@ -437,7 +432,9 @@
       <SS13Milk>15</SS13Milk>
     </products>
   </RecipeDef>
- 
+
+	<!-- Leather -->
+
   <RecipeDef ParentName="RefineBioGeneratorBase">
     <defName>RefineLeather</defName>
     <label>Synthesize Leather</label>

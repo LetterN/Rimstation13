@@ -38,7 +38,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Autolathe Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardAutolathe</defName>
     <label>Autolathe Circuit Board</label>
@@ -79,7 +81,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Heavy Lathe Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardHeavyLathe</defName>
     <label>Heavy Lathe Circuit Board</label>
@@ -121,6 +125,8 @@
     </stuffProps>
   </ThingDef>
 
+	<!-- Circuit Imprinter Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardCircuitImprinter</defName>
     <label>Circuit Imprinter Circuit Board</label>
@@ -161,7 +167,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Chem Dispenser Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardChemDispenser</defName>
     <label>Chem Dispenser Circuit Board</label>
@@ -202,7 +210,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Comms Console Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardCommsConsole</defName>
     <label>Communication's Console Circuit Board</label>
@@ -243,7 +253,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Destructive Analyzer Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardDestructiveAnalyser</defName>
     <label>Destructive Analyser Circuit Board</label>
@@ -284,7 +296,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Bio Generator Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardBioGen</defName>
     <label>BioGenerator's Circuit Board</label>
@@ -326,7 +340,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Chem Mixer Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardChemMixer</defName>
     <label>Chem Mixer Circuit Board</label>
@@ -368,6 +384,8 @@
     </stuffProps>
   </ThingDef>
   
+	<!-- ORM Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardOreRedemption</defName>
     <label>Ore Redemption Circuit Board</label>
@@ -409,6 +427,8 @@
     </stuffProps>
   </ThingDef>
   
+	<!-- Protolathe Board -->
+  
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardProtolathe</defName>
     <label>Protolathe Circuit Board</label>
@@ -449,7 +469,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Exsosuit Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardRobotFabricator</defName>
     <label>Robot Fabricator Circuit Board</label>
@@ -490,7 +512,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Portable Generator (plasma) Board -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardPortableGenerator</defName>
     <label>Portable Generator Circuit Board</label>
@@ -531,6 +555,8 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
+
+	<!-- SMES Board -->
   
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardSMESUnit</defName>
@@ -572,7 +598,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- All-Purpose grinder -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>CircuitBoardReagentGrinder</defName>
     <label>Reagent Grinder Circuit Board</label>
@@ -613,7 +641,9 @@
       <smeltable>false</smeltable>
     </stuffProps>
   </ThingDef>
-  
+
+	<!-- Airlock circuitry -->
+
   <ThingDef ParentName="CircuitBoardBase">
     <defName>AirlockElectronics</defName>
     <label>Airlock Electronics</label>

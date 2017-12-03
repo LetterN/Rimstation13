@@ -1,5 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <ThingDef Name="BenchBase" ParentName="BuildingBase" Abstract="True">
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+  </ThingDef>
+
+ 	<!-- Welding Tank -->
+  
+  <ThingDef ParentName="BenchBase">
+    <defName>WeldingTank</defName>
+    <label>welding tank</label>
+    <graphicData>
+      <texPath>Misc/WeldingTank/weldtank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>For all your improvised airlock needs.</description>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>200</Steel>
+    </costList>
+    <designationCategory>Production</designationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+  
+	<!-- Water Tank -->
+  
+  <ThingDef ParentName="BenchBase">
+    <defName>WaterTank</defName>
+    <label>water tank</label>
+    <graphicData>
+      <texPath>Misc/WaterTank/watertank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Even space weed gets thirsty.</description>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>200</Steel>
+    </costList>
+    <designationCategory>Production</designationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+ 
+	<!-- Crematorium -->
 
   <ThingDef ParentName="BuildingBase">
     <defName>SS13Crematorium</defName>
@@ -68,6 +166,8 @@
     </building>
   </ThingDef>
   
+	<!-- Hydro Tray -->
+  
   <ThingDef ParentName="BuildingBase">
     <defName>HydroponicsTray</defName>
     <label>hydroponics tray</label>
@@ -99,8 +199,11 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <Steel>50</Steel>
-      <Component>2</Component>
+      <Steel>5</Steel>
+      <MicroManipA>2</MicroManipA>
+	  <MatterBinA>3</MatterBinA>
+	  <ScanModuleA>1</ScanModuleA>
+	  <Glass>1</Glass>
     </costList>
     <fertility>2.5</fertility>
     <building>
@@ -122,11 +225,8 @@
 	<minifiedDef>MinifiedFurniture</minifiedDef>
   </ThingDef>
   
-  <ThingDef Name="BenchBase" ParentName="BuildingBase" Abstract="True">
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
-  </ThingDef>
-
+	<!-- Grinder(gibber) -->
+  
   <ThingDef ParentName="BenchBase">
     <defName>Grinder</defName>
     <label>grinder</label>
@@ -145,8 +245,10 @@
     </graphicData>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
-      <Steel>50</Steel>
-      <Component>2</Component>
+      <Steel>5</Steel>
+      <MicroManipA>3</MicroManipA>
+	  <MatterBinA>2</MatterBinA>
+	  <Glass>1</Glass>
     </costList>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -187,9 +289,11 @@
     </building>
   </ThingDef>
   
+	<!-- Food Processor  -->
+  
   <ThingDef ParentName="BenchBase">
     <defName>Processor</defName>
-    <label>Processor</label>
+    <label>Food Processor</label>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <description>A huge electrical grinder for vegetables, meat, clowns, corgis, pun pun...</description>
     <graphicData>
@@ -205,8 +309,10 @@
     </graphicData>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
-      <Steel>50</Steel>
-      <Component>2</Component>
+      <Steel>5</Steel>
+      <MicroManipA>3</MicroManipA>
+	  <MatterBinA>2</MatterBinA>
+	  <Glass>1</Glass>
     </costList>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -243,6 +349,8 @@
     </building>
   </ThingDef>
   
+	<!-- Microwave -->
+  
   <ThingDef ParentName="BenchBase">
     <defName>Microwave</defName>
     <label>microwave oven</label>
@@ -261,8 +369,11 @@
     </graphicData>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
-      <Steel>50</Steel>
-      <Component>2</Component>
+      <Steel>5</Steel>
+      <MatterBinA>2</MatterBinA>
+	  <MicroManipA>2</MicroManipA>
+	  <LaserA>1</LaserA>
+	  <Component>1</Component>
     </costList>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -300,6 +411,8 @@
     </building>
   </ThingDef>
   
+	<!-- Autolathe -->
+  
   <ThingDef ParentName="BenchBase">
     <defName>Autolathe</defName>
     <label>autolathe</label>
@@ -316,8 +429,10 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>5</Steel>
+	  <Glass>1</Glass>
+      <MatterBinA>2</MatterBinA>
+	  <MicroManipA>2</MicroManipA>
 	  <CircuitBoardAutolathe>1</CircuitBoardAutolathe>
     </costList>
     <comps>
@@ -368,6 +483,8 @@
     </placeWorkers>
   </ThingDef>
   
+	<!-- Chem Dispenser -->
+  
   <ThingDef ParentName="BenchBase">
     <defName>ChemDispenser</defName>
     <label>chem dispenser</label>
@@ -384,8 +501,12 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>5</Steel>
+	  <CapacitorA>1</CapacitorA>
+	  <MatterBinA>2</MatterBinA>
+	  <MicroManipA>2</MicroManipA>
+      <Glass>1</Glass>
+	  <Component>1</Component>
 	  <CircuitBoardChemDispenser>1</CircuitBoardChemDispenser>
     </costList>
     <comps>
@@ -435,6 +556,8 @@
     </placeWorkers>
   </ThingDef>
   
+	<!-- ChemMixer -->
+  
   <ThingDef ParentName="BenchBase">
     <defName>ChemMixer</defName>
     <label>chem mixer</label>
@@ -451,8 +574,10 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>5</Steel>
+	  <MatterBinA>1</MatterBinA>
+	  <MicroManipA>1</MicroManipA>
+      <Component>1</Component>
 	  <CircuitBoardChemDispenser>1</CircuitBoardChemDispenser>
     </costList>
     <comps>
@@ -502,6 +627,8 @@
     </placeWorkers>
   </ThingDef>
   
+	<!-- ORM -->
+  
   <ThingDef ParentName="BenchBase">
     <defName>OreRedemption</defName>
     <label>ore redemption machine</label>
@@ -520,8 +647,12 @@
     </graphicData>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>5</Steel>
+      <MatterBinA>2</MatterBinA>
+	  <MicroManipA>1</MicroManipA>
+	  <LaserA>2</LaserA>
+	  <Component>2</Component>
+	  
 	  <CircuitBoardOreRedemption>1</CircuitBoardOreRedemption>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
@@ -570,6 +701,8 @@
       <heatPerTickWhileWorking>2</heatPerTickWhileWorking>
     </building>
   </ThingDef>
+  
+	<!-- Heavy Lathe -->
   
   <ThingDef ParentName="BenchBase">
     <defName>HeavyLathe</defName>
@@ -634,94 +767,8 @@
     </building>
   </ThingDef>
   
-    <ThingDef ParentName="BenchBase">
-    <defName>WeldingTank</defName>
-    <label>welding tank</label>
-    <graphicData>
-      <texPath>Misc/WeldingTank/weldtank</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1,1)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.35</staticSunShadowHeight>
-    <fillPercent>0.5</fillPercent>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <description>For all your improvised airlock needs.</description>
-    <size>(1,1)</size>
-    <costList>
-      <Steel>200</Steel>
-    </costList>
-    <designationCategory>Production</designationCategory>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
-    <comps>
-      <li Class="CompProperties_Facility">
-        <statOffsets>
-          <WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
-        </statOffsets>
-        <maxSimultaneous>2</maxSimultaneous>
-      </li>
-    </comps>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
-  </ThingDef>
+	<!-- Circuit Imprinter -->
   
-  <ThingDef ParentName="BenchBase">
-    <defName>WaterTank</defName>
-    <label>water tank</label>
-    <graphicData>
-      <texPath>Misc/WaterTank/watertank</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1,1)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.35</staticSunShadowHeight>
-    <fillPercent>0.5</fillPercent>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <description>Even space weed gets thirsty.</description>
-    <size>(1,1)</size>
-    <costList>
-      <Steel>200</Steel>
-    </costList>
-    <designationCategory>Production</designationCategory>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
-    <comps>
-      <li Class="CompProperties_Facility">
-        <statOffsets>
-          <WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
-        </statOffsets>
-        <maxSimultaneous>2</maxSimultaneous>
-      </li>
-    </comps>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
-  </ThingDef>
-
   <ThingDef ParentName="BenchBase">
     <defName>CircuitImprinter</defName>
     <label>Circuit Imprinter</label>
@@ -738,8 +785,10 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>5</Steel>
+      <MatterBinA>2</MatterBinA>
+	  <MicroManipA>2</MicroManipA>
+	  <GlassBeaker>2</GlassBeaker>
 	  <CircuitBoardCircuitImprinter>1</CircuitBoardCircuitImprinter>
     </costList>
     <comps>
@@ -785,10 +834,84 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
   </ThingDef>
- 
+
+	<!-- Protolathe -->
+  
+    <ThingDef ParentName="BenchBase">
+    <defName>Protolathe</defName>
+    <label>protolathe</label>
+    <description>Converts raw materials into useful objects.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>2500</WorkToMake>
+      <Flammability>1.0</Flammability>
+	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>5</Steel>
+      <MatterBinA>2</MatterBinA>
+	  <MicroManipA>2</MicroManipA>
+	  <GlassBeaker>2</GlassBeaker>
+	  <CircuitBoardProtolathe>1</CircuitBoardProtolathe>
+    </costList>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+        <startElectricalFires>true</startElectricalFires>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <recipes>
+      <li>MakeComponent</li>
+    </recipes>
+    <graphicData>
+      <texPath>Misc/Protolathe/protolathe</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	  <unpoweredWorkTableWorkSpeedFactor>0.1</unpoweredWorkTableWorkSpeedFactor>
+    </building>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+    <surfaceType>Item</surfaceType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+  </ThingDef>
+  
+	<!-- All-Purpose-Grinder -->
+
   <ThingDef ParentName="BenchBase">
     <defName>ReagentGrinder</defName>
-    <label>Chemistry Grinder</label>
+    <label>All-Purpose Grinder</label>
     <description>Grinds up plants and other reagents into their constituent parts, generally for use in crafting or chemistry.</description>
     <thingClass>Building_WorkTable</thingClass>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
@@ -802,8 +925,11 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>5</Steel>
+	  <MatterBinA>1</MatterBinA>
+	  <MicroManipA>2</MicroManipA>
+	  <ScanModuleA>1</ScanModuleA>
+      <Component>1</Component>
 	  <CircuitBoardReagentGrinder>1</CircuitBoardReagentGrinder>
     </costList>
     <comps>
@@ -850,6 +976,8 @@
     </placeWorkers>
   </ThingDef>
  
+	<!-- Bio Generator -->
+
   <ThingDef ParentName="BenchBase">
     <defName>BioGenerator</defName>
     <label>Bio Generator</label>
@@ -866,8 +994,11 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>5</Steel>
+      <Component>1</Component>
+	  <MicroManipA>2</MicroManipA>
+	  <MatterBinA>3</MatterBinA>
+	  <GlassBeaker>1</GlassBeaker>
 	  <CircuitBoardBioGen>1</CircuitBoardBioGen>
     </costList>
     <comps>
@@ -913,7 +1044,9 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
   </ThingDef>
- 
+
+	<!-- Kitchen Table -->
+
   <ThingDef ParentName="BenchBase">
     <defName>KitchenTable</defName>
     <label>Kitchen Table</label>
@@ -937,11 +1070,6 @@
         <linkableFacilities>
           <li>ToolCabinet</li>
         </linkableFacilities>
-      </li>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>100</basePowerConsumption>
-        <startElectricalFires>true</startElectricalFires>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
@@ -975,5 +1103,5 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
   </ThingDef>
- 
+
 </Defs>
