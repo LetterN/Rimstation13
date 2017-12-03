@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================================== Jumpsuits =====================================-->
+  
+  <ThingDef Name="SS13AntagJumpsuitBase" ParentName="ApparelBase" Abstract="True">
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+	  <Insulation_Cold>-10</Insulation_Cold>
+	  <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+	<apparel>
+      <wornGraphicPath>Clothing/Jumpsuits/Atmospherics_Suit/jsatmos</wornGraphicPath>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+		<defaultOutfitTags>
+			<li>Crew</li>
+		</defaultOutfitTags>
+		<tags>
+			<li>NanoTrasen</li>
+		</tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13AntagJumpsuitBase">
+    <defName>ApparelSyndicateCombatJumpsuit</defName>
+    <label>Syndicate Combat Jumpsuit</label>
+    <description>What's the point of the pockets if there's no FUKKEN DISK!?!</description>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.10</ArmorRating_Heat>
+	  <Insulation_Cold>-10</Insulation_Cold>
+	  <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+    <graphicData>
+      <texPath>Clothing/Antag/Syndi_Combat/syndicombat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+			<li>Apparel</li>
+	</thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>+0.25</MoveSpeed>
+	  <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Clothing/Antag/Syndi_Combat/syndicombat</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <tags>
+			<li>Syndicate</li>
+			<li>NukeOps</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+  
+</Defs>

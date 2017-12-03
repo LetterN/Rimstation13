@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerWorld</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[celestialprefix] [celestialname] Sector [designation]</li>
+        <li>name->[celestialprefix] [celestialname] Sector</li>
+        <li>name->[celestialname] Sector [designation]</li>
+        <li>name->[celestialname] Sector</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>celestialname</keyword>
+          <path>NameBanks/Celestial</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>celestialprefix</keyword>
+          <path>NameBanks/CelestialPrefix</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>designation</keyword>
+          <path>NameBanks/alphabeta</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+
+
+
+</Defs>

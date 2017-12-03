@@ -21,9 +21,6 @@
 			<layers>
 				<li>Shell</li>
 			</layers>
-			<tags>
-				<li>NanoTrasen</li>
-			</tags>
     </apparel>
   </ThingDef>
   
@@ -44,9 +41,43 @@
 			<layers>
 				<li>Middle</li>
 			</layers>
-			<tags>
-				<li>NanoTrasen</li>
-			</tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef Name="UnmakeableShellArmourBase" ParentName="ApparelBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef Name="UnmakeableMiddleArmourBase" ParentName="ApparelBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
     </apparel>
   </ThingDef>
   
@@ -78,6 +109,9 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Armour/ArmourVest_Suit/armorvest</wornGraphicPath>
+			<tags>
+				<li>ArmourVest</li>
+			</tags>
     </apparel>
   </ThingDef>
   
@@ -109,6 +143,9 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Armour/SWAT_Suit/swatsuit</wornGraphicPath>
+			<tags>
+				<li>SWATSuit</li>
+			</tags>
     </apparel>
   </ThingDef>
   
@@ -142,6 +179,9 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Armour/Deathsquad_Suit/deathsquad</wornGraphicPath>
+			<tags>
+				<li>Deathsquad</li>
+			</tags>
     </apparel>
   </ThingDef>
   

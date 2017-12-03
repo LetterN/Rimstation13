@@ -9,7 +9,6 @@
       <texPath>Clothing/Other_Suits/Clown_Suit/Mask/clownmask</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	
     <costList>
       <Cloth>10</Cloth>
     </costList>
@@ -33,8 +32,9 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <defaultOutfitTags>
-      </defaultOutfitTags>
+			<tags>
+				<li>Clown</li>
+			</tags>
     </apparel>
   </ThingDef>
  

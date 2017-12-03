@@ -42,7 +42,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>NanoTrasen</li>
+				<li>EVASuit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>EVA</li>
@@ -90,7 +90,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>NanoTrasen</li>
+				<li>AdvancedHardsuit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>EVA</li>
@@ -138,7 +138,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>NanoTrasen</li>
+				<li>AtmosphericHardsuit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>EVA</li>
@@ -186,7 +186,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>NanoTrasen</li>
+				<li>EngineeringHardsuit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>EVA</li>
@@ -234,7 +234,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>NanoTrasen</li>
+				<li>MiningHardsuit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>EVA</li>
@@ -282,11 +282,53 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>NanoTrasen</li>
+				<li>SecurityHardsuit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>EVA</li>
 			</defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="SS13ArmorHelmetUnmakeableBase">
+    <defName>ApparelSyndiHelmet</defName>
+    <label>Syndicate Hardsuit Helmet</label>
+    <description>A glimmer of green in the dark. It seeks the FUKKEN DISK!!1!1</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Clothing/Antag/Syndi_Hardsuit/syndihardsuithelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <ArmorRating_Electric>0.1</ArmorRating_Electric>
+      <Insulation_Cold>-0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>10</Component>
+      <Plasteel>100</Plasteel>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Clothing/Antag/Syndi_Hardsuit/syndihardsuithelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Syndicate</li>
+			</tags>
     </apparel>
   </ThingDef>
   

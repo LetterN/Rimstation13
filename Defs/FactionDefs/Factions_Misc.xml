@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+		<defName>FactionCybersunIndustries</defName>
+		<label>Syndicate</label>
+    <description>Cybersun Industries is a well-known organization that bases its business model primarily on the research and development of human-enhancing computer and mechanical technology. They are notorious for their aggressive corporate tactics, and have been known to subsidize the Gorlex Marauder warlords as a form of paid terrorism. Their competent coverups and unchallenged mind-manipulation and augmentation technology makes them a large threat to Nanotrasen. In the recent years of the syndicate coalition, Cybersun Industries have established themselves as the leaders of the coalition, succeededing the founding group, the Gorlex Marauders.</description>
+    <pawnsPlural>Syndicate Operatives</pawnsPlural>
+    <baseSelectionWeight>1</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+		<appreciative>false</appreciative>
+    <leaderTitle>CEO</leaderTitle>
+    <expandingIconTexture>Misc/Icons/syndiicon</expandingIconTexture>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+		<factionNameMaker>NamerFactionCybersunIndustries</factionNameMaker>
+    <baseNameMaker>NamerFactionBaseCybersunIndustries</baseNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategory>Raider</backstoryCategory>
+		<geneticVariance>0.8</geneticVariance>
+		<hairTags>
+			<li>Punk</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-80</max>
+    </naturalColonyGoodwill>
+    <allowedArrivalTemperatureRange>
+      <min>-60</min>
+      <max>60</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+      <li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Normal</kindDef>
+        <commonality>100</commonality>
+        <options>
+			<NuclearOperative>100</NuclearOperative>
+        </options>
+      </li>
+      <li>
+				<!-- Normal fights, melee-only -->
+        <kindDef>Normal</kindDef>
+        <commonality>25</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+			<NuclearOperative>100</NuclearOperative>
+        </options>
+      </li>
+      <li>
+				<!-- Base defense -->
+				<kindDef>FactionBase</kindDef>
+        <options>
+			<NuclearOperative>100</NuclearOperative>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+  </FactionDef>
+  
+</Defs>

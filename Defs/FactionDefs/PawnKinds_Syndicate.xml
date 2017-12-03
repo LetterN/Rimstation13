@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="SyndicateBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>FactionCybersunIndustries</defaultFactionType>
+    <backstoryCategory>Raider</backstoryCategory>
+    <baseRecruitDifficulty>0.7</baseRecruitDifficulty>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.8</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+    <apparelTags>
+      <li>Syndicate</li>
+    </apparelTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SyndicateBase">
+    <defName>NuclearOperative</defName>
+    <label>Nuclear Operative</label>
+    <combatPower>100</combatPower>
+    <invNutrition>3</invNutrition>
+    <gearHealthRange>
+      <min>1</min>
+      <max>1</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>750</min>
+      <max>1000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>500</min>
+      <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Syndicate</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>0</min>
+      <max>0</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>30</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>Medicine</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+</Defs>

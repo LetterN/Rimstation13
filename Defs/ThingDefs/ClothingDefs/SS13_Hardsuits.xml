@@ -37,7 +37,7 @@
 		<apparel>
 			<wornGraphicPath>Clothing/Heavy_Suits/EVA_Suit/spacesuit</wornGraphicPath>
 			<tags>
-				<li>NanoTrasen</li>
+				<li>EVASuit</li>
 			</tags>
     </apparel>
   </ThingDef>
@@ -75,6 +75,9 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Heavy_Suits/Engineering_Suit/engineeringsuit</wornGraphicPath>
+			<tags>
+				<li>EngineeringHardsuit</li>
+			</tags>
     </apparel>
   </ThingDef>
   
@@ -111,6 +114,9 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Heavy_Suits/Mining_Suit/miningsuit</wornGraphicPath>
+			<tags>
+				<li>MiningHardsuit</li>
+			</tags>
 		</apparel>
   </ThingDef>
   
@@ -148,6 +154,9 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Heavy_Suits/Security_Suit/securitysuit</wornGraphicPath>
+			<tags>
+				<li>SecurityHardsuit</li>
+			</tags>
 		</apparel>
   </ThingDef>
   
@@ -184,6 +193,9 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Heavy_Suits/Advanced_Suit/advancedsuit</wornGraphicPath>
+			<tags>
+				<li>AdvancedHardsuit</li>
+			</tags>
 		</apparel>
   </ThingDef>
   
@@ -220,7 +232,42 @@
 		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<wornGraphicPath>Clothing/Heavy_Suits/Atmos_Suit/atmossuit</wornGraphicPath>
+			<tags>
+				<li>AtmosphericHardsuit</li>
+			</tags>
 		</apparel>
+  </ThingDef>
+  
+	<ThingDef ParentName="UnmakeableShellArmourBase">
+    <defName>ApparelSyndicateHardsuit</defName>
+    <label>Syndicate Hardsuit</label>
+    <description>The blood-red hardsuit of a stone cold killer and FUKKEN DISK THIEF.</description>
+    <graphicData>
+      <texPath>Clothing/Antag/Syndi_Hardsuit/syndihardsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+      <Insulation_Cold>-85</Insulation_Cold>
+	  <Insulation_Heat>0</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.30</MoveSpeed>
+      <WorkSpeedGlobal>-0.95</WorkSpeedGlobal>
+    </equippedStatOffsets>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Antag/Syndi_Hardsuit/syndihardsuit</wornGraphicPath>
+			<tags>
+				<li>Syndicate</li>
+				<li>NukeOps</li>
+			</tags>
+    </apparel>
   </ThingDef>
   
 </Defs>
