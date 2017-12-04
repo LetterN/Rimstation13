@@ -12,7 +12,6 @@
     <costList>
       <Cloth>50</Cloth>
     </costList>
-	
     <statBases>
       <WorkToMake>1</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>

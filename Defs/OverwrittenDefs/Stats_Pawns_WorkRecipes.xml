@@ -228,8 +228,8 @@
     <skillNeedFactors>
       <li Class="SkillNeed_BaseBonus">
         <skill>Cooking</skill>
-        <baseValue>0.4</baseValue>
-        <bonusPerLevel>0.06</bonusPerLevel>
+        <baseValue>1</baseValue>
+        <bonusPerLevel>0</bonusPerLevel>
       </li>
     </skillNeedFactors>
   </StatDef>

@@ -271,7 +271,7 @@
     </statBases>
     <ingestible>
       <preferability>RawBad</preferability>
-      <nutrition>0.1</nutrition>
+      <nutrition>0.15</nutrition>
       <joy>0.0</joy>
 	  <joyKind>Gluttonous</joyKind>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -971,7 +971,7 @@
 	  <Mass>0.4</Mass>
     </statBases>
     <ingestible>
-      <nutrition>0.2</nutrition>
+      <nutrition>0.3</nutrition>
       <joy>0.0</joy>
 	  <joyKind>Gluttonous</joyKind>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -994,7 +994,7 @@
 	  <Mass>0.4</Mass>
     </statBases>
     <ingestible>
-      <nutrition>0.4</nutrition>
+      <nutrition>0.6</nutrition>
       <joy>0.0</joy>
 	  <joyKind>Gluttonous</joyKind>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -1182,7 +1182,7 @@
 	  <Mass>0.4</Mass>
     </statBases>
     <ingestible>
-      <nutrition>0.3</nutrition>
+      <nutrition>0.4</nutrition>
       <joy>0.0</joy>
 	  <joyKind>Gluttonous</joyKind>
 			<ingestEffect>EatVegetarian</ingestEffect>
