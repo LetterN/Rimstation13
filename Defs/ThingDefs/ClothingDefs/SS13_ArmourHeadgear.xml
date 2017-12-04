@@ -14,7 +14,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>160</MaxHitPoints>
       <Mass>2.7</Mass>
       <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
@@ -62,7 +62,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>160</MaxHitPoints>
       <Mass>2.7</Mass>
       <ArmorRating_Blunt>0.75</ArmorRating_Blunt>

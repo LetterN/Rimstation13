@@ -174,7 +174,7 @@
     </graphicData>
         <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToMake>170</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
     </statBases>
   </ThingDef>

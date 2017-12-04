@@ -46,7 +46,7 @@
   <ThingDef ParentName="DoorBase" Name="SS13DoorBase" Abstract="True">
 	<designationCategory>Structure</designationCategory>
 	<costList>
-      <Steel>40</Steel>
+      <Steel>30</Steel>
       <Component>2</Component>
 	  <AirlockElectronics>1</AirlockElectronics>
     </costList>
@@ -58,7 +58,7 @@
     <label>maintenance door</label>
     <description>An entrance to Maintenance, the last seen location of many a greyshirt.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -84,7 +84,7 @@
     <label>glass door</label>
     <description>So you can see the blood before you open the door.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>175</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -120,7 +120,7 @@
     <label>airlock</label>
     <description>An entrance to the Clown's living Quarters.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.2</Flammability>
     </statBases>
@@ -146,7 +146,7 @@
     <label>blast door</label>
     <description>A thick wall of steel for the heads to hide behind.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>700</MaxHitPoints>
       <Flammability>0.0</Flammability>
     </statBases>
@@ -178,7 +178,7 @@
     <label>command door</label>
     <description>An entrance to where all the good stuff was kept, until it was stolen by anyone-with-a-welder-and-a-wrench, see: Everyone.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -204,7 +204,7 @@
     <label>engineering door</label>
     <description>An entrance to Engineering, birthplace of Lord Singulo, destroyer of worlds.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.2</Flammability>
     </statBases>
@@ -230,7 +230,7 @@
     <label>fire door</label>
     <description>Stops the AI from plasma-firing the entire station from one vent. It can still use the others, but hey.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.0</Flammability>
     </statBases>
@@ -256,7 +256,7 @@
     <label>hazard door</label>
     <description>A way to stop the spread of harmful toxins through the air. Unless it's low level nitrous, in which case, sweet dreams.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.1</Flammability>
     </statBases>
@@ -282,7 +282,7 @@
     <label>general door</label>
     <description>An entrance to nowhere important. If these are all you can open, the Airlock is still an option.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -308,7 +308,7 @@
     <label>medbay door</label>
     <description>An entrance to Medbay, THE place to be if you want to be drugged, killed, absorbed by a changeling and infected with six different viruses. Or all of the above.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -334,7 +334,7 @@
     <label>mining door</label>
     <description>An entrance to Mining, the one place the AI can't blow up.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -360,7 +360,7 @@
     <label>research door</label>
     <description>An entrance to Research and Development, your one stop shop for plasma fires, explosives, metroids and slimes.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.1</Flammability>
     </statBases>
@@ -386,7 +386,7 @@
     <label>security door</label>
     <description>The way to go after escaping your cell.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -412,7 +412,7 @@
     <label>virology door</label>
     <description>If this hasn't been torn down five minutes into a shift and its occupant murdered horrifically then someone fucked up somewhere.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>350</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -438,7 +438,7 @@
     <label>bulkhead</label>
     <description>A big old steel bulkhead.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0.0</Flammability>
     </statBases>
@@ -470,7 +470,7 @@
     <label>atmospherics door</label>
     <description>The grand entrance to Atmosia, home of the stations air supply. And most of its dangerous toxins.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>350</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -496,7 +496,7 @@
     <label>Shuttle door</label>
     <description>The entrance to the shuttle or an escape pod. Seeing these means it's time to go, whether in arrivals or departures.</description>
     <statBases>
-      <WorkToMake>1100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
 	  <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.3</Flammability>
     </statBases>

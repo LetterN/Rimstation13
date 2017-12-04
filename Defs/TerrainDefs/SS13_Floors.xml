@@ -3,6 +3,10 @@
 
   <TerrainDef Name="SS13FloorBase" ParentName="FloorBase" Abstract="True">
 	<designationCategory>Floors</designationCategory>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>5</WorkToMake>
+    </statBases>
   </TerrainDef>
   
   <!-- ================= Misc ================= -->
@@ -15,12 +19,8 @@
     <texturePath>Floors/plating</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -34,10 +34,6 @@
     <texturePath>Floors/space</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>0</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
       <Steel>1</Steel>
     </costList>
@@ -52,12 +48,8 @@
     <texturePath>Floors/wood</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -70,12 +62,8 @@
     <texturePath>Floors/bar</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -88,12 +76,8 @@
     <texturePath>Floors/bluefull</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -106,12 +90,8 @@
     <texturePath>Floors/bot</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -124,12 +104,8 @@
     <texturePath>Floors/cafeteria</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -142,12 +118,8 @@
     <texturePath>Floors/circuit</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -160,12 +132,8 @@
     <texturePath>Floors/circuitoff</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -178,12 +146,8 @@
     <texturePath>Floors/dark</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -196,12 +160,8 @@
     <texturePath>Floors/darkblue</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -214,12 +174,8 @@
     <texturePath>Floors/darkbrown</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -232,12 +188,8 @@
     <texturePath>Floors/darkgreen</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -250,12 +202,8 @@
     <texturePath>Floors/darkpurple</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -268,12 +216,8 @@
     <texturePath>Floors/darkred</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -286,12 +230,8 @@
     <texturePath>Floors/darkyellow</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -304,12 +244,8 @@
     <texturePath>Floors/delivery</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -322,12 +258,8 @@
     <texturePath>Floors/floor</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -340,12 +272,8 @@
     <texturePath>Floors/floorgrime</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -358,12 +286,8 @@
     <texturePath>Floors/freezer</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -376,12 +300,8 @@
     <texturePath>Floors/gcircuit</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -394,12 +314,8 @@
     <texturePath>Floors/grass</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -412,12 +328,8 @@
     <texturePath>Floors/green</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -432,10 +344,9 @@
     <color>(0.8, 0.8, 0.8)</color>
     <statBases>
       <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
     </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -448,12 +359,8 @@
     <texturePath>Floors/hydro</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -466,12 +373,8 @@
     <texturePath>Floors/lightblue</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -484,12 +387,8 @@
     <texturePath>Floors/neutralfull</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -502,12 +401,8 @@
     <texturePath>Floors/orange</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -520,12 +415,8 @@
     <texturePath>Floors/purple</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -538,12 +429,8 @@
     <texturePath>Floors/redfull</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -556,12 +443,8 @@
     <texturePath>Floors/reinforced</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -574,12 +457,8 @@
     <texturePath>Floors/syndi</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -592,12 +471,8 @@
     <texturePath>Floors/white</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -610,12 +485,8 @@
     <texturePath>Floors/lightgreen</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -628,12 +499,8 @@
     <texturePath>Floors/lightpurple</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -646,12 +513,8 @@
     <texturePath>Floors/lightred</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -664,12 +527,8 @@
     <texturePath>Floors/lightyellow</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -682,12 +541,8 @@
     <texturePath>Floors/yellow</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>
@@ -700,12 +555,8 @@
     <texturePath>Floors/grimy</texturePath>
 	<edgeType>Hard</edgeType>
     <color>(0.8, 0.8, 0.8)</color>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>40</WorkToMake>
-    </statBases>
     <costList>
-      <Steel>5</Steel>
+      <Steel>3</Steel>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
   </TerrainDef>

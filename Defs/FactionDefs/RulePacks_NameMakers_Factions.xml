@@ -155,7 +155,7 @@
     <defName>NamerFactionCybersunIndustries</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->Cybersun Industries</li>
+        <li>name->Syndicate</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

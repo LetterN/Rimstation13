@@ -79,9 +79,9 @@
 	<!-- Mass Metal Refine -->
 
   <RecipeDef ParentName="RefineOreBase">
-    <defName>RefineMassIronOre</defName>
-    <label>Mass Refine Iron Ore</label>
-    <description>Refine Iron Ore into sheets 10x. Is slightly more efficient than burning one ore at a time, producing more Steel per Ore.</description>
+    <defName>Refine10IronOre</defName>
+    <label>Refine Iron Ore x10</label>
+    <description>Refine Iron Ore into sheets x10. Is slightly more efficient than burning one ore at a time, producing more Steel per Ore.</description>
     <workAmount>500</workAmount>
     <targetCountAdjustment>1</targetCountAdjustment>
     <ingredients>
@@ -107,7 +107,33 @@
 	<!-- Silver -->
 
   <RecipeDef ParentName="RefineOreBase">
-    <defName>RefineSilverOre</defName>
+    <defName>Refine25IronOre</defName>
+    <label>Refine Iron Ore x10</label>
+    <description>Refine Iron Ore into sheets x10. Is slightly more efficient than burning one ore at a time, producing more Steel per Ore.</description>
+    <workAmount>750</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>IronOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Steel>100</Steel>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine1SilverOre</defName>
     <label>Refine Silver Ore</label>
     <description>Refine Silver Ore into sheets.</description>
     <workAmount>150</workAmount>
@@ -128,14 +154,66 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Silver>1</Silver>
+      <Silver>3</Silver>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine10SilverOre</defName>
+    <label>Refine Silver Ore x10</label>
+    <description>Refine Silver Ore x10 into sheets.</description>
+    <workAmount>450</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SilverOre</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SilverOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Silver>35</Silver>
     </products>
   </RecipeDef>
 
 	<!-- Gold -->
 
   <RecipeDef ParentName="RefineOreBase">
-    <defName>RefineGoldOre</defName>
+    <defName>Refine25SilverOre</defName>
+    <label>Refine Silver Ore x25</label>
+    <description>Refine Silver Ore x25 into sheets.</description>
+    <workAmount>450</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SilverOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SilverOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Silver>100</Silver>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine1GoldOre</defName>
     <label>Refine Gold Ore</label>
     <description>Refine Gold Ore into sheets.</description>
     <workAmount>150</workAmount>
@@ -162,6 +240,58 @@
 
 	<!-- Uranum -->
 
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine10GoldOre</defName>
+    <label>Refine Gold Ore x10</label>
+    <description>Refine Gold Ore x10 into sheets.</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoldOre</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GoldOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gold>35</Gold>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine25GoldOre</defName>
+    <label>Refine Gold Ore x25</label>
+    <description>Refine Gold Ore x25 into sheets.</description>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoldOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GoldOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gold>100</Gold>
+    </products>
+  </RecipeDef>
+  
   <RecipeDef ParentName="RefineOreBase">
     <defName>RefineUraniumOre</defName>
     <label>Refine Uranium Ore</label>
@@ -191,7 +321,59 @@
 	<!-- Diamond -->
 
   <RecipeDef ParentName="RefineOreBase">
-    <defName>RefineDiamondOre</defName>
+    <defName>Refine10UraniumOre</defName>
+    <label>Refine Uranium Ore x10</label>
+    <description>Refine Uranium Ore x10 into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UraniumOre</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UraniumOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Uranium>35</Uranium>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine25UraniumOre</defName>
+    <label>Refine Uranium Ore x25</label>
+    <description>Refine Uranium Ore x25 into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UraniumOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UraniumOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Uranium>100</Uranium>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine1DiamondOre</defName>
     <label>Refine Diamond Ore</label>
     <description>Refine Diamond Ore into usable Diamonds.</description>
     <workAmount>150</workAmount>
@@ -218,7 +400,59 @@
 
 	<!-- Plasma -->
   <RecipeDef ParentName="RefineOreBase">
-    <defName>RefinePlasmaOre</defName>
+    <defName>Refine10DiamondOre</defName>
+    <label>Refine Diamond Ore x10</label>
+    <description>Refine Diamond Ore x10 into usable Diamonds.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DiamondOre</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DiamondOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Jade>35</Jade>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine25DiamondOre</defName>
+    <label>Refine Diamond Ore x25</label>
+    <description>Refine Diamond Ore x25 into usable Diamonds.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DiamondOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DiamondOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Jade>100</Jade>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine1PlasmaOre</defName>
     <label>Refine Plasma Ore</label>
     <description>Refine Plasma Ore into sheets.</description>
     <workAmount>150</workAmount>
@@ -245,6 +479,95 @@
 
 	<!-- Plasteel -->
 
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine10PlasteelSheets</defName>
+    <label>Refine Plasteel x10.</label>
+    <description>Refine Plasma Ore x10 into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasmaOre</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasmaOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasma>35</Plasma>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine25PlasmaOre</defName>
+    <label>Refine Plasma Ore x25</label>
+    <description>Refine Plasma Ore x25 into sheets.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasmaOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasmaOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasma>100</Plasma>
+    </products>
+  </RecipeDef>
+  
+	<!-- Plasteel -->
+  
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>RefinePlasteelSheets</defName>
+    <label>Refine Plasteel.</label>
+    <description>Refine Plasma and Steel into Plasteel.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasma</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasma</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasteel>13</Plasteel>
+    </products>
+  </RecipeDef>
+  
   <RecipeDef ParentName="RefineOreBase">
     <defName>Refine10PlasteelSheets</defName>
     <label>Refine Plasteel x10.</label>
@@ -277,6 +600,41 @@
     </fixedIngredientFilter>
     <products>
       <Plasteel>13</Plasteel>
+    </products>
+  </RecipeDef>
+ 
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine25PlasteelSheets</defName>
+    <label>Refine Plasteel x25.</label>
+    <description>Refine Plasma and Steel into Plasteel.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasma</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasma</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasteel>40</Plasteel>
     </products>
   </RecipeDef>
  

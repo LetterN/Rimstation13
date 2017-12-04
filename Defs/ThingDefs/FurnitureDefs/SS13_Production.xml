@@ -123,7 +123,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>4500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
       <Cleanliness>-20</Cleanliness>
@@ -192,7 +192,7 @@
     <fillPercent>0.30</fillPercent>
 	<canOverlapZones>false</canOverlapZones>
     <statBases>
-      <WorkToMake>700</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-3</Cleanliness>
@@ -254,7 +254,7 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -318,7 +318,7 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -379,7 +379,7 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -423,7 +423,7 @@
     <pathCost>70</pathCost>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
     </statBases>
@@ -495,7 +495,7 @@
     <pathCost>70</pathCost>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
     </statBases>
@@ -568,7 +568,7 @@
     <pathCost>70</pathCost>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
     </statBases>
@@ -659,7 +659,7 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>1500</WorkToBuild>
+      <WorkToBuild>1</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -730,7 +730,7 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>1500</WorkToBuild>
+      <WorkToBuild>1</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -779,7 +779,7 @@
     <pathCost>70</pathCost>
     <statBases>
 	  <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>200</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
     </statBases>
@@ -824,9 +824,6 @@
 	  <unpoweredWorkTableWorkSpeedFactor>0.1</unpoweredWorkTableWorkSpeedFactor>
     </building>
     <fillPercent>0.5</fillPercent>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <hasInteractionCell>true</hasInteractionCell>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
     <surfaceType>Item</surfaceType>
@@ -919,7 +916,7 @@
     <pathCost>70</pathCost>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
     </statBases>
@@ -988,7 +985,7 @@
     <pathCost>70</pathCost>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
     </statBases>
@@ -1057,7 +1054,7 @@
     <pathCost>70</pathCost>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
     </statBases>

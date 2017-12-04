@@ -13,7 +13,7 @@
       <Cloth>10</Cloth>
     </costList>
     <statBases>
-      <WorkToMake>450</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
       <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.2</ArmorRating_Sharp>

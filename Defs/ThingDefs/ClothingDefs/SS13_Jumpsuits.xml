@@ -5,9 +5,9 @@
   
   <ThingDef Name="SS13JumpsuitBase" ParentName="SS13ApparelMakeableBase" Abstract="True">
     <statBases>
-      <WorkToMake>100</WorkToMake>
+      <WorkToMake>1</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
-      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
 	  <Insulation_Cold>-10</Insulation_Cold>
 	  <Insulation_Heat>5</Insulation_Heat>

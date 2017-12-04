@@ -53,12 +53,10 @@
     </placeWorkers>
     <building>
       <shipPart>true</shipPart>
-      
     </building>
     <costList>
-      <Steel>200</Steel>
-      <Plasteel>150</Plasteel>
-      <Component>10</Component>
+      <Steel>15</Steel>
+      <Plasteel>15</Plasteel>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
@@ -93,8 +91,8 @@
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
-      <WorkToBuild>8000</WorkToBuild>
-      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <MaxHitPoints>1</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
@@ -113,12 +111,11 @@
     </placeWorkers>
     <building>
       <shipPart>true</shipPart>
-      
     </building>
     <costList>
-      <Steel>200</Steel>
-      <Plasteel>150</Plasteel>
-      <Component>10</Component>
+      <Steel>15</Steel>
+      <Plasteel>15</Plasteel>
+      <Glass>15</Glass>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
@@ -134,7 +131,7 @@
 	<edgeType>Hard</edgeType>
     <statBases>
       <Beauty>2</Beauty>
-      <WorkToMake>150</WorkToMake>
+      <WorkToMake>1</WorkToMake>
     </statBases>
     <costList>
       <Steel>5</Steel>
@@ -206,7 +203,7 @@
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
-      <WorkToBuild>16000</WorkToBuild>
+      <WorkToBuild>1</WorkToBuild>
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -226,7 +223,6 @@
     </placeWorkers>
     <building>
       <shipPart>true</shipPart>
-      
     </building>
     <costList>
       <Steel>50</Steel>
@@ -254,7 +250,7 @@
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
-      <WorkToBuild>8000</WorkToBuild>
+      <WorkToBuild>1</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
