@@ -778,7 +778,7 @@
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
+	  <MaxHitPoints>300</MaxHitPoints>
       <WorkToMake>2500</WorkToMake>
       <Flammability>1.0</Flammability>
 	  <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>

@@ -246,8 +246,8 @@
 	<!-- Plasteel -->
 
   <RecipeDef ParentName="RefineOreBase">
-    <defName>RefinePlasteelSheets</defName>
-    <label>Refine Plasteel.</label>
+    <defName>Refine10PlasteelSheets</defName>
+    <label>Refine Plasteel x10.</label>
     <description>Refine Plasma and Steel into Plasteel.</description>
     <workAmount>150</workAmount>
     <targetCountAdjustment>1</targetCountAdjustment>
@@ -258,7 +258,7 @@
             <li>Plasma</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -266,7 +266,7 @@
 			<li>Steel</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -276,7 +276,44 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Plasteel>3</Plasteel>
+      <Plasteel>13</Plasteel>
+    </products>
+  </RecipeDef>
+ 
+   <!-- Plasteel 25 -->
+ 
+  <RecipeDef ParentName="RefineOreBase">
+    <defName>Refine25PlasteelSheets</defName>
+    <label>Refine Plasteel x25.</label>
+    <description>Refine Plasma and Steel into Plasteel.</description>
+    <workAmount>150</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasma</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasma</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasteel>40</Plasteel>
     </products>
   </RecipeDef>
 
