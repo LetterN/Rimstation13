@@ -14,9 +14,14 @@
     </costList>
     <statBases>
       <WorkToMake>1</WorkToMake>
-      <MaxHitPoints>120</MaxHitPoints>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
       <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>0.1</ArmorRating_Electric>
+      <Insulation_Cold>-20</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
     </statBases>
 	<thingCategories>
       <li>Headgear</li>
@@ -26,7 +31,7 @@
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
-        <li>UpperHead</li>
+        <li>FullHead</li>
       </bodyPartGroups>
       <wornGraphicPath>Clothing/Other_Suits/Clown_Suit/Mask/clownmask</wornGraphicPath>
       <layers>

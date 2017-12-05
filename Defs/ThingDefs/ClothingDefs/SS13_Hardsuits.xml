@@ -270,4 +270,44 @@
     </apparel>
   </ThingDef>
   
+	<ThingDef ParentName="ShellArmourBase">
+    <defName>ApparelClownHardsuit</defName>
+    <label>Clown Hardsuit</label>
+    <description>It's not actually a hardsuit per se, it's more a natural adaptation from all the times Clowns are spaced.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Clothing/Heavy_Suits/Clown_Suit/clownhardsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <WorkToMake>1</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>20</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <Insulation_Cold>-85</Insulation_Cold>
+	  <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>50</Plasteel>
+	  <SS13RawBanana>5</SS13RawBanana>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Clothing/Heavy_Suits/Clown_Suit/clownhardsuit</wornGraphicPath>
+			<tags>
+				<li>Clown</li>
+			</tags>
+    </apparel>
+  </ThingDef>
+  
 </Defs>

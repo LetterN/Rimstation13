@@ -184,6 +184,47 @@
   </RulePackDef>
 
   <RulePackDef>
+    <defName>NamerFactionClown</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->Clown</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFactionBaseClown</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[prefix] [base] [number]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>prefix</keyword>
+          <path>NameBanks/Clown/prefix</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>number</keyword>
+          <path>NameBanks/Clown/numbers</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>base</keyword>
+          <path>NameBanks/Clown/basetypes</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFactionGorlexMarauders</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->Gorlex Marauders</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
     <defName>NamerFactionGorlexMarauders</defName>
     <rulePack>
       <rulesStrings>

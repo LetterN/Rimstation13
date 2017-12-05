@@ -67,4 +67,70 @@
     <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
   </FactionDef>
   
-</Defs>
+  <FactionDef>
+		<defName>FactionClown</defName>
+		<label>Clowns</label>
+    <description>To offend is our sacred duty, to annoy is our calling. To prank is our aim and to honk is our birthright.</description>
+    <pawnsPlural>Clowns</pawnsPlural>
+    <baseSelectionWeight>1</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+		<appreciative>false</appreciative>
+    <leaderTitle>Honkmother</leaderTitle>
+    <expandingIconTexture>Icons/clown_icon</expandingIconTexture>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+		<factionNameMaker>NamerFactionClown</factionNameMaker>
+    <baseNameMaker>NamerFactionBaseClown</baseNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategory>Raider</backstoryCategory>
+		<geneticVariance>0.8</geneticVariance>
+		<hairTags>
+			<li>Punk</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-80</max>
+    </naturalColonyGoodwill>
+    <allowedArrivalTemperatureRange>
+      <min>-60</min>
+      <max>60</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+      <li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Normal</kindDef>
+        <commonality>100</commonality>
+        <options>
+			<Clown>100</Clown>
+        </options>
+      </li>
+      <li>
+				<!-- Normal fights, melee-only -->
+        <kindDef>Normal</kindDef>
+        <commonality>25</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+			<Clown>100</Clown>
+        </options>
+      </li>
+      <li>
+				<!-- Base defense -->
+				<kindDef>FactionBase</kindDef>
+        <options>
+			<Clown>100</Clown>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+  </FactionDef>
+  
+  </Defs>
