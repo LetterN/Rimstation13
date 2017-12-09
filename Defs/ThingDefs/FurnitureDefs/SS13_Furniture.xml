@@ -407,12 +407,12 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>ShuttleConsole</defName>
+    <defName>CommsConsole</defName>
     <label>communications console</label>
     <thingClass>Building_CommsConsole</thingClass>
     <graphicData>
-      <texPath>Furniture/shuttlepc</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Furniture/CommsConsole/commsconsole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <damageData>
         <rect>(0,0,3,1.8)</rect>
@@ -422,27 +422,33 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
-	<blockWind>true</blockWind>
+    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
-	<canOverlapZones>false</canOverlapZones>
+    <canOverlapZones>false</canOverlapZones>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>2200</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
-    <description>A Communications Console, so CentComm can ignore your pleas for help prior to sending in a Death Squad.</description>
+    <description>Allows radio contact with remote traders as well as other factions for trade and diplomacy.</description>
     <size>(1,1)</size>
+    <designationCategory>Misc</designationCategory>
     <costList>
-      <Steel>120</Steel>
+      <Steel>80</Steel>
       <Component>4</Component>
-	  <CircuitBoardCommsConsole>1</CircuitBoardCommsConsole>
     </costList>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Misc</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
     <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(224,224,255,0)</glowColor>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>true</startElectricalFires>
@@ -452,8 +458,8 @@
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
-	
   </ThingDef>
+  
 
 <!-- Beds and Beds and Beds and Beds-->
 

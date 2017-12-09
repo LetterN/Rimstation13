@@ -85,6 +85,56 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SS13PieDough</defName>
+    <label>Pie Dough</label>
+    <description>A base for a pie.</description>
+    <graphicData>
+      <texPath>Meals/piedough</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>200</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SoyDope</defName>
+    <label>Soy Dope</label>
+    <description>Processed Soy Bean, best used in other recipes.</description>
+    <graphicData>
+      <texPath>Meals/soydope</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>200</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
   <ThingDef ParentName="SimpleCookedMealBase">
     <defName>MealBread</defName>
     <label>loaf of bread</label>
@@ -1009,7 +1059,7 @@
     <description>Contrary to the belief of some pizza sellers, Pizza bread is for pizza and ONLY pizza. No one wants cinammon toast made with pizza bread, god damn. Like, who thinks pizza bread with tasteless mozzarella is a good idea? Just make a damn pizza with it.</description>
     <stackLimit>50</stackLimit>
     <graphicData>
-      <texPath>Meals/pastrybase</texPath>
+      <texPath>Meals/pizzabread</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

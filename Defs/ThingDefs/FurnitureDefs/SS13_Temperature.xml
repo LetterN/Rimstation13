@@ -361,10 +361,6 @@
       <li Class="CompProperties_TempControl">
         <energyPerSecond>3</energyPerSecond>
       </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>1</glowRadius>
-        <glowColor>(80,250,235,0)</glowColor>
-      </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <designationCategory>Temperature</designationCategory>
@@ -421,10 +417,6 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_TempControl">
         <energyPerSecond>-3</energyPerSecond>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>1</glowRadius>
-        <glowColor>(80,250,235,0)</glowColor>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
