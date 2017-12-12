@@ -80,6 +80,85 @@
 		</wildAnimals>
 	</BiomeDef>
 
+ <BiomeDef Name="BiomeLavalandParent" Abstract="True">
+		<defName>LavalandBiome</defName>
+		<label>Lavaland</label>
+		<description>Resource rich but dangerous hellscape. Prone to deadly ash storms.</description>
+		<workerClass>BiomeWorker_ColdBog</workerClass>
+		<implemented>true</implemented>
+		<canAutoChoose>true</canAutoChoose>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<animalDensity>4</animalDensity>
+		<plantDensity>0</plantDensity>
+		<hasVirtualPlants>false</hasVirtualPlants>
+		<factionBaseSelectionWeight>1</factionBaseSelectionWeight>
+		<pathCost_spring>300000</pathCost_spring>
+		<pathCost_summer>300000</pathCost_summer>
+		<pathCost_fall>300000</pathCost_fall>
+		<pathCost_winter>300000</pathCost_winter>
+		<texture>Floors/lava</texture>
+		<soundsAmbient>
+			<li>AmbientWind_Desolate</li>
+		</soundsAmbient>
+		<diseaseMtbDays>80</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>BasaltTerrain</terrain>
+				<min>-999</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.015</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Lava</terrain>
+						<min>0.97</min>
+						<max>0.78</max>
+					</li>
+					<li>
+						<terrain>Lava</terrain>
+						<min>0.98</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<Clear>12</Clear>
+			<Fog>0</Fog>
+			<Rain>0</Rain>
+			<DryThunderstorm>0</DryThunderstorm>
+			<RainyThunderstorm>0</RainyThunderstorm>
+			<FoggyRain>0</FoggyRain>
+			<SnowGentle>0</SnowGentle>
+			<SnowHard>0</SnowHard>
+		</baseWeatherCommonalities>
+		<wildAnimals>
+			<SpaceCarp>1</SpaceCarp>
+		</wildAnimals>
+	</BiomeDef>
+	
   <BiomeDef ParentName="BiomeSpaceParent">
 	<defName>SeaIce</defName>
   </BiomeDef>
@@ -124,15 +203,15 @@
 	<defName>Lake</defName>
   </BiomeDef>
   
-  <BiomeDef ParentName="BiomeSpaceParent">
+  <BiomeDef ParentName="BiomeLavalandParent">
     <defName>ColdBog</defName>
   </BiomeDef>
 
-  <BiomeDef ParentName="BiomeSpaceParent">
+  <BiomeDef ParentName="BiomeLavalandParent">
     <defName>TemperateSwamp</defName>
   </BiomeDef>
 
-  <BiomeDef ParentName="BiomeSpaceParent">
+  <BiomeDef ParentName="BiomeLavalandParent">
     <defName>TropicalSwamp</defName>
   </BiomeDef>
   

@@ -776,7 +776,7 @@
   <ThingDef ParentName="BaseGun">
     <defName>Gun_SyndiSniper</defName>
     <label>Sniper Rifle</label>
-    <description>Specialist weapon for the profession, or insane. Long range sniper rifle.</description>
+    <description>Specialist weapon for the professional, or insane. Long range sniper rifle.</description>
     <graphicData>
       <texPath>Weapons/Ranged/sniper</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -826,6 +826,78 @@
           <li>Poke</li>
         </capacities>
         <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ToyCrossbow</defName>
+    <label>foam dart</label>
+    <graphicData>
+      <texPath>Projectiles/foamdart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_ToyCrossbow</defName>
+    <label>Toy Crossbow</label>
+    <description>The perfect way to get someone killed, as long as that someone is you.</description>
+    <graphicData>
+      <texPath>Weapons/Ranged/toycrossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRevolver</soundInteract>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.99</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+	<generateCommonality>0.05</generateCommonality>
+    <weaponTags>
+      <li>Clown</li>
+    </weaponTags>
+	<techLevel>Spacer</techLevel>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ToyCrossbow</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>30</range>
+        <soundCast>SS13FoamDartShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
         <cooldownTime>1.6</cooldownTime>
       </li>
     </tools>

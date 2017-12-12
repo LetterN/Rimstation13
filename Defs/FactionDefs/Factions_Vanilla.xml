@@ -33,7 +33,7 @@
 		<backstoryCategory>Civil</backstoryCategory>
 		<geneticVariance>0.8</geneticVariance>
 		<hairTags>
-			<li>Rural</li>
+			<li>SS13</li>
 		</hairTags>
     <naturalColonyGoodwill>
       <min>-60</min>
@@ -137,7 +137,7 @@
     <backstoryCategory>Tribal</backstoryCategory>
     <leaderTitle>chief</leaderTitle>
     <hairTags>
-      <li>Tribal</li>
+      <li>SS13</li>
     </hairTags>
     <naturalColonyGoodwill>
       <min>-100</min>

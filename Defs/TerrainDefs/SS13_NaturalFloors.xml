@@ -110,4 +110,43 @@
     <fertility>0.0</fertility>
   </TerrainDef>
   
+  <TerrainDef>
+    <defName>Lava</defName>
+    <label>Lava</label>
+    <texturePath>Floors/lava</texturePath>
+    <edgeType>Water</edgeType>
+    <renderPrecedence>395</renderPrecedence>
+		<passability>Impassable</passability>
+    <pathCost>300</pathCost>
+    <acceptFilth>false</acceptFilth>
+    <fertility>0</fertility>
+    <avoidWander>true</avoidWander>
+    <changeable>false</changeable>
+		<holdSnow>false</holdSnow>
+    <takeSplashes>true</takeSplashes>
+    <extinguishesFire>false</extinguishesFire>
+  </TerrainDef>
+  
+  <TerrainDef>
+	<defName>BasaltTerrain</defName>
+    <label>Basalt</label>
+    <texturePath>Floors/basalt</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>50</pathCost>
+    <statBases>
+      <Beauty>12</Beauty>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+    </affordances>
+	<avoidWander>true</avoidWander>
+	<holdSnow>false</holdSnow>
+	<acceptFilth>false</acceptFilth>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>0.00</fertility>
+    <takeFootprints>False</takeFootprints>
+  </TerrainDef>
+  
 </Defs>

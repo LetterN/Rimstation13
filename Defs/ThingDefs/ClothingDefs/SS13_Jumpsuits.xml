@@ -5,6 +5,7 @@
   
   <ThingDef Name="SS13JumpsuitBase" ParentName="SS13ApparelMakeableBase" Abstract="True">
     <statBases>
+	  <MarketValue>100</MarketValue>
       <WorkToMake>1</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
@@ -55,6 +56,7 @@
       </layers>
 	  <tags>
 			<li>AtmosphericTechnician</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -86,6 +88,7 @@
       </layers>
 	  <tags>
 			<li>Captain</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -115,6 +118,7 @@
       </layers>
 	  <tags>
 			<li>CargoTechnician</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -144,6 +148,7 @@
       </layers>
 	  <tags>
 			<li>ChiefEngineer</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -173,6 +178,7 @@
       </layers>
 	  <tags>
 			<li>Chemist</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -202,6 +208,7 @@
       </layers>
 	  <tags>
 			<li>ChiefMedicalOfficer</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -231,6 +238,7 @@
       </layers>
 	  <tags>
 			<li>Engineer</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -260,6 +268,7 @@
       </layers>
 	  <tags>
 			<li>Geneticist</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -289,6 +298,7 @@
       </layers>
 	  <tags>
 			<li>Assistant</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -318,6 +328,7 @@
       </layers>
 	  <tags>
 			<li>HeadOfSecurity</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -347,6 +358,7 @@
       </layers>
 	  <tags>
 			<li>Botanist</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -376,6 +388,7 @@
       </layers>
 	  <tags>
 			<li>Janitor</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -405,6 +418,7 @@
       </layers>
 	  <tags>
 			<li>MedicalDoctor</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -434,6 +448,7 @@
       </layers>
 	  <tags>
 			<li>ShaftMiner</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -463,6 +478,7 @@
       </layers>
 	  <tags>
 			<li>QuarterMaster</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -523,6 +539,7 @@
       </layers>
 	  <tags>
 			<li>Roboticist</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -552,6 +569,7 @@
       </layers>
 	  <tags>
 			<li>SecurityOfficer</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -581,6 +599,7 @@
       </layers>
 	  <tags>
 			<li>Virologist</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -610,6 +629,7 @@
       </layers>
 	  <tags>
 			<li>Warden</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -639,6 +659,7 @@
       </layers>
 	  <tags>
 			<li>Chef</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>
@@ -668,6 +689,7 @@
       </layers>
 	  <tags>
 			<li>Detective</li>
+			<li>NanoTrasen</li>
 	  </tags>
     </apparel>
   </ThingDef>

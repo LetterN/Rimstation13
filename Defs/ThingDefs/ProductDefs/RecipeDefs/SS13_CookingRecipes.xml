@@ -46,6 +46,58 @@
     <workSkill>Cooking</workSkill>
   </RecipeDef>
   
+  <RecipeDef ParentName="CookKitchenTableBase">
+    <defName>PieDough</defName>
+    <label>create pie dough</label>
+    <description>Flatten cake batter into pie dough</description>
+    <jobString>Processing</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13CakeBatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13PieDough>1</SS13PieDough>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookKitchenTableBase">
+    <defName>RawPastryBase</defName>
+    <label>create pastry base</label>
+    <description>Cut pie dough into pastry bases</description>
+    <jobString>Processing</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13PieDough</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13PastryBase>3</SS13PastryBase>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
   <RecipeDef ParentName="CookMicrowaveBase">
     <defName>MakeBread</defName>
     <label>make bread</label>
@@ -480,6 +532,33 @@
     <defName>CopyPasta</defName>
     <label>make copypasta</label>
     <description>make copypasta</description>
+    <jobString>Processing.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>60</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SS13TomatoPasta</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <SS13CopyPasta>1</SS13CopyPasta>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef  ParentName="CookProcessorBase">
+    <defName>SoyDope</defName>
+    <label>make soy dope</label>
+    <description>make soy dope</description>
     <jobString>Processing.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
