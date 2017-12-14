@@ -23,7 +23,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -35,9 +36,6 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -71,7 +69,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -83,9 +82,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -119,7 +118,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -131,9 +131,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -167,7 +167,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -179,9 +180,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -215,7 +216,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -227,9 +229,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -265,7 +267,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -277,9 +280,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -313,7 +316,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -325,9 +329,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -361,7 +365,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -373,9 +378,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -409,7 +414,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -421,9 +427,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -457,7 +463,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -469,9 +476,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -507,7 +514,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -519,9 +527,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -555,7 +563,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -567,9 +576,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -603,7 +612,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -615,9 +625,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -651,7 +661,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -663,9 +674,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -699,7 +710,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -711,9 +723,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -749,7 +761,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -761,9 +774,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -797,7 +810,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -809,9 +823,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -845,7 +859,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -857,9 +872,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -893,7 +908,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -905,9 +921,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -941,7 +957,8 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1</MarketValue>
 	  <Mass>0.070</Mass>
       <SharpDamageMultiplier>0</SharpDamageMultiplier>
       <BluntDamageMultiplier>0</BluntDamageMultiplier>
@@ -953,9 +970,9 @@
     <smallVolume>false</smallVolume>
 	<deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
+       
+         
+       
       <constructEffect>ConstructMetal</constructEffect>
       <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
