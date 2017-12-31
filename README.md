@@ -7,9 +7,11 @@ This mod is based on the /tg/ Branch of SS13 as it is the one I am most familiar
 
 # Links
 
-Discord: [Discord](https://discord.gg/SRhkvsV)
-Forum: [Rimworld Mod Forum](https://ludeon.com/forums/index.php?topic=36827.0)
-Steam: [Steam Workshop Page](http://steamcommunity.com/sharedfiles/filedetails/?id=1205893726&tscn=1511577652)
+Discord: [Discord](https://discord.gg/SRhkvsV "Rimstation13")
+
+Forum: [Rimworld Mod Forum](https://ludeon.com/forums/index.php?topic=36827.0 "Ludeon Forums")
+
+Steam: [Steam Workshop Page](http://steamcommunity.com/sharedfiles/filedetails/?id=1205893726&tscn=1511577652 "Steam")
 
 # Installation
 
